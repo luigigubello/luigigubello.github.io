@@ -1,0 +1,56 @@
+## Users CSV stats:
+# New accounts per year:
+
+[2009,3], [2010,4], [2011,6], [2012,15], [2013,13], [2014,20], [2015,90], [2016,98], [2017,307], [2018,214]
+
+Total: 770
+
+# Accounts' location:
+
+[nan,374], [Islamic Republic of Iran,44], [Kingdom of Saudi Arabia,18], [United States,13], [تهران,8], [iran,8], [Hashemite Kingdom of Jordan,7], [California, USA,7], [Afghanistan,7], [المملكة العربية السعودية,7], [Tehran,7], [tehran,6], [المملكة الأردنية الهاشمية,6], [Iran,5], [Tehran, Iran,5], [Yemen,5], [Riyadh,5], [France,4], [Dallas, TX,4], [New York, USA,4], [Paris, France,4], [palestine,4], [بغداد,4], [طهران,3], [Russia,3], [live in US,Ohio,cleveland,3], [Syrian Arab Republic,3], [فلسطين,3], [Germany,3], [Argentina,3], [Delaware, USA,2], [Moscow, Russia,2], [Houston, TX,2], [Manhattan, NY,2], [London,2], [IRAN,2], [Caracas, Venezuela,2], [jordan,2], [الأردن,2], [Qatar,2], [Worldwide,2], [Fremont, CA,2], [جمهوری اسلامی ایران,2], [London, England,2], [Texas, USA,2], [Portland, OR,1], [Illinois, USA,1], [هر جا که این قلب ببره,1], [Bolsover, England,1], [Azerbaijan,1], [نقطه صفر مرزی,1], [Gazeteci,1], [San Francisco, CA,1], [ایران ، تهران ، خونمون,1], [دمشق ، حــــــــــــــرم بانــــــــــــــــــو,1], [زیر آسمون خدا,1], [Arab World,1], [شیراز،مرکز تمدن ایران,1], [تهرونشون,1], [Jordan, MN,1], [Piscataway, NJ,1], [New Jersey, USA,1], [خونه بابام,1], [baku,1], [Azer,1], [تهران، ایران🇮🇷,1], [Venezuela,1], [NJ,1], [USA,1], [طهرون,1], [California,Los Angeles,1], [Washington, USA,1], [Atlanta,1], [بهشت,1], [Anywhere,1], [وطنم ایران,1], [همونجایی که دلبر خونه داره,1], [بچه تبریزحزب اللهی بچه تبریز,1], [Birm,1], [اليمن ,1], [Atlantic City, NJ,1], [استان قنیطره، سوریه,1], [توییتر آباد,1], [Iran - Tehran,1], [Nord, Nord-Pas-de-Calais,1], [Libya,1], [insanın lisanı...,1], [TeHrAn,1], [ج.ا.ا,1], [الرياض,1], [Saudi Arabia,1], [Toronto, Ontario,1], [liver,1], [Arizona,phoenix,1], [Amazonas, Brazil,1], [North Holland, The Netherlands,1], [مصر,1], [جمهوری اسلامی ایران🇮🇷,1], [کربلا,1], [کربلای 5,1], [qazvin,1], [هنا,1], [日本 東京,1], [Colorado, USA,1], [Nederland,1], [ایران، کرمانشاه، دالاهو,1], [US,1], [Munich, Bavaria,1], [Brooklyn, NY,1], [Western Australia, Australia,1], [جا مانده از شلمچه,1], [New York city,1], [Republic of Croatia,1], [Sasdat Abad، TEHRAN، IRAN,1], [Palestine,1], [دنیای وحشی؛ مربع برمودا,1], [Pennsylvania,Pittsburgh,1], [Wonderland ,1], [América Latina,1], [ایرانی الاصل,1], [ohi,1], [España,1], [کویر لوت,1], [پاستور,1], [ایران - قاجار,1], [می کده,1], [Pennsylvania,Philadelphia,1], [Tabriz,1], [الخليج العربي دولة الكويت,1], [اهواز جان,1], [Iran, Tehran,1], [Asia,1], [الدوحة, دولة قطر,1], [العراق,1], [live in TEXAS,DALAS,1], [Argenteuil, France,1], [کره ی خاکی,1], [کـــــــــــربلا,1], [Mountain View, CA,1], [Amman,1], [England, United Kingdom,1], [karaj,1], [النجف,1], [saudiaarabia,1], [Chicago,1], [İstanbul, Türkiye 🇹🇷,1], [UAE,1], [India - Iran,1], [Vivo en España... Soy de Perú...,1], [پایتخت,1], [Bahrain,1], [کره زمین,1], [Ohio,1], [برمودا,1], [Oregon, USA,1], [اليمن,1], [Oregon,Portland,1], [هیچجا ، همینجا ، نه اونجا,1], [lo,1], [Sacramento, CA,1], [Califor,1], [Türkiye,1], [Nantes, France,1], [تهرانی هستم,1], [کلوت شهداد,1], [خوزستــــــــــــــــــــــان,1], [برکه,1], [New York, NY,1], [Al Madinah Al Munawwarah,1], [راننده اسنپ شدم از روی اجبار/ از پشت فرمون ریت می کنم :),1], [یزد,1], [Brazil,1], [شمال,1], [اشتهارد ؛ تهران,1], [Washington,Seattle,1], [جغرافیای عاشقان,1], [اصفهان,1], [پاره تنم ایران,1], [اینجا,1], [istanbul,1], [The Netherlands,1], [Florida,Orlando,1], [ایران اسلامی,1], [بلندیهای میمک,1], [Delawa,1], [ایران,1], [مملكة الحجاز و نجد و ملحقاتها,1], [ישראל,1], [#Damascus_Syria,1], [کلیسای نتردام,1], [Moscow,1], [Middle East........ LEBANON....SYRIA,1], [Jeddah,1], [دمشق,1], [تهران- ایران,1], [United Kingdom,1], [المنطقة الشرقية - اقليم المشرق في شبه الجزيرة العربية,1], [زیر آسمون این شهر,1], [Iraq,1], [Ohio, USA,1], [مكة المكرمة, المملكة العربية ا,1], [كربلاء,1], [شلمچه ، فکه ، مجنون,1], [أحرار,1], [Beautiful Tehran,1], [Texas,San Antonio,1], [کنارتم,1], [İstanbul, Türkiye,1]
+
+Total: 770
+
+# Followers stats:
+
+[0,182], [10,74], [50,41], [100,178], [500,125], [1000,88], [2000,40], [5000,42]
+
+Total: 770
+
+# Following stats:
+
+[0,127], [10,85], [50,45], [100,176], [500,84], [1000,125], [2000,103], [5000,25]
+
+Total: 770
+
+# Accounts' language:
+
+[en,646], [ar,72], [fa,21], [tr,10], [es,10], [en-gb,7], [fr,3], [ru,1]
+
+Total: 770
+
+
+## Tweets CSV stats:
+# Tweets and retweets per year:
+
+[2010,1,0], [2011,6,0], [2012,5494,408], [2013,14088,145], [2014,229882,977], [2015,248780,9042], [2016,112260,16548], [2017,290421,104120], [2018,222004,101097]
+
+Total: 1122936
+
+# Fav - retweet - reply per year:
+
+[2010,0,1,0], [2011,0,0,0], [2012,55,394,571], [2013,205,435,195], [2014,16444,32315,23038], [2015,62167,82858,14472], [2016,105232,92910,8045], [2017,733414,340424,59268], [2018,600076,279199,58539]
+
+Total: 1517593, 828536, 164128
+
+# User agents:
+
+[Twitter Web Client,699348], [TweetDeck,96561], [dlvr.it,78674], [Twitter for Android,62048], [Facebook,58444], [Twitter Lite,23308], [nan,22858], [Buffer,16036], [Twitter for Websites,13944], [RoundTeam,12157], [IFTTT,8883], [Twitter for iPhone,3973], [iuvmonline-fa,3216], [TweetItBot,2744], [Google,2708], [blackhouseinfo,2395], [appstwitter1396,1622], [iuvmonline-en,1617], [Twitter for iPad,1140], [Samsung Mobile,825], [4bhnews,819], [iuvm ur,770], [twitter iuvm,759], [IUVM AZ,629], [blackhouseapp,616], [Pinterest,607], [alsaudianet,507], [jordan-times,445], [Add Your Account,435], [IUVMPRESS TR,363], [Instagram,332], [schedule_time,311], [twitter iuvm en,294], [twitter iuvm fr,286], [ twitter iuvm ar,283], [Media Studio,271], [Commun.it,266], [alhadathps,260], [Hootsuite,210], [MY MESAL,183], [twitter iuvm pashto,180], [vk.com,167], [SoundCloud,148], [worldcups,139], [mediadbnews,103], [WordPress.com,96], [ManageFlitter,95], [Twitter for Windows Phone,78], [erased14166029,77], [Twitter for Android Tablets,64], [Follower Plus ,54], [PressTV Documentary,52], [Tweenjoy,50], [tocotest,42], [Twitter for Windows,41], [LinkedIn,39], [Zapier.com,36], [Twitter for BlackBerry®,34], [Mobile Web (M2),32], [Tweetbot for iΟS,31], [yazbunu official app,26], [Moments Internal Auth,20], [Mobile Web,17], [Tweepi,17], [Twittimer,13], [iOS,12], [Gleam Competition App,8], [Silver Bird,6], [Twitter Ads,6], [erased12475773,6], [twity net,6], [Tweetbot for Mac,6], [bedavatakip,5], [Tall Tweets,5], [Linkis: turn sharing into growth,5], [Tweepsmap,4], [LongerTwits,4], [Twibbon,4], [FOX News Login,3], [Takibibirak Pro,3], [Swifter Framework,3], [Blog2Social APP,2], [Who is Your Unfollowers?,2], [twiends.com,2], [TweetCaster for Android,2], [Takipcom,2], [Twitlonger,2], [ViralPro,2], [TwiAgeCom,2], [Fieldrunners 2 HD on iOS,2], [Crowdfire - Go Big,1], [erased12519106,1], [erased12519047,1], [Spring.me,1], [Who Unfollowed Me,1], [CallApp,1], [التأكد مْن عمر المشترك,1], [mesal1,1], [ شعلة - درب عقلك يوميا,1], [FavCleaner,1], [TestAlk1396,1], [Still Follows,1], [twitterfeed,1], [CatMe,1], [New App v4.109,1], [Thunderclap,1], [Twitterfall,1], [Hootsuite Inc.,1], [Twitter.com inc     ,1], [StatusPeople Fake Followers,1], [erased12569952,1], [erased12556322,1], [erased12522259,1], [erased15201008,1], [JumboTweet,1], [Al jazeera America,1], [FsaIe App,1], [erased13192829,1], [Trendsmap.com,1], [Twishort,1], [TheWorld Rev,1], [HsinBot,1], [My Photobucket,1], [quemvaita,1]
+
+Total: 1122936
+
+# Tweets languages:
+
+[fr,323801], [en,276946], [ar,154326], [tr,92466], [fa,92206], [es,65244], [und,42750], [ru,40796], [nan,5629], [ur,4578], [ro,4471], [ps,4306], [hi,4264], [in,2051], [de,1507], [fi,1004], [pt,976], [tl,605], [cy,564], [et,514], [da,475], [ht,443], [uk,384], [it,382], [bs,276], [bg,250], [nl,195], [ca,184], [sv,151], [vi,131], [eu,128], [sl,125], [id,117], [no,111], [pl,107], [cs,85], [ja,67], [hu,64], [sk,42], [ne,31], [lv,30], [lt,28], [is,25], [sd,17], [sr,16], [iw,15], [hr,12], [th,11], [mr,10], [el,10], [ko,5], [zh,5]
+
+Total: 1122936

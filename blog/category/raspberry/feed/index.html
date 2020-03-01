@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Raspberry &#8211; Blog un po&#039; nerd</title>
+	<atom:link href="https://luigigubello.github.io/blog/category/raspberry/feed/" rel="self" type="application/rss+xml" />
+	<link>http://luigigubello.github.io/blog/</link>
+	<description>Nerd is the new Hipster</description>
+	<lastBuildDate>Sat, 03 Nov 2018 18:10:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://luigigubello.github.io/blog/wp-content/uploads/2017/12/cropped-favicon-1-32x32.jpg</url>
+	<title>Raspberry &#8211; Blog un po&#039; nerd</title>
+	<link>http://luigigubello.github.io/blog/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Configurare un Pi-Hole portatile</title>
+		<link>https://luigigubello.github.io/blog/configurare-pi-hole-portatile/</link>
+				<pubDate>Fri, 02 Nov 2018 12:02:07 +0000</pubDate>
+		<dc:creator><![CDATA[luigi]]></dc:creator>
+				<category><![CDATA[Italian]]></category>
+		<category><![CDATA[Raspberry]]></category>
+
+		<guid isPermaLink="false">https://www.gubello.me/blog/?p=504</guid>
+				<description><![CDATA[<p>Poco tempo fa ho scoperto un progetto open source chiamato Pi-Hole, piuttosto conosciuto e apprezzato. Il compito di Pi-Hole è quello di &#8220;ripulire&#8221; la nostra navigazione su Internet da pubblicità e siti malevoli (semplificando: funge da ad-block), creando un piccolo server DNS sul Raspberry. Uno dei principali punti di forza è che, una volta configurato, <a href="https://luigigubello.github.io/blog/configurare-pi-hole-portatile/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Configurare un Pi-Hole portatile</span></a></p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/configurare-pi-hole-portatile/">Configurare un Pi-Hole portatile</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p>Poco tempo fa ho scoperto un progetto open source chiamato <strong>Pi-Hole</strong>, piuttosto conosciuto e apprezzato. Il compito di Pi-Hole è quello di &#8220;ripulire&#8221; la nostra navigazione su Internet da pubblicità e siti malevoli (semplificando: funge da ad-block), creando un piccolo server DNS sul Raspberry. Uno dei principali punti di forza è che, una volta configurato, ripulisce dalle pubblicità ogni dispositivo connesso alla rete, senza bisogno di ulteriori programmi o plug-in.</p>
+<p>Questo progetto mi ha entusiasmato così tanto (mi ha tolto la pubblicità invasiva e fastidiosa anche da tutte le applicazioni installate su Android) che ho deciso di provare a configurarlo in modo da portarlo facilmente in giro, senza bisogno di cavi ethernet o configurazioni particolari del router. Avendo anche un piccolo schermino da 3,5 pollici per il Raspberry l&#8217;ho configurato in modo tale che sul monitor appaiano alcune informazioni utili, ma questa è un&#8217;aggiunta superflua. Per configurare Pi-Hole come volevo ho usato:</p>
+<ul>
+<li>Raspberry Pi3 Model B + Raspbian Stretch Lite (2018-10-09)</li>
+<li>‎TP Link TL-WN722N v3</li>
+<li><a href="https://www.amazon.it/Raspberry-Quimat-Resolution-Protective-QSC11/dp/B06W55HBTX/ref=pd_sbs_147_2?_encoding=UTF8&amp;pd_rd_i=B06W55HBTX&amp;pd_rd_r=a0b0b9ae-de01-11e8-b659-c3ef5a38f9fa&amp;pd_rd_w=gR58Z&amp;pd_rd_wg=R8fgN&amp;pf_rd_i=desktop-dp-sims&amp;pf_rd_m=A11IL2PNWYJU7H&amp;pf_rd_p=466c5af4-0171-4b17-9b3f-b4036a90f75d&amp;pf_rd_r=3KT6KMEV303JBPPMNGBV&amp;pf_rd_s=desktop-dp-sims&amp;pf_rd_t=40701&amp;psc=1&amp;refRID=3KT6KMEV303JBPPMNGBV">Quimat LCD Display da 3,5 pollici</a> <strong>(opzionale)</strong></li>
+</ul>
+<h4 style="text-align: center;">1.</h4>
+<p>Lo schermino LCD Quimat è opzionale, nel caso non si disponga di questo pezzo basta munirsi di classico cavo HDMI e monitor e saltare la parte della guida riguardante l&#8217;installazione dei driver per il display. La versione Lite di Raspbian si usa solo da linea di comando, quindi può essere utile avere una tastiera a portata di mano. Per prima cosa prepariamo una scheda SD estraendoci dentro Raspbian Lite, per fare ciò Balena Etcher (ex Etcher) andrà benissimo. A fine processo la memoria SD sarà divisa in due partizioni: <strong>boot</strong> e <strong>rootfs</strong>. Nella partizione <strong>boot</strong> creiamo due files: uno chiamato <strong>ssh</strong>, vuoto, e uno chiamato <strong>wpa_supplicant.conf</strong>. All&#8217;interno di quest&#8217;ultimo incollate il seguente testo, inserendo il nome della vostra connessione wi-fi e la password:<br />
+<code><br />
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev<br />
+update_config=1<br />
+country=US</code><br />
+<code><br />
+network={<br />
+&#160;&#160;&#160;&#160;ssid="Your-WiFi-SSID"<br />
+&#160;&#160;&#160;&#160;psk="Your-WiFi-Password"<br />
+&#160;&#160;&#160;&#160;scan_ssid=1<br />
+}</code></p>
+<p>Questi due files ci serviranno per connetterci via SSH al Raspberry fin dal primo avvio. <a href="https://github.com/goodtft/LCD-show">Scarichiamo i driver</a> per il display Quimat, estraiamoli nella cartella <em>LCD-show</em>, e copiamo la cartella nella partizione <strong>rootfs</strong>, nel percorso <strong>/home/pi</strong>. Montiamo il display sul Raspberry e accendiamolo. Collegandoci via SSH diamo i seguenti comandi:<br />
+<code><br />
+chmod -R 755 LCD-show<br />
+cd LCD-show<br />
+sudo ./LCD35-show</code></p>
+<p>Il Raspberry dovrebbe riavviarsi e sul display Quimat dovrebbe finalmente apparire la shell. Ora bisogna creare &#8220;ponte&#8221; tra l&#8217;antenna integrata del Raspberry (<em>wlan0</em>) e l&#8217;antenna WiFi USB (<em>wlan1</em>), per fare ciò basta seguire <a href="https://luigigubello.github.io/blog/utilizzare-il-raspberry-pi-3-via-termux/">questa</a> mia vecchia guida, ma utilizzando questa volta Raspbian Lite possiamo rinunciare all&#8217;installazione del pacchetto <em>network-manager-gnome</em>. La configurazione finale di Raspbian tramite <strong>raspi-config </strong>è lasciata all&#8217;utente, in base alle proprie abitudini e/o esigenze.</p>
+<h4 style="text-align: center;">2.</h4>
+<p>Ora è possibile installare Pi-Hole, diamo il seguente comando:<br />
+<code><br />
+curl -sSL https://install.pi-hole.net | bash</code></p>
+<p>L&#8217;installazione è guidata e piuttosto facile, almeno per il momento conviene tenere le impostazioni di default, tranne per due configurazioni: quanto richiede l&#8217;interfaccia selezioniamo <strong>wlan0 </strong>e quando ci chiede quali IP utilizzare nella riga <em>IP Address</em> scriviamo <strong>192.168.12.1/24</strong> e nella riga <em>Gateway</em> scriviamo <strong>192.168.12.1</strong>. Concludiamo l&#8217;installazione e diamo infine il comando: <code>sudo apt-get purge dhcpcd5</code>.<br />
+Quest&#8217;ultimo pacchetto viene installato in automatico da Pi-Hole ad ogni riconfigurazione che andremo a fare, e bisogno ricordarsi di toglierlo alla fine perché entra in conflitto con il pacchetto <em>network-manager</em>.</p>
+<h4 style="text-align: center;">3.</h4>
+<p><strong>Se non stai utilizzando uno schermo LCD puoi saltare questa parte.</strong> Per sfruttare al meglio il piccolo display Quimat ho deciso di usarlo in combinazione con <a href="https://github.com/jpmck/PADD">PADD</a>, un piccolo script che dà informazioni riguardo a Pi-Hole, che ho scoperto leggendo una <a href="https://learn.adafruit.com/pi-hole-ad-pitft-tft-detection-display/install-padd">guida</a> sul sito di Adafruit. Scarichiamo lo script: <code>wget -N https://raw.githubusercontent.com/jpmck/PADD/master/padd.sh</code>. Ora con <strong>nano </strong>andiamo a commentare la seguente riga:<br />
+<code><br />
+<strong>#</strong> export LC_ALL=en_US.UTF-8 &gt; /dev/null 2&gt;&amp;1 || export LC_ALL=en_GB.UTF-8 &gt; /dev/null 2&gt;&amp;1 || export LC_ALL=C.UTF-8 &gt; /dev/null 2&gt;&amp;1</code></p>
+<p>Per far avviare PADD ad ogni avvio di Raspbian modifichiamo il file <strong>.bashrc</strong> aggiungendo alla fine le seguenti righe:<br />
+<code><br />
+# Run PADD<br />
+if [ "$TERM" == "linux" ] ; then<br />
+&#160;&#160;while :<br />
+&#160;&#160;do<br />
+&#160;&#160;&#160;&#160;./padd.sh<br />
+&#160;&#160;&#160;&#160;sleep 1<br />
+&#160;&#160;done<br />
+fi</code></p>
+<p>E infine rendiamo eseguibile lo script: <code>chmod +x padd.sh</code>. Ora al prossimo riavvio PADD viene lanciato in automatico mostrando le informazioni relative a Pi-Hole.</p>
+<h4 style="text-align: center;"><strong>4.</strong></h4>
+<p>L&#8217;ultima parte riguarda la messa in sicurezza di Pi-Hole. L&#8217;idea è quella di poter portare il Raspberry facilmente in giro e di poter usufruire di Pi-Hole anche su reti che non sono la nostra, come ad esempio il wi-fi di un albergo. Per prima cosa quindi bisogna cambiare la password di Raspbian e quella del pannello di controllo di Pi-Hole (<em>pi.hole/admin/</em>). Il Raspberry ora dovrebbe funzionare più o meno così:</p>
+<p style="text-align: center;"><strong>[device]&#8211;&gt;[raspberry][wlan0]&#8211;&gt;[wlan1][/raspberry]&#8211;&gt;[router]</strong></p>
+<p>Pi-Hole è impostato su <em>wlan0</em>, che fa da hotspot, e <em>wlan1</em> viene utilizzata per connettersi ai vari router. Quindi bisogna fare in modo che:</p>
+<ol>
+<li>I dispositivi che si connettono a <em>wlan0</em> non abbiano accesso non autorizzatto alla pagina <em>pi.hole/admin/</em>.</li>
+<li>Il Raspberry non sia esposto a particolari rischi quando si connette a un router tramite <em>wlan1</em>.</li>
+</ol>
+<p>Configuriamo quindi <strong>lighttpd</strong> in modo tale che vengano richiesti <em>user</em> e <em>password</em> per accedere a <em>pi.hole/admin/</em> e che l&#8217;accesso a questa pagina sia ristretto solo a determinati IP (cioè solo agli utenti connessi a <em>wlan0</em>). Nella cartella <strong>/etc/lighttpd</strong> modifichiamo (o creiamo, nel caso non esistesse) il file <strong>external.conf</strong>, aggiungendo queste righe:<br />
+<code><br />
+$HTTP["remoteip"] != "192.168.12.1/24" {<br />
+&#160;&#160;url.access-deny = ( "" )<br />
+}</code></p>
+<p>Ora controlliamo che nel file <strong>lighttpd.conf</strong> siano presente le seguenti righe, altrimenti bisogna aggiungerle alla fine del file:<br />
+<code><br />
+# Add user chosen options held in external file<br />
+include_shell "cat external.conf 2&gt;/dev/null"</code></p>
+<p>A questo punto solo gli IP <strong>192.168.12.*</strong> avranno accesso alla pagina <em>pi.hole</em>. Ora aggiungiamo una richiesta di autenticazione, per fare ciò ho seguito una <a href="https://jacobsalmela.com/2014/05/25/password-protect-a-lighttpd-web-server-on-a-raspberry-pi-using-mod-auth/">semplice guida</a> di <a href="https://jacobsalmela.com">Jacob Salmela</a>. Per prima cosa creiamo in <em>/etc/lighttpd/</em> una cartella chiamata <strong>.htpasswd</strong>: <code>sudo mkdir /etc/lighttpd/.htpasswd</code>. All&#8217;interno di questa cartella creiamo lo script <strong>hash.sh </strong>contenente il seguente codice:<br />
+<code><br />
+#!/bin/sh<br />
+user=$1<br />
+realm=$2<br />
+pass=$3<br />
+hash=`echo -n "$user:$realm:$pass" | md5sum | cut -b -32`<br />
+echo "$user:$realm:$hash"</code></p>
+<p>Rendiamo eseguibile lo script e lanciamolo, scegliendo un nome utente e una password al posto di <strong>user</strong> e <strong>password</strong>.<br />
+<code><br />
+sudo chmod +x hash.sh<br />
+sudo ./hash.sh '<strong>user</strong>' 'pihole' '<strong>password</strong>'</code></p>
+<p>Lo script restituirà una stringa come output, copiamola e incolliamola in un nuovo file chiamato <strong>lighttpd-htdigest.user</strong>, che va salvato sempre nella cartella <strong>./htpasswd</strong>. Infine apriamo nuovamente <em>lighttpd.conf </em>e incolliamo il seguente testo:<br />
+<code><br />
+# Mod_Auth Configuration<br />
+auth.backend = "htdigest"<br />
+auth.backend.htdigest.userfile = "/etc/lighttpd/.htpasswd/lighttpd-htdigest.user"<br />
+auth.require = ( "/admin/" =&gt;<br />
+&#160;&#160;&#160;&#160;(<br />
+&#160;&#160;&#160;&#160;"method"  =&gt; "digest",<br />
+&#160;&#160;&#160;&#160;"realm"   =&gt; "pihole",<br />
+&#160;&#160;&#160;&#160;"require" =&gt; "user=<strong>user</strong>"<br />
+&#160;&#160;&#160;&#160;),<br />
+)</code></p>
+<p>Al posto di <strong>user</strong> bisogna inserire il nome utente usato nel file <strong>lighttpd-htdigest.user</strong>, salviamo il file e riavviamo lighttpd: <code>sudo service lighttpd restart</code>. Ora per accedere alla pagina <em>pi.hole</em> dovrebbero venirci richiesti user e password. Se tutto è andato per il verso giusto , occupiamoci di restringere l&#8217;accesso al protocollo SSH. Apriamo il file <strong>/etc/ssh/sshd_config </strong>e aggiungiamo le seguenti righe:<br />
+<code><br />
+# Block all users except from 192.168.12.*<br />
+AllowUsers *@192.168.12.*</code></p>
+<p>Così facendo solo gli utenti con IP <strong>192.168.12.*</strong> (cioè quelli connessi a <em>wlan0</em>) potranno connettersi via SSH al Raspberry.<br />
+Adesso bisogna bloccare in entrata le porte <strong>22</strong> e <strong>53</strong> dell&#8217;antenna <em>wlan1</em>, che è quella che espone il Raspberry a potenziali minacce collegandosi a router estranei. Dirigiamoci nella directory <strong>/home/pi/ </strong>e digitiamo i seguenti comandi:<br />
+<code><br />
+sudo apt-get install iptables-persistent<br />
+mkdir iptables &amp;&amp; cd iptables<br />
+sudo iptables-save &gt; /home/pi/iptables/iptables<br />
+cp iptables iptables.orig</code></p>
+<p>Ora apriamo con <em>nano</em> il file <em>iptables </em>e aggiungiamo le seguenti regole per rifiutare il traffico in entrata sulle porte 22 e 53 su <em>wlan1</em>:<br />
+<code><br />
+-A INPUT -i wlan1 -p tcp --destination-port 22 -j REJECT<br />
+-A INPUT -i wlan1 -p tcp --destination-port 53 -j REJECT</code></p>
+<p>Ora importiamo le nuove regole e impostiamo che vengano usate ad ogni avvio, diamo quindi i seguenti comandi:<br />
+<code><br />
+sudo iptables-restore /home/pi/iptables/iptables<br />
+cd /etc/network/if-pre-up.d<br />
+sudo nano iptables</code></p>
+<p>All&#8217;interno di questo nuovo file <em>iptables</em> inseriamo il seguente codice (grazie <a href="https://wiki.debian.org/it/iptables">Debian Wiki</a> <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/2764.png" alt="❤" class="wp-smiley" style="height: 1em; max-height: 1em;" />):<br />
+<code><br />
+#!/bin/sh<br />
+/sbin/iptables-restore &lt; /home/pi/iptables/iptables</code></p>
+<p>Per ultimare rendiamo eseguibile lo script e riavviamo: <code>sudo chmod +x iptables &amp;&amp; sudo reboot</code>. Dopo il riavvio colleghiamo il Raspberry, tramite comando <b>nmcli</b>, al router di casa (o a un router qualsiasi in realtà) e controlliamo che le porte 22 e 53 non siano visibili (per farlo basta collegare un telefono Android al medesimo router e con <em>Termux</em> dare il comando <code>nmap <em>&lt;ip_raspberry&gt;</em></code>).</p>
+<p>A questo punto la configurazione è praticamente ultimata, ma per scrupolo andremo a creare un <strong>certificato SSL</strong> per la pagina web <em>pi.hole</em>. Essendo la pagina <em>pi.hole</em> raggiungibile solamente se si è collegati a <em>wlan0</em> ho deciso che un certificato autofirmato è sufficiente, visto che siamo noi stessi a crearlo possiamo reputarlo attendibile. Chrome e Firefox (e presumo ogni altro browser) non lo reputeranno tale perché noteranno che è autofirmato e non è certificato da nessun ente terzo, questo non è un problema, come viene spiegato anche nella <a href="https://support.mozilla.org/it/kb/questa-connessione-non-sicura#w_il-certificato-non-ae-affidabile-in-quanto-auto-firmato">pagina di supporto di Mozilla</a>, e basta aggiungerlo tra le eccezioni. Dirigiamoci nella directory <strong>/etc/lighttpd </strong>e diamo i seguenti comandi:<br />
+<code><br />
+sudo mkdir certs &amp;&amp; cd certs<br />
+sudo openssl req -new -x509 -keyout pihole.pem -out pihole.pem -days 365 -nodes</code></p>
+<p>Potete lasciare vuoti tutti i campi eccetto quello chiamato <strong>Common Name</strong> in cui dovrete inserire <strong>pi.hole</strong>, infine date il seguente comando: <code>sudo chmod 400 pihole.pem</code>. Ora torniamo nella cartella<strong>/etc/lighttpd</strong> e modifichiamo il file <strong>lighttpd.conf</strong> aggiungendo il seguente testo:<br />
+<code><br />
+# Enable certificate SSL<br />
+$SERVER["socket"] == ":443" {<br />
+&#160;&#160;ssl.engine = "enable"<br />
+&#160;&#160;ssl.pemfile =  "/etc/lighttpd/certs/pihole.pem"<br />
+}</code><br />
+<code><br />
+# Redirect HTTP to HTTPS<br />
+$HTTP["scheme"] == "http" {<br />
+&#160;&#160;$HTTP["host"] =~ ".*" {<br />
+&#160;&#160;&#160;&#160;url.redirect = (".*" =&gt; "https://%0$0")<br />
+&#160;&#160;}<br />
+}</code></p>
+<p>Perfetto, ora riavviamo <em>lighttpd</em> come fatto in precedenza. A questo punto tutto dovrebbe essere filato per il verso giusto, quindi facciamo un backup di alcuni files:<br />
+<code><br />
+sudo cp /etc/lighttpd/lighttpd.conf /etc/lighttpd/lighttpd.conf.bk<br />
+cp /home/pi/iptables/iptables /home/pi/iptables/iptables.bk</code></p>
+<p>E riavviamo. <em>That’s all folks!</em></p>
+<p>Lascio un QR code contenente tutti i post, le discussioni, le guide e le varie letture che mi sono tornate utili per configurare il tutto.</p>
+<p><img class="aligncenter wp-image-523" src="https://luigigubello.github.io/blog/wp-content/uploads/2018/11/pihole_bibliografia.png" alt="" width="200" height="200" srcset="https://luigigubello.github.io/blog/wp-content/uploads/2018/11/pihole_bibliografia.png 300w, https://luigigubello.github.io/blog/wp-content/uploads/2018/11/pihole_bibliografia-150x150.png 150w, https://luigigubello.github.io/blog/wp-content/uploads/2018/11/pihole_bibliografia-125x125.png 125w" sizes="(max-width: 200px) 100vw, 200px" /></p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/configurare-pi-hole-portatile/">Configurare un Pi-Hole portatile</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Utilizzare il Raspberry Pi 3 via Termux</title>
+		<link>https://luigigubello.github.io/blog/utilizzare-il-raspberry-pi-3-via-termux/</link>
+				<pubDate>Wed, 07 Mar 2018 09:08:20 +0000</pubDate>
+		<dc:creator><![CDATA[luigi]]></dc:creator>
+				<category><![CDATA[Italian]]></category>
+		<category><![CDATA[Raspberry]]></category>
+
+		<guid isPermaLink="false">https://www.gubello.me/blog/?p=239</guid>
+				<description><![CDATA[<p>AGGIORNATO IN DATA 8/03/2018 In data 8/03/2018 ho modificato quasi completamente il post originale, perché ho deciso di impuntarmi e risolvere i miei problemi con Raspbian Stretch. La soluzione adottata in questa versione dell&#8217;articolo è senza dubbio migliore della precedente: è più facile, più veloce e ho utilizzato una distribuzione (Raspbian) adatta ad un uso <a href="https://luigigubello.github.io/blog/utilizzare-il-raspberry-pi-3-via-termux/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Utilizzare il Raspberry Pi 3 via Termux</span></a></p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/utilizzare-il-raspberry-pi-3-via-termux/">Utilizzare il Raspberry Pi 3 via Termux</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<h6>AGGIORNATO IN DATA 8/03/2018</h6>
+<p><strong>In data 8/03/2018 ho modificato quasi completamente il post originale, perché ho deciso di impuntarmi e risolvere i miei problemi con Raspbian Stretch. La soluzione adottata in questa versione dell&#8217;articolo è senza dubbio migliore della precedente: è più facile, più veloce e ho utilizzato una distribuzione (Raspbian) adatta ad un uso giornaliero. Ho comunque salvato in un file pdf l&#8217;articolo originale, che potete <a href="https://luigigubello.github.io/blog/wp-content/uploads/2018/03/Utilizzare_il_Raspberry_Pi_3_via_Termux_Prima_Versione.pdf">scaricare qui</a>.</strong></p>
+<p style="text-align: center;"><strong>+++++++++++++++++++</strong></p>
+<p>Qualche mese fa ho comprato un Raspberry Pi 3 Model B, l&#8217;ho comprato per curiosità, per giocarci (letteralmente). Nelle settimane successive ho acquistato un piccolo <a href="http://www.quimat.cn/cpzs/sjpj/313.html">schermo da 3,5 pollici</a>, una powerbank e un paio di joystick (modello Nintendo SNES) e grazie al bellissimo progetto <a href="https://www.retropie.it/">RetroPie</a> ho trasformato il mio Raspberry in una console portatile di giochi retro.</p>
+<p>Nel frattempo ho anche voluto provare qualche distribuzione, ne ho provate in totale tre: <strong>Raspbian Jessie</strong>, <strong>Raspbian Stretch</strong> e <strong>Kali Linux 2017.3</strong>. Il primo approccio con Raspbian Jessie è stato perfetto, tutto funzionava alla perfezione, non ha richiesto particolari configurazioni. Purtroppo non posso dire lo stesso della versione successiva, Stretch, <del>che continua a darmi problemi nonostante sia ormai considerata stabile, soprattutto continua a bloccarsi totalmente il sistema operativo quando quest&#8217;ultimo utilizza l&#8217;antenna wireless integrata per connettersi alla rete</del> <strong>(problematica risolta)</strong>. Proprio a causa di questi piccoli problemi con Raspbian Stretch ho deciso di provare anche Kali Linux perché dalla versione <strong>2017.3</strong> contiene il <strong><a href="https://whitedome.com.au/re4son/re4son-kernel/">kernel Re4son</a> </strong>, un kernel modificato che al suo interno ha preinstallati diversi driver per vari chipset wireless.</p>
+<p>L&#8217;obiettivo di questo post è spiegare come configurare un Raspberry per poterlo usare tramite smartphone Android via connessione SSH, anche se il Raspberry non è connesso a nessuna rete wi-fi.</p>
+<p>Io mi sono trovato, casualmente, a dovermi arrangiare con questi oggetti:</p>
+<ul>
+<li><span style="font-size: 1rem;">Raspberry Pi 3 Model B + </span><del style="font-size: 1rem;"> Kali 2017.3</del><strong style="font-size: 1rem;"> Raspbian Stretch</strong></li>
+<li>‎TP Link TL-WN722N v3</li>
+</ul>
+<p>La mia chiavetta ha un chipset Realtek e Raspbian Stretch la riconosce subito automaticamente, ma se così non fosse basta dare i seguenti comandi per risolvere la situazione:</p>
+<p><code>sudo apt-get update<br />
+sudo apt-get install firmware-realtek</code></p>
+<p>Per utilizzare il Raspberry via SSH anche se quest&#8217;ultimo non è connesso a una rete l&#8217;idea è quella di usare (almeno) due antenne wi-fi, una per creare un access point e  un&#8217;altra libera di connettersi a internet. Una volta creato un AP potremmo connetterci via SSH tramite l&#8217;applicazione <a href="https://termux.com/"><strong>Termux</strong></a> e utilizzare così il terminale. In ordine ho dovuto:</p>
+<ol>
+<li>Installare <em>Network Manager</em> e rinunciare a <em>dhcpd</em></li>
+<li>Configurare Raspbian affinché ad ogni avvio assegni sempre gli stessi nomi alle antenne wi-fi</li>
+<li>Creare un access point e far sì che questo si crei in automatico ad ogni avvio</li>
+</ol>
+<h4 style="text-align: center;">1.</h4>
+<p>Ho deciso di rinunciare a <strong>dhcpd</strong><em> </em>in favore di <strong>Network Manager</strong>, perché quest&#8217;ultimo semplifica molto la vita quando ci si vuole connettere a una rete wi-fi usando solo il terminale e perché con dhcpd, usando l&#8217;antenna integrata, Raspbian Stretch mi si blocca in maniera quasi sistematica. Seguendo un <a href="https://raspberrypi.stackexchange.com/questions/29783/how-to-setup-network-manager-on-raspbian">commento</a> su StackExchange, do i seguenti comandi nel terminale:</p>
+<p><code>sudo apt-get install network-manager network-manager-gnome<br />
+sudo apt-get purge openresolv dhcpcd5<br />
+sudo ln -sf /lib/systemd/resolv.conf /etc/resolv.conf</code></p>
+<p>Fatto ciò posso rimuovere l&#8217;icona del wi-fi nel pannello in alto, che verrà sostituita dall&#8217;icona di Network Manager.</p>
+<p><code>reboot</code></p>
+<h4 style="text-align: center;">2.</h4>
+<p>A questo punto devo assegnare dei nomi fissi alle due antenne wi-fi, quella interna e quella esterna. Dopo numerosi tentativi falliti scopro, grazie a un <a href="https://www.raspberrypi.org/forums/viewtopic.php?t=191639">topic</a> sul forum di RaspberryPi, che prima bisogna eliminare il file <strong>/etc/systemd/network/99-default.link</strong>.<br />
+Ritento e fallisco ancora, scopro infatti che <a href="https://forums.kali.org/showthread.php?33405-SOLVED-NetworkManager-reverts-spoofed-MAC-to-permanent-one-or-randomizes-it">Network Manager cambia i MAC Address ad ogni avvio</a>, per evitare ciò modifico il file <b>/etc/NetworkManager/NetworkManager.conf </b>e aggiungo le seguenti righe:</p>
+<p><code>[device]<br />
+wifi.scan-rand-mac-address=no</code></p>
+<p><code>[connection]<br />
+ethernet.cloned-mac-address=preserve<br />
+wifi.cloned-mac-address=preserve</code></p>
+<p>Salvo e riavvio due volte per accertarmi che i MAC Address siano persistenti. Una volta fatto ciò mi basta creare il file <strong>/etc/udev/rules.d/70-persistent-net.rules </strong>e aggiungerci il seguente testo:</p>
+<p><code>ACTION=="add", SUBSYSTEM=="net", DRIVERS=="brcmfmac", NAME="wlan0"<br />
+ACTION=="add", SUBSYSTEM=="net", DRIVERS=="?*", ATTR{address}=="mac:addr:ext:wifi", NAME="wlan1"</code></p>
+<p>Riavvio, per accertarmi che i nomi siano correttamente assegnati: <strong>wlan0</strong> è l&#8217;antenna integrata nel Raspberry e servirà a creare l&#8217;access point e <strong>wlan1 </strong>è l&#8217;antenna USB che servirà per collegarsi alle reti wi-fi .</p>
+<h4 style="text-align: center;">3.</h4>
+<p>Ora bisogna creare un access point, ci sono diverse guide in internet, ma io ho trovato molto comodo e veloce il programma <a href="https://github.com/oblique/create_ap"><strong>create_ap</strong> di <strong>oblique</strong></a>. Procedo quindi all’installazione di <strong>create_ap</strong>:</p>
+<p><code>git clone https://github.com/oblique/create_ap<br />
+cd create_ap<br />
+sudo make install</code></p>
+<p>Digito ora i seguenti comandi, che servono a creare un access point con l&#8217;antenna integrata del Raspberry, appoggiarsi all&#8217;antenna esterna per collegarsi ad una rete wi-fi e ripetere quest&#8217;azione ad ogni avvio:</p>
+<p><code>sudo create_ap wlan0 wlan1 AccessPoint PasswordAP --mkconfig /etc/create_ap.conf<br />
+sudo systemctl start create_ap<br />
+sudo systemctl enable create_ap<br />
+reboot</code></p>
+<p>A questo punto, se tutto fila liscio, appare la rete wi-fi <em>AccessPoint</em>, collego il telefono a questa rete wi-fi, e apro Termux dove digito il comando <code>ssh root@192.168.12.1</code>. Inserisco le credenziali d&#8217;accesso et voilà! Posso utilizzare il Raspberry comodamente tramite smartphone. Un programma utile per gestire al meglio le connessioni SSH è <strong>screen</strong>.</p>
+<p>C&#8217;è un ultimo problema da risolvere: l&#8217;access point creato per ora non ha una connessione ad internet, e se il telefono è connesso alla rete creata dal Raspberry allora non può essere connesso a un&#8217;altra rete wi-fi (e quindi è privo di una connessione internet). Basta utilizzare quindi <strong>wlan1</strong> per connettere il Raspberry ad una rete wi-fi funzionante. Per fare ciò uso il comando <strong>nmcli</strong>, che non è altro che il Network Manager da riga di comando.</p>
+<p><code>nmcli device wifi rescan<br />
+nmcli device wifi list<br />
+nmcli device wifi connect SSID-Name password wireless-password</code></p>
+<p>Ringrazio <a href="https://nullr0ute.com/2016/09/connect-to-a-wireless-network-using-command-line-nmcli/">un post di</a> <a href="https://nullr0ute.com/about/">Peter Robinson</a> per avermi fatto scoprire questo comando e avermi semplificato la vita. Questa, per ora, è la soluzione che ho adottato io.</p>
+<p><strong>Pareri e conclusioni personali:</strong></p>
+<ul>
+<li>Kali 2017.3 è una buona distribuzione per Raspberry, soprattutto grazie al suo kernel e ai repository molto ampi, ma non è pensata per un utilizzo giornaliero.</li>
+<li>La mia esperienza con Raspbian Jessie è stata di gran lunga migliore di quella con Raspbian Stretch.</li>
+<li>Il progetto Retropie per emulare vecchi videogiochi è davvero bellissimo, se non sapete come utilizzare un Raspberry, compratevi due joystick, installate Retropie e giocate a Mario Kart, che è avvincente anche dopo trent&#8217;anni.</li>
+<li><del>Visto le piccole, ma pur sempre fastidiose, problematiche con l&#8217;ultima versione di Raspbian penso proverò Ubuntu Mate 16 per Raspberry. L&#8217;idea è di trovare una distribuzione con cuore Debian che sia stabile e leggera per un utilizzo giornaliero.</del><br />
+Ho provato Ubuntu Mate 16 e personalmente l&#8217;ho trovato terribile.</li>
+</ul>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/utilizzare-il-raspberry-pi-3-via-termux/">Utilizzare il Raspberry Pi 3 via Termux</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

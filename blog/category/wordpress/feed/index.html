@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>WordPress &#8211; Blog un po&#039; nerd</title>
+	<atom:link href="https://luigigubello.github.io/blog/category/wordpress/feed/" rel="self" type="application/rss+xml" />
+	<link>http://luigigubello.github.io/blog/</link>
+	<description>Nerd is the new Hipster</description>
+	<lastBuildDate>Mon, 14 May 2018 21:24:26 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://luigigubello.github.io/blog/wp-content/uploads/2017/12/cropped-favicon-1-32x32.jpg</url>
+	<title>WordPress &#8211; Blog un po&#039; nerd</title>
+	<link>http://luigigubello.github.io/blog/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>GD bbPress Attachments 2.5 – Authenticated stored XSS</title>
+		<link>https://luigigubello.github.io/blog/gd-bbpress-attachments-2-5-authenticated-stored-xss/</link>
+				<pubDate>Sun, 13 May 2018 23:58:19 +0000</pubDate>
+		<dc:creator><![CDATA[luigi]]></dc:creator>
+				<category><![CDATA[English]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[XSS]]></category>
+
+		<guid isPermaLink="false">https://www.gubello.me/blog/?p=383</guid>
+				<description><![CDATA[<p>INFO Product: GD bbPress Attachments Version: 2.5 Active installations: 10,000+ Product page: https://it.wordpress.org/plugins/gd-bbpress-attachments/ DESCRIPTION An authenticated user of a bbPress forum, who can attach a file, can inject arbitrary javascript code via filename. The arbitrary code runs both on the topic page and in the admin panel, and it only affects the administrators, moderators and the attacker. The variable $error[&#8216;file&#8217;] in /code/attachments/front.php (line 349) is not <a href="https://luigigubello.github.io/blog/gd-bbpress-attachments-2-5-authenticated-stored-xss/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading GD bbPress Attachments 2.5 – Authenticated stored XSS</span></a></p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/gd-bbpress-attachments-2-5-authenticated-stored-xss/">GD bbPress Attachments 2.5 – Authenticated stored XSS</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<h4 style="text-align: center;"><strong>INFO</strong></h4>
+<p><strong>Product:</strong> GD bbPress Attachments<br />
+<strong>Version: </strong>2.5<br />
+<strong>Active installations:</strong> 10,000+<br />
+<strong>Product page: </strong><a href="https://it.wordpress.org/plugins/gd-bbpress-attachments/">https://it.wordpress.org/plugins/gd-bbpress-attachments/</a></p>
+<h4 style="text-align: center;">DESCRIPTION</h4>
+<p>An authenticated user of a bbPress forum, who can attach a file, can inject arbitrary javascript code via filename. The arbitrary code runs both on the topic page and in the admin panel, and it only affects the administrators, moderators and the attacker.</p>
+<p>The variable <strong>$error[&#8216;file&#8217;]</strong> in <strong>/code/</strong><b>attachments/front.php</b> (line 349)<b> </b>is not escaped.</p>
+<h4 style="text-align: center;">PROOF OF CONCEPT</h4>
+<p style="text-align: center;"> <iframe src="https://www.youtube-nocookie.com/embed/n4xX0ODV1O4?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p style="text-align: left;">GD bbPress Attachments 2.5 is vulnerable, probably earlier versions too.</p>
+<p><strong>24/04/2018</strong> – I send the report<br />
+<strong>27/04/2018</strong> –<a href="https://www.dev4press.com/blog/plugins/2018/gd-bbpress-attachments-2-6/">GD bbPress Attachments is updated to version <strong>2.6</strong></a> and the vulnerability is fixed<br />
+<strong>14/05/2018</strong> – Public disclosure</p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/gd-bbpress-attachments-2-5-authenticated-stored-xss/">GD bbPress Attachments 2.5 – Authenticated stored XSS</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>My Calendar 2.5.16 &#8211; Authenticated stored XSS</title>
+		<link>https://luigigubello.github.io/blog/my-calendar-2-5-16-authenticated-stored-xss/</link>
+				<pubDate>Wed, 18 Apr 2018 08:13:39 +0000</pubDate>
+		<dc:creator><![CDATA[luigi]]></dc:creator>
+				<category><![CDATA[English]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[XSS]]></category>
+
+		<guid isPermaLink="false">https://www.gubello.me/blog/?p=324</guid>
+				<description><![CDATA[<p>INFO Product: My Calendar Version: 2.5.16 Active installations: 30,000+ Product page: https://it.wordpress.org/plugins/my-calendar/ DESCRIPTION An authenticated user, who can add new events,  can inject arbitrary javascript code via event_time_label input. The arbitrary code runs both on the event page and in the admin panel. In my-calendar-event-manager.php, line 1873, the variable $eventTime is not sanitized. PROOF OF CONCEPT My Calendar 2.5.16 is <a href="https://luigigubello.github.io/blog/my-calendar-2-5-16-authenticated-stored-xss/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading My Calendar 2.5.16 &#8211; Authenticated stored XSS</span></a></p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/my-calendar-2-5-16-authenticated-stored-xss/">My Calendar 2.5.16 &#8211; Authenticated stored XSS</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<h4 style="text-align: center;"><strong>INFO</strong></h4>
+<p><strong>Product:</strong> My Calendar<br />
+<strong>Version: </strong>2.5.16<br />
+<strong>Active installations:</strong> 30,000+<br />
+<strong>Product page: </strong><a href="https://it.wordpress.org/plugins/my-calendar/">https://it.wordpress.org/plugins/my-calendar/</a></p>
+<h4 style="text-align: center;"><strong>DESCRIPTION</strong></h4>
+<p>An authenticated user, who can add new events,  can inject arbitrary javascript code via <strong>event_time_label </strong>input. The arbitrary code runs both on the event page and in the admin panel.</p>
+<p>In<b> my-calendar-event-manager.php</b>,<b> </b>line 1873, the variable <strong>$eventTime</strong> is not sanitized.</p>
+<h4 style="text-align: center;">PROOF OF CONCEPT</h4>
+<p><center><iframe src="https://www.youtube-nocookie.com/embed/OvoEiJd6ggY?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center><br />
+My Calendar 2.5.16 is vulnerable, probably earlier versions too. Joe Dolson, My Calendar&#8217;s author, was really quick to fix the vulnerability and update the plugin.</p>
+<p><strong>02/04/2018</strong> &#8211; I send the report<br />
+<strong>03/04/2018</strong> &#8211; My Calendar is updated to version <strong>2.5.17</strong> and the vulnerability is fixed<br />
+<strong>18/04/2018</strong> &#8211; Public disclosure</p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/my-calendar-2-5-16-authenticated-stored-xss/">My Calendar 2.5.16 &#8211; Authenticated stored XSS</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>WP Live Chat Support 8.0.05 &#8211; Stored XSS</title>
+		<link>https://luigigubello.github.io/blog/wp-live-chat-support-8-0-05-stored-xss/</link>
+				<pubDate>Sun, 08 Apr 2018 22:48:12 +0000</pubDate>
+		<dc:creator><![CDATA[luigi]]></dc:creator>
+				<category><![CDATA[English]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[XSS]]></category>
+
+		<guid isPermaLink="false">https://www.gubello.me/blog/?p=295</guid>
+				<description><![CDATA[<p>INFO Product: WP Live Chat Support Version: 8.0.05 Active installations: 50,000+ Product page: https://wordpress.org/plugins/wp-live-chat-support/ CVE: 2018-9864 1. DESCRIPTION An unauthenticated user could inject arbitrary javascript code in the admin panel by using the text field &#8220;Name&#8221; of WP Live Chat Support. Using a single input point it was possible to inject javascript code into two different output points <a href="https://luigigubello.github.io/blog/wp-live-chat-support-8-0-05-stored-xss/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading WP Live Chat Support 8.0.05 &#8211; Stored XSS</span></a></p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/wp-live-chat-support-8-0-05-stored-xss/">WP Live Chat Support 8.0.05 &#8211; Stored XSS</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<h4 style="text-align: center;"><strong>INFO</strong></h4>
+<p><strong>Product:</strong> WP Live Chat Support<br />
+<strong>Version: </strong>8.0.05<br />
+<strong>Active installations:</strong> 50,000+<br />
+<strong>Product page: </strong><a href="https://wordpress.org/plugins/wp-live-chat-support/">https://wordpress.org/plugins/wp-live-chat-support/</a><br />
+<strong>CVE:</strong> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-9864">2018-9864</a></p>
+<h4 style="text-align: center;"><strong>1.</strong></h4>
+<h4 style="text-align: center;">DESCRIPTION</h4>
+<p>An unauthenticated user could inject arbitrary javascript code in the admin panel by using the text field &#8220;Name&#8221; of WP Live Chat Support.</p>
+<p>Using a single input point it was possible to inject javascript code into two different output points of the admin panel. There were two issues in the external javascript file <a href="https://bleeper.io/app/assets/js/bleeper-agent-dev.js"><strong>bleeper-agent-dev.js</strong></a>:</p>
+<ul>
+<li>the function <strong><b>bleeper_strip_tags</b></strong> filtered closed tags only, so it could be bypassed with an unclosed tag</li>
+<li>the variable <strong><b>chatInfoArea-Name</b></strong> was not escaped</li>
+</ul>
+<p><u>This vulnerability has been fixed in all versions of the plugin without an update because <strong>bleeper-agent-dev.js</strong> is an external file and the developer has updated it.</u></p>
+<h4 style="text-align: center;"><strong>PROOF OF CONCEPT</strong></h4>
+<p style="text-align: center;"><iframe src="https://www.youtube-nocookie.com/embed/kAW1zU3PI00?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h4 style="text-align: center;"><strong>2.</strong></h4>
+<h4 style="text-align: center;"><strong>DESCRIPTION</strong></h4>
+<p>An unauthenticated user can inject arbitrary javascript code in the admin panel by using the text field &#8220;Name&#8221; of WP Live Chat Support. The arbitrary code runs on the page <strong>wplivechat-menu-history</strong>.</p>
+<p>In the file <strong>wp-live-chat-support.php </strong>there is no sanitization of <strong>$result-&gt;id</strong> (row 4439).<br />
+WP Live Chat Support 8.0.05 is vulnerable, probably earlier versions too.</p>
+<h4 style="text-align: center;"><strong>PROOF OF CONCEPT</strong></h4>
+<p style="text-align: center;"><iframe src="https://www.youtube-nocookie.com/embed/eHG1pWaez9w?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h4 style="text-align: center;"><strong>3.</strong></h4>
+<h4 style="text-align: center;"><strong>DESCRIPTION</strong></h4>
+<p>An unauthenticated user could inject arbitrary javascript code by attaching an SVG file in the chat. This is a feature of WP Live Chat Support <strong>Pro</strong>.</p>
+<p>The problem was the array <strong>bleeper_file_suffix_check</strong>, a white list of the file extensions, in the external javascript file <strong>bleeper-agent-dev.js</strong>. In this array there was the <strong>*.svg</strong> extension, for this reason it was possible to attach SVG files.</p>
+<p><u>This vulnerability has been fixed in all versions of the plugin without an update because <strong>bleeper-agent-dev.js</strong> is an external file and the developer has updated it.</u></p>
+<h4 style="text-align: center;">PROOF OF CONCEPT</h4>
+<p style="text-align: center;"><iframe src="https://www.youtube-nocookie.com/embed/AYmLSmpTA6I?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>&nbsp;</p>
+<p><strong>06/03/2018</strong> &#8211; I send the report of the first vulnerability<br />
+<strong>09/03/2018</strong> &#8211; The developers reply me and they give me a <i>Pro</i> version to look for other vulnerabilities<br />
+<strong>11/03/2018</strong> &#8211; I send the report about other vulnerabilities<br />
+<strong>23/03/2018</strong> &#8211; WP Live Chat Support is updated to version <strong>8.0.06</strong> and the second vulnerability is fixed. The other vulnerabilities are remotely fixed<br />
+<strong>09/04/2018</strong> &#8211; Public disclosure</p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/wp-live-chat-support-8-0-05-stored-xss/">WP Live Chat Support 8.0.05 &#8211; Stored XSS</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Events Manager 5.8.1.1 &#8211; Stored XSS</title>
+		<link>https://luigigubello.github.io/blog/events-manager-authenticated-stored-xss/</link>
+				<pubDate>Sun, 25 Mar 2018 22:01:17 +0000</pubDate>
+		<dc:creator><![CDATA[luigi]]></dc:creator>
+				<category><![CDATA[English]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[XSS]]></category>
+
+		<guid isPermaLink="false">https://www.gubello.me/blog/?p=198</guid>
+				<description><![CDATA[<p>INFO Product: Events Manager Version: 5.8.1.1 Active installations: 100,000+ Product page: https://it.wordpress.org/plugins/events-manager/ CVE: 2018-9020 DESCRIPTION An unauthenticated user or a user without privileges, who can submit an event, can inject javascript code in the Google Maps miniature. The malicious code runs in the admin panel when a user with privileges opens the submitted event. The problem <a href="https://luigigubello.github.io/blog/events-manager-authenticated-stored-xss/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Events Manager 5.8.1.1 &#8211; Stored XSS</span></a></p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/events-manager-authenticated-stored-xss/">Events Manager 5.8.1.1 &#8211; Stored XSS</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<h4 style="text-align: center;">INFO</h4>
+<p><strong>Product:</strong> Events Manager<br />
+<strong>Version:</strong> 5.8.1.1<br />
+<strong>Active installations:</strong> 100,000+<br />
+<strong>Product page:</strong> <a href="https://it.wordpress.org/plugins/events-manager/">https://it.wordpress.org/plugins/events-manager/</a><br />
+<strong>CVE:</strong> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-9020">2018-9020</a></p>
+<h4 style="text-align: center;">DESCRIPTION</h4>
+<p>An unauthenticated user or a user without privileges, who can submit an event, can inject javascript code in the Google Maps miniature. The malicious code runs in the admin panel when a user with privileges opens the submitted event.</p>
+<p>The problem is in the file <strong>events-manager.js</strong>, the variable <strong>mapTitle</strong> is not escaped.</p>
+<h4 style="text-align: center;"><strong>PROOF OF CONCEPT</strong></h4>
+<p><center><iframe src="https://www.youtube-nocookie.com/embed/40d7uXl36O4?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center><br />
+Events Manager 5.8.1.1 is vulnerable, probably earlier versions too.</p>
+<p>Marcus Sykes, the Events Manager&#8217;s developer, fixed the vulnerability on January, 15th, and published a post on his blog <a href="http://wp-events-plugin.com/blog/2018/01/15/events-manager-5-8-1-2-security-release/">about it</a>.</p>
+<p><strong>10/01/2018</strong> &#8211; I send the report<br />
+<strong>15/01/2018</strong> &#8211; Events Manager is updated to version <strong>5.8.1.2</strong> and the vulnerability is fixed<br />
+<strong>26/03/2018</strong> &#8211; Public disclosure</p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/events-manager-authenticated-stored-xss/">Events Manager 5.8.1.1 &#8211; Stored XSS</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Bookly #1 WordPress Booking Plugin (Lite) 13.2 &#8211; Blind Stored XSS</title>
+		<link>https://luigigubello.github.io/blog/bookly-blind-stored-xss/</link>
+				<pubDate>Fri, 09 Feb 2018 23:01:23 +0000</pubDate>
+		<dc:creator><![CDATA[luigi]]></dc:creator>
+				<category><![CDATA[English]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[XSS]]></category>
+
+		<guid isPermaLink="false">https://www.gubello.me/blog/?p=188</guid>
+				<description><![CDATA[<p>INFO Product: Bookly #1 WordPress Booking Plugin (Lite Version) Version: 13.2 Active installations: 10,000+ Product page: https://wordpress.org/plugins/bookly-responsive-appointment-booking-tool/ CVE: 2018-6891 DESCRIPTION An unauthenticated user can inject arbitrary persistent javascript code in the admin panel. PROOF OF CONCEPT Bookly Lite 13.2 and Bookly Pro 14.5 are affected, probably even earlier versions. I think the problem is that jQuery.ajax request is <a href="https://luigigubello.github.io/blog/bookly-blind-stored-xss/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Bookly #1 WordPress Booking Plugin (Lite) 13.2 &#8211; Blind Stored XSS</span></a></p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/bookly-blind-stored-xss/">Bookly #1 WordPress Booking Plugin (Lite) 13.2 &#8211; Blind Stored XSS</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<h4 style="text-align: center;">INFO</h4>
+<p><strong>Product:</strong> Bookly #1 WordPress Booking Plugin (Lite Version)<br />
+<strong>Version:</strong> 13.2<br />
+<strong>Active installations:</strong> 10,000+<br />
+<strong>Product page: </strong><a href="https://wordpress.org/plugins/bookly-responsive-appointment-booking-tool/">https://wordpress.org/plugins/bookly-responsive-appointment-booking-tool/</a><br />
+<strong>CVE: </strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-6891">2018-6891</a></p>
+<h4 style="text-align: center;">DESCRIPTION</h4>
+<p>An unauthenticated user can inject arbitrary persistent javascript code in the admin panel.</p>
+<h4 style="text-align: center;">PROOF OF CONCEPT</h4>
+<p><center><iframe src="https://www.youtube-nocookie.com/embed/3H-wCK4juSU?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center><br />
+Bookly Lite 13.2 and Bookly Pro 14.5 are affected, probably even earlier versions.<br />
+<em>I think the problem is that jQuery.ajax request is not sanitized in <strong>ng-payment_details_dialog.js</strong>.<sup>[*]</sup></em></p>
+<p><strong>07/01/2018 </strong>&#8211; I send the report<br />
+<strong>26/01/2018 </strong>&#8211; Bookly Lite is updated to version <strong>14.5</strong> and the vulnerability is fixed<br />
+<strong>10/02/2018 </strong>&#8211; Public disclosure</p>
+<p>&nbsp;</p>
+<p><em><sup>[*]</sup> I have been very busy these days, so I could not read the code of the plug-in.</em></p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/bookly-blind-stored-xss/">Bookly #1 WordPress Booking Plugin (Lite) 13.2 &#8211; Blind Stored XSS</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

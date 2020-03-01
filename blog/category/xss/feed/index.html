@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>XSS &#8211; Blog un po&#039; nerd</title>
+	<atom:link href="https://luigigubello.github.io/blog/category/xss/feed/" rel="self" type="application/rss+xml" />
+	<link>http://luigigubello.github.io/blog/</link>
+	<description>Nerd is the new Hipster</description>
+	<lastBuildDate>Sat, 15 Feb 2020 10:30:43 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://luigigubello.github.io/blog/wp-content/uploads/2017/12/cropped-favicon-1-32x32.jpg</url>
+	<title>XSS &#8211; Blog un po&#039; nerd</title>
+	<link>http://luigigubello.github.io/blog/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Javascript Injection in six Android mail clients</title>
+		<link>https://luigigubello.github.io/blog/javascript-injection-in-six-android-mail-clients/</link>
+				<pubDate>Sat, 15 Feb 2020 10:26:54 +0000</pubDate>
+		<dc:creator><![CDATA[luigi]]></dc:creator>
+				<category><![CDATA[Bug Bounty]]></category>
+		<category><![CDATA[English]]></category>
+		<category><![CDATA[IT Security]]></category>
+		<category><![CDATA[XSS]]></category>
+
+		<guid isPermaLink="false">https://www.gubello.me/blog/?p=1001</guid>
+				<description><![CDATA[<p>During last spring (2019) I started to &#8220;open and read&#8221; the Android applications before installing them. Reversing an APK file can be interesting to understand how an app works, how it manages the permissions and my data, if there are vulnerabilities. I was looking for a different Android mail client, so I started to reverse <a href="https://luigigubello.github.io/blog/javascript-injection-in-six-android-mail-clients/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Javascript Injection in six Android mail clients</span></a></p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/javascript-injection-in-six-android-mail-clients/">Javascript Injection in six Android mail clients</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p>During last spring (2019) I started to &#8220;open and read&#8221; the Android applications before installing them. Reversing an APK file can be interesting to understand how an app works, how it manages the permissions and my data, if there are vulnerabilities. I was looking for a different Android mail client, so I started to reverse them and I found many mail clients on Play Store were &#8211; maybe are &#8211; vulnerable to Javascript injection. I found eight important apps vulnerable to cross-site scripting:<strong> Newton Mail</strong> 10.0.23, <strong>Nine Email</strong> 4.5.3a, <strong>Blue Mail</strong> 1.9.5.36, <strong>Edison Email</strong> 1.7.1, <strong>Email TypeApp</strong> 1.9.5.35 and <strong>Spark</strong> 2.0.2 + <strong>two</strong> apps I can&#8217;t disclose now. In April and May 2019 I wrote to vendors of these apps, but only someone replied to me.</p>
+<h3 style="text-align: center;">JAVASCRIPT INJECTION IN ANDROID WEBVIEW</h3>
+<p>Javascript injection in Android WebView is a serious vulnerability because in some scenario it was possible to execute code remotely by injecting a malicious Javascript code in the WebView (<strong>CVE-2012-6636</strong>, <strong>CVE-2013-4710</strong>). These vulnerabilities were fixed by Google, but Javascript injection in the WebView is yet a common bug, also for this reason Google have created <a href="https://support.google.com/faqs/answer/9095419?hl=en-GB">a support page</a> to explain how to use Javascript interfaces in the WebView. Although Javascript injection usually doesn&#8217;t lead to code execution, it is still a serious vulnerability <a href="https://labs.integrity.pt/articles/review-android-webviews-fileaccess-attack-vectors/index.html">because can be used to steal data</a> (similar to CVE-2019-11730 PoC) if <code dir="ltr" translate="no">setAllowUniversalAccessFromFileURLs</code> is set <code>True</code>.</p>
+<h5 style="text-align: center;">Newton Mail</h5>
+<p><strong>App:</strong> Newton Mail<br />
+<strong>Version:</strong> 10.0.23<br />
+<strong>Downloads:</strong> + 1.000.000<br />
+<strong>Has vendor replied? <span style="color: #00ff00;">Yes</span></strong><br />
+<strong>CVE: </strong>2019-12365</p>
+<p><center><iframe src="https://www.youtube-nocookie.com/embed/HFS0eDaJ7to" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center><center></center><br />
+In Netwon Mail 10.0.23 <code dir="ltr" translate="no">setAllowUniversalAccessFromFileURLs</code> is set <code>True</code>.</p>
+<h5 style="text-align: center;">Edison Mail</h5>
+<p><strong>App:</strong> Edison Mail<br />
+<strong>Version:</strong> 1.7.1<br />
+<strong>Downloads:</strong> + 1.000.000<br />
+<strong>Has vendor replied? <span style="color: #00ff00;">Yes</span></strong><br />
+<strong>CVE: </strong>2019-12368</p>
+<p><center><iframe src="https://www.youtube-nocookie.com/embed/a9MgZz6iaRs" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center><br />
+In Edison Mail 1.7.1 <code dir="ltr" translate="no">setAllowUniversalAccessFromFileURLs</code> is set <code>True</code>.</p>
+<h5 class="AHFaub" style="text-align: center;">Nine &#8211; Email &amp; Calendar</h5>
+<p><strong>App:</strong> Nine &#8211; Email &amp; Calendar<br />
+<strong>Version:</strong> 4.5.3a<br />
+<strong>Downloads:</strong> + 1.000.000<br />
+<strong>Has vendor replied? <span style="color: #ff0000;">No</span></strong><br />
+<strong>CVE: </strong>2019-12366</p>
+<p><center><iframe src="https://www.youtube-nocookie.com/embed/QBBJPjIL9Gg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>&nbsp;</p>
+<h5 style="text-align: center;">Spark</h5>
+<p><strong>App:</strong> Spark<br />
+<strong>Version:</strong> 2.0.2<br />
+<strong>Downloads:</strong> + 500.000<br />
+<strong>Has vendor replied? <span style="color: #00ff00;">Yes</span></strong><br />
+<strong>CVE: </strong>2019-12370</p>
+<p><center><iframe src="https://www.youtube-nocookie.com/embed/FIcH7iiEWcI" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>&nbsp;</p>
+<h5 style="text-align: center;">Blue Mail</h5>
+<p><strong>App:</strong> Blue Mail<br />
+<strong>Version:</strong> 1.9.5.36<br />
+<strong>Downloads:</strong> + 5.000.000<br />
+<strong>Has vendor replied? <span style="color: #ff0000;">No</span></strong><br />
+<strong>CVE: </strong>2019-12367</p>
+<p><center><iframe src="https://www.youtube-nocookie.com/embed/AhGvtlt45CM" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>&nbsp;</p>
+<h5 class="AHFaub" style="text-align: center;">TypeApp Email</h5>
+<p><strong>App:</strong> TypeApp Email<br />
+<strong>Version:</strong> 1.9.5.35<br />
+<strong>Downloads:</strong> + 1.000.000<br />
+<strong>Has vendor replied? <span style="color: #ff0000;">No</span></strong><br />
+<strong>CVE: </strong>2019-12369</p>
+<p><center><iframe src="https://www.youtube-nocookie.com/embed/_tI_Yw04Xcs" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>&nbsp;</p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/javascript-injection-in-six-android-mail-clients/">Javascript Injection in six Android mail clients</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>From XSS to RCE in Simplenote 1.1.3</title>
+		<link>https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/</link>
+				<pubDate>Sun, 29 Jul 2018 16:20:59 +0000</pubDate>
+		<dc:creator><![CDATA[luigi]]></dc:creator>
+				<category><![CDATA[Bug Bounty]]></category>
+		<category><![CDATA[English]]></category>
+		<category><![CDATA[XSS]]></category>
+
+		<guid isPermaLink="false">https://www.gubello.me/blog/?p=438</guid>
+				<description><![CDATA[<p>SUMMARY In Simplenote 1.1.3 &#8211; Desktop app there is a stored XSS vulnerability that can be used to execute arbitrary code. If there is malicious code in the note and the user tries to print it (for example to save it as a PDF), the malicious code runs. #358049 &#8211; RCE via Print function [Simplenote 1.1.3 &#8211; Desktop <a href="https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading From XSS to RCE in Simplenote 1.1.3</span></a></p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/">From XSS to RCE in Simplenote 1.1.3</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<h4 style="text-align: center;">SUMMARY</h4>
+<p>In <strong>Simplenote 1.1.3 &#8211; Desktop app</strong> there is a stored XSS vulnerability that can be used to execute arbitrary code. If there is malicious code in the note and the user tries to print it (for example to save it as a PDF), the malicious code runs.</p>
+<p><center><iframe src="https://www.youtube-nocookie.com/embed/YzEzLsSAO3s?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center><br />
+<a href="https://hackerone.com/reports/358049"><strong>#358049 &#8211; <span style="font-size: 1rem;">RCE via Print function [Simplenote 1.1.3 &#8211; Desktop app]</span></strong></a></p>
+<p><strong>27/05/2018</strong> – I send the report<br />
+<strong>25/06/2018</strong> – The vulnerability is fixed and the bug bounty reward is 250$<br />
+<strong>26/07/2018</strong> – Public disclosure</p>
+<hr />
+<p>I suggest these awesome readings about XSS and Remote Code Execution in the Electron based applications:</p>
+<ul>
+<li><a style="background-color: #ffffff; font-size: 1rem;" href="https://ysx.me.uk/taking-note-xss-to-rce-in-the-simplenote-electron-client/">Taking note: XSS to RCE in the Simplenote Electron client</a></li>
+<li>
+<p id="only-an-electron-away-from-code-execution"><a href="https://silviavali.github.io/Electron/only_an_electron_away_from_code_execution">Only an Electron Away from Code Execution</a></p>
+</li>
+</ul>
+<div class="report-heading__social-share spec-social-share"></div>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/">From XSS to RCE in Simplenote 1.1.3</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>GD bbPress Attachments 2.5 – Authenticated stored XSS</title>
+		<link>https://luigigubello.github.io/blog/gd-bbpress-attachments-2-5-authenticated-stored-xss/</link>
+				<pubDate>Sun, 13 May 2018 23:58:19 +0000</pubDate>
+		<dc:creator><![CDATA[luigi]]></dc:creator>
+				<category><![CDATA[English]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[XSS]]></category>
+
+		<guid isPermaLink="false">https://www.gubello.me/blog/?p=383</guid>
+				<description><![CDATA[<p>INFO Product: GD bbPress Attachments Version: 2.5 Active installations: 10,000+ Product page: https://it.wordpress.org/plugins/gd-bbpress-attachments/ DESCRIPTION An authenticated user of a bbPress forum, who can attach a file, can inject arbitrary javascript code via filename. The arbitrary code runs both on the topic page and in the admin panel, and it only affects the administrators, moderators and the attacker. The variable $error[&#8216;file&#8217;] in /code/attachments/front.php (line 349) is not <a href="https://luigigubello.github.io/blog/gd-bbpress-attachments-2-5-authenticated-stored-xss/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading GD bbPress Attachments 2.5 – Authenticated stored XSS</span></a></p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/gd-bbpress-attachments-2-5-authenticated-stored-xss/">GD bbPress Attachments 2.5 – Authenticated stored XSS</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<h4 style="text-align: center;"><strong>INFO</strong></h4>
+<p><strong>Product:</strong> GD bbPress Attachments<br />
+<strong>Version: </strong>2.5<br />
+<strong>Active installations:</strong> 10,000+<br />
+<strong>Product page: </strong><a href="https://it.wordpress.org/plugins/gd-bbpress-attachments/">https://it.wordpress.org/plugins/gd-bbpress-attachments/</a></p>
+<h4 style="text-align: center;">DESCRIPTION</h4>
+<p>An authenticated user of a bbPress forum, who can attach a file, can inject arbitrary javascript code via filename. The arbitrary code runs both on the topic page and in the admin panel, and it only affects the administrators, moderators and the attacker.</p>
+<p>The variable <strong>$error[&#8216;file&#8217;]</strong> in <strong>/code/</strong><b>attachments/front.php</b> (line 349)<b> </b>is not escaped.</p>
+<h4 style="text-align: center;">PROOF OF CONCEPT</h4>
+<p style="text-align: center;"> <iframe src="https://www.youtube-nocookie.com/embed/n4xX0ODV1O4?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p style="text-align: left;">GD bbPress Attachments 2.5 is vulnerable, probably earlier versions too.</p>
+<p><strong>24/04/2018</strong> – I send the report<br />
+<strong>27/04/2018</strong> –<a href="https://www.dev4press.com/blog/plugins/2018/gd-bbpress-attachments-2-6/">GD bbPress Attachments is updated to version <strong>2.6</strong></a> and the vulnerability is fixed<br />
+<strong>14/05/2018</strong> – Public disclosure</p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/gd-bbpress-attachments-2-5-authenticated-stored-xss/">GD bbPress Attachments 2.5 – Authenticated stored XSS</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Stored XSS in Microsoft Bing</title>
+		<link>https://luigigubello.github.io/blog/stored-xss-in-microsoft-bing/</link>
+				<pubDate>Sat, 21 Apr 2018 10:30:51 +0000</pubDate>
+		<dc:creator><![CDATA[luigi]]></dc:creator>
+				<category><![CDATA[Bug Bounty]]></category>
+		<category><![CDATA[English]]></category>
+		<category><![CDATA[XSS]]></category>
+
+		<guid isPermaLink="false">https://www.gubello.me/blog/?p=365</guid>
+				<description><![CDATA[<p>After many unsuccessful attempts to find an XSS in Yahoo&#8217;s domains, I decided to move my attention to Microsoft Bing. If you have a Microsoft account, Bing allows you to save online content (images, videos and places) on the page &#8220;My saves&#8221;, and allows to create collections to better manage your own content. The titles <a href="https://luigigubello.github.io/blog/stored-xss-in-microsoft-bing/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Stored XSS in Microsoft Bing</span></a></p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/stored-xss-in-microsoft-bing/">Stored XSS in Microsoft Bing</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p>After many unsuccessful attempts to find an XSS in Yahoo&#8217;s domains, I decided to move my attention to Microsoft Bing.<br />
+If you have a Microsoft account, Bing allows you to save online content (images, videos and places) on the page <em>&#8220;My saves&#8221;</em>, and allows to create collections to better manage your own content.<br />
+The titles of these collections were not properly filtered, so it was possible to break the code and inject persistent arbitrary code.<br />
+The code could be injected easily, all it took was the wrong image added to <em>&#8220;My saves&#8221;</em>.<br />
+I was lucky with Bing, now I can go back to fail with Yahoo <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<figure id="attachment_367" aria-describedby="caption-attachment-367" style="width: 600px" class="wp-caption aligncenter"><a href="https://luigigubello.github.io/blog/wp-content/uploads/2018/04/stored_xss_bing.png"><img class="wp-image-367" src="https://luigigubello.github.io/blog/wp-content/uploads/2018/04/stored_xss_bing.png" alt="" width="600" height="326" srcset="https://luigigubello.github.io/blog/wp-content/uploads/2018/04/stored_xss_bing.png 1364w, https://luigigubello.github.io/blog/wp-content/uploads/2018/04/stored_xss_bing-300x163.png 300w, https://luigigubello.github.io/blog/wp-content/uploads/2018/04/stored_xss_bing-768x417.png 768w, https://luigigubello.github.io/blog/wp-content/uploads/2018/04/stored_xss_bing-1024x556.png 1024w, https://luigigubello.github.io/blog/wp-content/uploads/2018/04/stored_xss_bing-920x499.png 920w" sizes="(max-width: 600px) 100vw, 600px" /></a><figcaption id="caption-attachment-367" class="wp-caption-text">Stored XSS in Microsoft Bing</figcaption></figure>
+<h4 style="text-align: center;"><strong>ATTACK SCENARIO</strong></h4>
+<p>An attacker pastes on a site (for example a popular blog) the link of an image found on Bing. The GET parameter <strong>q</strong> has a malicious javascript code. Example:</p>
+<p><code>www.bing.com/images/search?view=detailV2&amp;ccid=ugtTKk%2bf&amp;id=77C601FDB8F3CAC089D09B4F80E5984B3D66972F&amp;thid=OIP.ugtTKk-ffUvl93ztAPX8mAHaD8&amp;<strong style="color: red;">q=malicious_javascript</strong>&amp;simid=608017275115016031&amp;selectedIndex=0&amp;ajaxhist=0</code></p>
+<p>A victim visits this site randomly, sees the image, opens it and saves it in <em>&#8220;My Saves&#8221;</em>. Bing uses the value of variable <strong>q</strong> to give a title to the new collection. The malicious code runs whenever the victim opens <em>&#8220;My saves&#8221;</em>.<br />
+<strong>In this attack there is no interaction between the attacker and the victim.</strong></p>
+<h4 style="text-align: center;">PROOF OF CONCEPT</h4>
+<p style="text-align: center;"><iframe src="https://www.youtube-nocookie.com/embed/SJ8c27mpN-c?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>16/04/2018</strong> – I send the report<br />
+<strong>19/04/2018</strong> – The vulnerability is fixed and I’m rewarded by having my name written in the Hall of Fame<br />
+<strong>21/04/2018</strong> – Public disclosure</p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/stored-xss-in-microsoft-bing/">Stored XSS in Microsoft Bing</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>My Calendar 2.5.16 &#8211; Authenticated stored XSS</title>
+		<link>https://luigigubello.github.io/blog/my-calendar-2-5-16-authenticated-stored-xss/</link>
+				<pubDate>Wed, 18 Apr 2018 08:13:39 +0000</pubDate>
+		<dc:creator><![CDATA[luigi]]></dc:creator>
+				<category><![CDATA[English]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[XSS]]></category>
+
+		<guid isPermaLink="false">https://www.gubello.me/blog/?p=324</guid>
+				<description><![CDATA[<p>INFO Product: My Calendar Version: 2.5.16 Active installations: 30,000+ Product page: https://it.wordpress.org/plugins/my-calendar/ DESCRIPTION An authenticated user, who can add new events,  can inject arbitrary javascript code via event_time_label input. The arbitrary code runs both on the event page and in the admin panel. In my-calendar-event-manager.php, line 1873, the variable $eventTime is not sanitized. PROOF OF CONCEPT My Calendar 2.5.16 is <a href="https://luigigubello.github.io/blog/my-calendar-2-5-16-authenticated-stored-xss/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading My Calendar 2.5.16 &#8211; Authenticated stored XSS</span></a></p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/my-calendar-2-5-16-authenticated-stored-xss/">My Calendar 2.5.16 &#8211; Authenticated stored XSS</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<h4 style="text-align: center;"><strong>INFO</strong></h4>
+<p><strong>Product:</strong> My Calendar<br />
+<strong>Version: </strong>2.5.16<br />
+<strong>Active installations:</strong> 30,000+<br />
+<strong>Product page: </strong><a href="https://it.wordpress.org/plugins/my-calendar/">https://it.wordpress.org/plugins/my-calendar/</a></p>
+<h4 style="text-align: center;"><strong>DESCRIPTION</strong></h4>
+<p>An authenticated user, who can add new events,  can inject arbitrary javascript code via <strong>event_time_label </strong>input. The arbitrary code runs both on the event page and in the admin panel.</p>
+<p>In<b> my-calendar-event-manager.php</b>,<b> </b>line 1873, the variable <strong>$eventTime</strong> is not sanitized.</p>
+<h4 style="text-align: center;">PROOF OF CONCEPT</h4>
+<p><center><iframe src="https://www.youtube-nocookie.com/embed/OvoEiJd6ggY?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center><br />
+My Calendar 2.5.16 is vulnerable, probably earlier versions too. Joe Dolson, My Calendar&#8217;s author, was really quick to fix the vulnerability and update the plugin.</p>
+<p><strong>02/04/2018</strong> &#8211; I send the report<br />
+<strong>03/04/2018</strong> &#8211; My Calendar is updated to version <strong>2.5.17</strong> and the vulnerability is fixed<br />
+<strong>18/04/2018</strong> &#8211; Public disclosure</p>
+<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/my-calendar-2-5-16-authenticated-stored-xss/">My Calendar 2.5.16 &#8211; Authenticated stored XSS</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>
