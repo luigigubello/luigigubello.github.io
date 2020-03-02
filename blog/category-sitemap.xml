@@ -1,39 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//luigigubello.github.io/blog/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//www.gubello.me/blog/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://luigigubello.github.io/blog/category/bug-bounty/</loc>
+		<loc>https://www.gubello.me/blog/category/bug-bounty/</loc>
 		<lastmod>2020-02-15T10:30:43+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/category/english/</loc>
+		<loc>https://www.gubello.me/blog/category/english/</loc>
 		<lastmod>2020-02-15T10:30:43+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/category/github/</loc>
+		<loc>https://www.gubello.me/blog/category/github/</loc>
 		<lastmod>2019-12-03T00:42:28+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/category/it-security/</loc>
+		<loc>https://www.gubello.me/blog/category/it-security/</loc>
 		<lastmod>2020-02-15T10:30:43+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/category/italian/</loc>
+		<loc>https://www.gubello.me/blog/category/italian/</loc>
 		<lastmod>2019-08-15T15:12:50+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/category/other/</loc>
+		<loc>https://www.gubello.me/blog/category/other/</loc>
 		<lastmod>2019-12-03T00:42:28+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/category/raspberry/</loc>
+		<loc>https://www.gubello.me/blog/category/raspberry/</loc>
 		<lastmod>2018-11-03T18:10:12+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/category/wordpress/</loc>
+		<loc>https://www.gubello.me/blog/category/wordpress/</loc>
 		<lastmod>2018-05-14T21:24:26+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/category/xss/</loc>
+		<loc>https://www.gubello.me/blog/category/xss/</loc>
 		<lastmod>2020-02-15T10:30:43+00:00</lastmod>
 	</url>
 </urlset>

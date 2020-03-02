@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//luigigubello.github.io/blog/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//www.gubello.me/blog/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<sitemap>
-		<loc>https://luigigubello.github.io/blog/post-sitemap.xml</loc>
+		<loc>https://www.gubello.me/blog/post-sitemap.xml</loc>
 		<lastmod>2020-02-15T10:30:43+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://luigigubello.github.io/blog/page-sitemap.xml</loc>
+		<loc>https://www.gubello.me/blog/page-sitemap.xml</loc>
 		<lastmod>2019-11-24T20:13:54+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://luigigubello.github.io/blog/category-sitemap.xml</loc>
+		<loc>https://www.gubello.me/blog/category-sitemap.xml</loc>
 		<lastmod>2020-02-15T10:30:43+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://luigigubello.github.io/blog/author-sitemap.xml</loc>
+		<loc>https://www.gubello.me/blog/author-sitemap.xml</loc>
 		<lastmod>2018-03-08T18:52:31+00:00</lastmod>
 	</sitemap>
 </sitemapindex>

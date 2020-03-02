@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Raspberry &#8211; Blog un po&#039; nerd</title>
-	<atom:link href="https://luigigubello.github.io/blog/category/raspberry/feed/" rel="self" type="application/rss+xml" />
-	<link>http://luigigubello.github.io/blog/</link>
+	<atom:link href="https://www.gubello.me/blog/category/raspberry/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.gubello.me/blog/</link>
 	<description>Nerd is the new Hipster</description>
 	<lastBuildDate>Sat, 03 Nov 2018 18:10:12 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,23 +21,23 @@
 	
 
 <image>
-	<url>https://luigigubello.github.io/blog/wp-content/uploads/2017/12/cropped-favicon-1-32x32.jpg</url>
+	<url>https://www.gubello.me/blog/wp-content/uploads/2017/12/cropped-favicon-1-32x32.jpg</url>
 	<title>Raspberry &#8211; Blog un po&#039; nerd</title>
-	<link>http://luigigubello.github.io/blog/</link>
+	<link>http://www.gubello.me/blog/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Configurare un Pi-Hole portatile</title>
-		<link>https://luigigubello.github.io/blog/configurare-pi-hole-portatile/</link>
+		<link>https://www.gubello.me/blog/configurare-pi-hole-portatile/</link>
 				<pubDate>Fri, 02 Nov 2018 12:02:07 +0000</pubDate>
 		<dc:creator><![CDATA[luigi]]></dc:creator>
 				<category><![CDATA[Italian]]></category>
 		<category><![CDATA[Raspberry]]></category>
 
 		<guid isPermaLink="false">https://www.gubello.me/blog/?p=504</guid>
-				<description><![CDATA[<p>Poco tempo fa ho scoperto un progetto open source chiamato Pi-Hole, piuttosto conosciuto e apprezzato. Il compito di Pi-Hole è quello di &#8220;ripulire&#8221; la nostra navigazione su Internet da pubblicità e siti malevoli (semplificando: funge da ad-block), creando un piccolo server DNS sul Raspberry. Uno dei principali punti di forza è che, una volta configurato, <a href="https://luigigubello.github.io/blog/configurare-pi-hole-portatile/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Configurare un Pi-Hole portatile</span></a></p>
-<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/configurare-pi-hole-portatile/">Configurare un Pi-Hole portatile</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+				<description><![CDATA[<p>Poco tempo fa ho scoperto un progetto open source chiamato Pi-Hole, piuttosto conosciuto e apprezzato. Il compito di Pi-Hole è quello di &#8220;ripulire&#8221; la nostra navigazione su Internet da pubblicità e siti malevoli (semplificando: funge da ad-block), creando un piccolo server DNS sul Raspberry. Uno dei principali punti di forza è che, una volta configurato, <a href="https://www.gubello.me/blog/configurare-pi-hole-portatile/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Configurare un Pi-Hole portatile</span></a></p>
+<p>The post <a rel="nofollow" href="https://www.gubello.me/blog/configurare-pi-hole-portatile/">Configurare un Pi-Hole portatile</a> appeared first on <a rel="nofollow" href="http://www.gubello.me/blog/">Blog un po&#039; nerd</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<p>Poco tempo fa ho scoperto un progetto open source chiamato <strong>Pi-Hole</strong>, piuttosto conosciuto e apprezzato. Il compito di Pi-Hole è quello di &#8220;ripulire&#8221; la nostra navigazione su Internet da pubblicità e siti malevoli (semplificando: funge da ad-block), creando un piccolo server DNS sul Raspberry. Uno dei principali punti di forza è che, una volta configurato, ripulisce dalle pubblicità ogni dispositivo connesso alla rete, senza bisogno di ulteriori programmi o plug-in.</p>
 <p>Questo progetto mi ha entusiasmato così tanto (mi ha tolto la pubblicità invasiva e fastidiosa anche da tutte le applicazioni installate su Android) che ho deciso di provare a configurarlo in modo da portarlo facilmente in giro, senza bisogno di cavi ethernet o configurazioni particolari del router. Avendo anche un piccolo schermino da 3,5 pollici per il Raspberry l&#8217;ho configurato in modo tale che sul monitor appaiano alcune informazioni utili, ma questa è un&#8217;aggiunta superflua. Per configurare Pi-Hole come volevo ho usato:</p>
@@ -63,7 +63,7 @@ network={<br />
 chmod -R 755 LCD-show<br />
 cd LCD-show<br />
 sudo ./LCD35-show</code></p>
-<p>Il Raspberry dovrebbe riavviarsi e sul display Quimat dovrebbe finalmente apparire la shell. Ora bisogna creare &#8220;ponte&#8221; tra l&#8217;antenna integrata del Raspberry (<em>wlan0</em>) e l&#8217;antenna WiFi USB (<em>wlan1</em>), per fare ciò basta seguire <a href="https://luigigubello.github.io/blog/utilizzare-il-raspberry-pi-3-via-termux/">questa</a> mia vecchia guida, ma utilizzando questa volta Raspbian Lite possiamo rinunciare all&#8217;installazione del pacchetto <em>network-manager-gnome</em>. La configurazione finale di Raspbian tramite <strong>raspi-config </strong>è lasciata all&#8217;utente, in base alle proprie abitudini e/o esigenze.</p>
+<p>Il Raspberry dovrebbe riavviarsi e sul display Quimat dovrebbe finalmente apparire la shell. Ora bisogna creare &#8220;ponte&#8221; tra l&#8217;antenna integrata del Raspberry (<em>wlan0</em>) e l&#8217;antenna WiFi USB (<em>wlan1</em>), per fare ciò basta seguire <a href="https://www.gubello.me/blog/utilizzare-il-raspberry-pi-3-via-termux/">questa</a> mia vecchia guida, ma utilizzando questa volta Raspbian Lite possiamo rinunciare all&#8217;installazione del pacchetto <em>network-manager-gnome</em>. La configurazione finale di Raspbian tramite <strong>raspi-config </strong>è lasciata all&#8217;utente, in base alle proprie abitudini e/o esigenze.</p>
 <h4 style="text-align: center;">2.</h4>
 <p>Ora è possibile installare Pi-Hole, diamo il seguente comando:<br />
 <code><br />
@@ -175,24 +175,24 @@ sudo cp /etc/lighttpd/lighttpd.conf /etc/lighttpd/lighttpd.conf.bk<br />
 cp /home/pi/iptables/iptables /home/pi/iptables/iptables.bk</code></p>
 <p>E riavviamo. <em>That’s all folks!</em></p>
 <p>Lascio un QR code contenente tutti i post, le discussioni, le guide e le varie letture che mi sono tornate utili per configurare il tutto.</p>
-<p><img class="aligncenter wp-image-523" src="https://luigigubello.github.io/blog/wp-content/uploads/2018/11/pihole_bibliografia.png" alt="" width="200" height="200" srcset="https://luigigubello.github.io/blog/wp-content/uploads/2018/11/pihole_bibliografia.png 300w, https://luigigubello.github.io/blog/wp-content/uploads/2018/11/pihole_bibliografia-150x150.png 150w, https://luigigubello.github.io/blog/wp-content/uploads/2018/11/pihole_bibliografia-125x125.png 125w" sizes="(max-width: 200px) 100vw, 200px" /></p>
-<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/configurare-pi-hole-portatile/">Configurare un Pi-Hole portatile</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+<p><img class="aligncenter wp-image-523" src="https://www.gubello.me/blog/wp-content/uploads/2018/11/pihole_bibliografia.png" alt="" width="200" height="200" srcset="https://www.gubello.me/blog/wp-content/uploads/2018/11/pihole_bibliografia.png 300w, https://www.gubello.me/blog/wp-content/uploads/2018/11/pihole_bibliografia-150x150.png 150w, https://www.gubello.me/blog/wp-content/uploads/2018/11/pihole_bibliografia-125x125.png 125w" sizes="(max-width: 200px) 100vw, 200px" /></p>
+<p>The post <a rel="nofollow" href="https://www.gubello.me/blog/configurare-pi-hole-portatile/">Configurare un Pi-Hole portatile</a> appeared first on <a rel="nofollow" href="http://www.gubello.me/blog/">Blog un po&#039; nerd</a>.</p>
 ]]></content:encoded>
 										</item>
 		<item>
 		<title>Utilizzare il Raspberry Pi 3 via Termux</title>
-		<link>https://luigigubello.github.io/blog/utilizzare-il-raspberry-pi-3-via-termux/</link>
+		<link>https://www.gubello.me/blog/utilizzare-il-raspberry-pi-3-via-termux/</link>
 				<pubDate>Wed, 07 Mar 2018 09:08:20 +0000</pubDate>
 		<dc:creator><![CDATA[luigi]]></dc:creator>
 				<category><![CDATA[Italian]]></category>
 		<category><![CDATA[Raspberry]]></category>
 
 		<guid isPermaLink="false">https://www.gubello.me/blog/?p=239</guid>
-				<description><![CDATA[<p>AGGIORNATO IN DATA 8/03/2018 In data 8/03/2018 ho modificato quasi completamente il post originale, perché ho deciso di impuntarmi e risolvere i miei problemi con Raspbian Stretch. La soluzione adottata in questa versione dell&#8217;articolo è senza dubbio migliore della precedente: è più facile, più veloce e ho utilizzato una distribuzione (Raspbian) adatta ad un uso <a href="https://luigigubello.github.io/blog/utilizzare-il-raspberry-pi-3-via-termux/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Utilizzare il Raspberry Pi 3 via Termux</span></a></p>
-<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/utilizzare-il-raspberry-pi-3-via-termux/">Utilizzare il Raspberry Pi 3 via Termux</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+				<description><![CDATA[<p>AGGIORNATO IN DATA 8/03/2018 In data 8/03/2018 ho modificato quasi completamente il post originale, perché ho deciso di impuntarmi e risolvere i miei problemi con Raspbian Stretch. La soluzione adottata in questa versione dell&#8217;articolo è senza dubbio migliore della precedente: è più facile, più veloce e ho utilizzato una distribuzione (Raspbian) adatta ad un uso <a href="https://www.gubello.me/blog/utilizzare-il-raspberry-pi-3-via-termux/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Utilizzare il Raspberry Pi 3 via Termux</span></a></p>
+<p>The post <a rel="nofollow" href="https://www.gubello.me/blog/utilizzare-il-raspberry-pi-3-via-termux/">Utilizzare il Raspberry Pi 3 via Termux</a> appeared first on <a rel="nofollow" href="http://www.gubello.me/blog/">Blog un po&#039; nerd</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<h6>AGGIORNATO IN DATA 8/03/2018</h6>
-<p><strong>In data 8/03/2018 ho modificato quasi completamente il post originale, perché ho deciso di impuntarmi e risolvere i miei problemi con Raspbian Stretch. La soluzione adottata in questa versione dell&#8217;articolo è senza dubbio migliore della precedente: è più facile, più veloce e ho utilizzato una distribuzione (Raspbian) adatta ad un uso giornaliero. Ho comunque salvato in un file pdf l&#8217;articolo originale, che potete <a href="https://luigigubello.github.io/blog/wp-content/uploads/2018/03/Utilizzare_il_Raspberry_Pi_3_via_Termux_Prima_Versione.pdf">scaricare qui</a>.</strong></p>
+<p><strong>In data 8/03/2018 ho modificato quasi completamente il post originale, perché ho deciso di impuntarmi e risolvere i miei problemi con Raspbian Stretch. La soluzione adottata in questa versione dell&#8217;articolo è senza dubbio migliore della precedente: è più facile, più veloce e ho utilizzato una distribuzione (Raspbian) adatta ad un uso giornaliero. Ho comunque salvato in un file pdf l&#8217;articolo originale, che potete <a href="https://www.gubello.me/blog/wp-content/uploads/2018/03/Utilizzare_il_Raspberry_Pi_3_via_Termux_Prima_Versione.pdf">scaricare qui</a>.</strong></p>
 <p style="text-align: center;"><strong>+++++++++++++++++++</strong></p>
 <p>Qualche mese fa ho comprato un Raspberry Pi 3 Model B, l&#8217;ho comprato per curiosità, per giocarci (letteralmente). Nelle settimane successive ho acquistato un piccolo <a href="http://www.quimat.cn/cpzs/sjpj/313.html">schermo da 3,5 pollici</a>, una powerbank e un paio di joystick (modello Nintendo SNES) e grazie al bellissimo progetto <a href="https://www.retropie.it/">RetroPie</a> ho trasformato il mio Raspberry in una console portatile di giochi retro.</p>
 <p>Nel frattempo ho anche voluto provare qualche distribuzione, ne ho provate in totale tre: <strong>Raspbian Jessie</strong>, <strong>Raspbian Stretch</strong> e <strong>Kali Linux 2017.3</strong>. Il primo approccio con Raspbian Jessie è stato perfetto, tutto funzionava alla perfezione, non ha richiesto particolari configurazioni. Purtroppo non posso dire lo stesso della versione successiva, Stretch, <del>che continua a darmi problemi nonostante sia ormai considerata stabile, soprattutto continua a bloccarsi totalmente il sistema operativo quando quest&#8217;ultimo utilizza l&#8217;antenna wireless integrata per connettersi alla rete</del> <strong>(problematica risolta)</strong>. Proprio a causa di questi piccoli problemi con Raspbian Stretch ho deciso di provare anche Kali Linux perché dalla versione <strong>2017.3</strong> contiene il <strong><a href="https://whitedome.com.au/re4son/re4son-kernel/">kernel Re4son</a> </strong>, un kernel modificato che al suo interno ha preinstallati diversi driver per vari chipset wireless.</p>
@@ -254,7 +254,7 @@ nmcli device wifi connect SSID-Name password wireless-password</code></p>
 <li><del>Visto le piccole, ma pur sempre fastidiose, problematiche con l&#8217;ultima versione di Raspbian penso proverò Ubuntu Mate 16 per Raspberry. L&#8217;idea è di trovare una distribuzione con cuore Debian che sia stabile e leggera per un utilizzo giornaliero.</del><br />
 Ho provato Ubuntu Mate 16 e personalmente l&#8217;ho trovato terribile.</li>
 </ul>
-<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/utilizzare-il-raspberry-pi-3-via-termux/">Utilizzare il Raspberry Pi 3 via Termux</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+<p>The post <a rel="nofollow" href="https://www.gubello.me/blog/utilizzare-il-raspberry-pi-3-via-termux/">Utilizzare il Raspberry Pi 3 via Termux</a> appeared first on <a rel="nofollow" href="http://www.gubello.me/blog/">Blog un po&#039; nerd</a>.</p>
 ]]></content:encoded>
 										</item>
 	</channel>

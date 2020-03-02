@@ -1,358 +1,358 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//luigigubello.github.io/blog/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//www.gubello.me/blog/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://luigigubello.github.io/blog/</loc>
+		<loc>https://www.gubello.me/blog/</loc>
 		<lastmod>2020-02-15T10:30:43+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/xsssonar/</loc>
+		<loc>https://www.gubello.me/blog/xsssonar/</loc>
 		<lastmod>2017-12-16T17:56:28+00:00</lastmod>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2017/12/xsssonar_logo.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2017/12/xsssonar_logo.png</image:loc>
 			<image:caption><![CDATA[XSSSonar]]></image:caption>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/stored-xss-in-touch-mail-ru/</loc>
+		<loc>https://www.gubello.me/blog/stored-xss-in-touch-mail-ru/</loc>
 		<lastmod>2018-01-05T11:35:53+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/stored-xss-via-cloud-attachment/</loc>
+		<loc>https://www.gubello.me/blog/stored-xss-via-cloud-attachment/</loc>
 		<lastmod>2018-01-20T17:18:39+00:00</lastmod>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_notebook.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_notebook.png</image:loc>
 			<image:caption><![CDATA[Stored XSS in gadgets.zoho.eu popup box]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_note.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_note.png</image:loc>
 			<image:caption><![CDATA[XSS ZOHO popup box]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_source_note.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_source_note.png</image:loc>
 			<image:caption><![CDATA[XSS ZOHO source code]]></image:caption>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/bookly-blind-stored-xss/</loc>
+		<loc>https://www.gubello.me/blog/bookly-blind-stored-xss/</loc>
 		<lastmod>2018-02-11T16:32:49+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/multiple-stored-xss-in-aol-mail/</loc>
+		<loc>https://www.gubello.me/blog/multiple-stored-xss-in-aol-mail/</loc>
 		<lastmod>2018-03-23T18:05:32+00:00</lastmod>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2018/03/aol_stored_xss_print.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2018/03/aol_stored_xss_print.png</image:loc>
 			<image:caption><![CDATA[Blind stored XSS in AOL Mail via vCard import]]></image:caption>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/events-manager-authenticated-stored-xss/</loc>
+		<loc>https://www.gubello.me/blog/events-manager-authenticated-stored-xss/</loc>
 		<lastmod>2018-03-26T15:53:27+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/utilizzare-il-raspberry-pi-3-via-termux/</loc>
+		<loc>https://www.gubello.me/blog/utilizzare-il-raspberry-pi-3-via-termux/</loc>
 		<lastmod>2018-03-26T17:37:31+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/wp-live-chat-support-8-0-05-stored-xss/</loc>
+		<loc>https://www.gubello.me/blog/wp-live-chat-support-8-0-05-stored-xss/</loc>
 		<lastmod>2018-04-09T20:10:21+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/my-calendar-2-5-16-authenticated-stored-xss/</loc>
+		<loc>https://www.gubello.me/blog/my-calendar-2-5-16-authenticated-stored-xss/</loc>
 		<lastmod>2018-04-18T08:13:39+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/stored-xss-in-microsoft-bing/</loc>
+		<loc>https://www.gubello.me/blog/stored-xss-in-microsoft-bing/</loc>
 		<lastmod>2018-04-27T18:02:26+00:00</lastmod>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2018/04/stored_xss_bing.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2018/04/stored_xss_bing.png</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/gd-bbpress-attachments-2-5-authenticated-stored-xss/</loc>
+		<loc>https://www.gubello.me/blog/gd-bbpress-attachments-2-5-authenticated-stored-xss/</loc>
 		<lastmod>2018-05-14T21:24:26+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/html-injection-in-signal-desktop/</loc>
+		<loc>https://www.gubello.me/blog/html-injection-in-signal-desktop/</loc>
 		<lastmod>2018-05-16T15:23:25+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/quali-utenti-usano-bandiera-ita-nel-nickname-di-twitter/</loc>
+		<loc>https://www.gubello.me/blog/quali-utenti-usano-bandiera-ita-nel-nickname-di-twitter/</loc>
 		<lastmod>2018-07-21T00:47:23+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/</loc>
+		<loc>https://www.gubello.me/blog/from-xss-to-rce-in-simplenote/</loc>
 		<lastmod>2018-08-24T15:09:46+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/italian-hacker-camp-2018/</loc>
+		<loc>https://www.gubello.me/blog/italian-hacker-camp-2018/</loc>
 		<lastmod>2018-08-27T23:59:11+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/configurare-pi-hole-portatile/</loc>
+		<loc>https://www.gubello.me/blog/configurare-pi-hole-portatile/</loc>
 		<lastmod>2018-11-03T18:10:12+00:00</lastmod>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2018/11/pihole_bibliografia.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2018/11/pihole_bibliografia.png</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/router-dlink-dva-5592-authentication-bypass/</loc>
+		<loc>https://www.gubello.me/blog/router-dlink-dva-5592-authentication-bypass/</loc>
 		<lastmod>2018-12-16T23:30:10+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/about-iran-and-ira-twitter-datasets-for-fun-part-one/</loc>
+		<loc>https://www.gubello.me/blog/about-iran-and-ira-twitter-datasets-for-fun-part-one/</loc>
 		<lastmod>2018-12-30T23:11:32+00:00</lastmod>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2018/12/users_iran.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2018/12/users_iran.png</image:loc>
 			<image:caption><![CDATA[Plots about Iranian users CSV]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2018/12/tweets_iran.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2018/12/tweets_iran.png</image:loc>
 			<image:caption><![CDATA[Plots about Iranian tweets CSV]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2018/12/users_russia.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2018/12/users_russia.png</image:loc>
 			<image:caption><![CDATA[Plots about IRA users CSV]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2018/12/tweets_russia.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2018/12/tweets_russia.png</image:loc>
 			<image:caption><![CDATA[Tweets CSV IRA]]></image:caption>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/about-iran-and-ira-twitter-datasets-for-fun-part-two/</loc>
+		<loc>https://www.gubello.me/blog/about-iran-and-ira-twitter-datasets-for-fun-part-two/</loc>
 		<lastmod>2019-05-20T00:32:37+00:00</lastmod>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/Iran_descriptions.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/01/Iran_descriptions.png</image:loc>
 			<image:caption><![CDATA[Iran descriptions]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/Iran_description_wordcloud.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/01/Iran_description_wordcloud.png</image:loc>
 			<image:caption><![CDATA[Iran description wordcloud]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/IRA_descriptions.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/01/IRA_descriptions.png</image:loc>
 			<image:caption><![CDATA[IRA descriptions]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/IRA_description_wordcloud.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/01/IRA_description_wordcloud.png</image:loc>
 			<image:caption><![CDATA[IRA description wordcloud]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/Europe_comparison.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/01/Europe_comparison.png</image:loc>
 			<image:caption><![CDATA[Europe comparison]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/German_pie.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/01/German_pie.png</image:loc>
 			<image:caption><![CDATA[German pie]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/German_donut.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/01/German_donut.png</image:loc>
 			<image:caption><![CDATA[German_donut]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/German_user_wordcloud.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/01/German_user_wordcloud.png</image:loc>
 			<image:caption><![CDATA[German user wordcloud]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/German_hashtag_wordcloud.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/01/German_hashtag_wordcloud.png</image:loc>
 			<image:caption><![CDATA[German hashtag wordcloud]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Italian_pie.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/02/Italian_pie.png</image:loc>
 			<image:caption><![CDATA[Italian Pie]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Italian_donut.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/02/Italian_donut.png</image:loc>
 			<image:caption><![CDATA[Italian_donut]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Italian_user_wordcloud.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/02/Italian_user_wordcloud.png</image:loc>
 			<image:caption><![CDATA[Italian user wordcloud]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Italian_hashtag_wordcloud.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/02/Italian_hashtag_wordcloud.png</image:loc>
 			<image:caption><![CDATA[Italian hashtag wordcloud]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Spanish_pie.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/02/Spanish_pie.png</image:loc>
 			<image:caption><![CDATA[Spanish pie]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Spanish_donut.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/02/Spanish_donut.png</image:loc>
 			<image:caption><![CDATA[Spanish_donut]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/Spanish_user_wordcloud.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/03/Spanish_user_wordcloud.png</image:loc>
 			<image:caption><![CDATA[Spanish user wordcloud]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/Spanish_hashtag_wordcloud.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/03/Spanish_hashtag_wordcloud.png</image:loc>
 			<image:caption><![CDATA[Spanish hashtag wordcloud]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/French_pie.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/03/French_pie.png</image:loc>
 			<image:caption><![CDATA[French pie]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/French_donut.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/03/French_donut.png</image:loc>
 			<image:caption><![CDATA[French_donut]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/French_user_wordcloud.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/03/French_user_wordcloud.png</image:loc>
 			<image:caption><![CDATA[French user wordcloud]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/French_hashtag_wordcloud.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/03/French_hashtag_wordcloud.png</image:loc>
 			<image:caption><![CDATA[French hashtag wordcloud]]></image:caption>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/hack5stelle/</loc>
+		<loc>https://www.gubello.me/blog/hack5stelle/</loc>
 		<lastmod>2019-08-15T15:12:50+00:00</lastmod>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/04/superchicche.jpg</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/04/superchicche.jpg</image:loc>
 			<image:caption><![CDATA[Zucchero, cannella ed ogni cosa bella! Questi sono gli ingredienti per creare le ragazzine perfette. Ma il professor Utonium aggiunse per sbaglio un'ulteriore ingrediente alla mistura: il chemical X.]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/04/anatra_gif.gif</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/04/anatra_gif.gif</image:loc>
 			<image:caption><![CDATA[La GIF usata nel &lt;a href="https://twitter.com/evaristegal0is/status/960793718684086272"&gt;"famoso" tweet del 6 febbraio 2018&lt;/a&gt;]]></image:caption>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/about-iran-and-ira-twitter-datasets-for-fun-part-iii/</loc>
+		<loc>https://www.gubello.me/blog/about-iran-and-ira-twitter-datasets-for-fun-part-iii/</loc>
 		<lastmod>2019-09-15T13:40:29+00:00</lastmod>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/tweet_date_list_en.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/tweet_date_list_en.png</image:loc>
 			<image:caption><![CDATA[English tweets and retweets trend]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/creation_date_list_en.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/creation_date_list_en.png</image:loc>
 			<image:caption><![CDATA[Creation date of accounts plot]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/tweet_date_list_de.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/tweet_date_list_de.png</image:loc>
 			<image:caption><![CDATA[German tweets and retweets trend]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/creation_date_list_de.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/creation_date_list_de.png</image:loc>
 			<image:caption><![CDATA[Creation date of accounts plot [de]]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/tweet_date_list.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/tweet_date_list.png</image:loc>
 			<image:caption><![CDATA[Italian tweets and retweets trend]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/creation_date_list.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/creation_date_list.png</image:loc>
 			<image:caption><![CDATA[Creation date of accounts plot [it]]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/372658464fd2be7d3c2c220eded91605f498483c984455ab63cd4ae74dd18895_density.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/372658464fd2be7d3c2c220eded91605f498483c984455ab63cd4ae74dd18895_density.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/f82084575688f694cdf1328a7a28bc453f3b9d0c52029ac28d55ab535b1ebb5f_tweet_date_list.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/f82084575688f694cdf1328a7a28bc453f3b9d0c52029ac28d55ab535b1ebb5f_tweet_date_list.png</image:loc>
 			<image:title><![CDATA[f82084575688f694cdf1328a7a28bc453f3b9d0c52029ac28d55ab535b1ebb5f_tweet_date_list]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/372658464fd2be7d3c2c220eded91605f498483c984455ab63cd4ae74dd18895_tweet_date_list.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/372658464fd2be7d3c2c220eded91605f498483c984455ab63cd4ae74dd18895_tweet_date_list.png</image:loc>
 			<image:title><![CDATA[372658464fd2be7d3c2c220eded91605f498483c984455ab63cd4ae74dd18895_tweet_date_list]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/378410ae3ae135e4f2271e4cad9190bae2d5b029c5888114a7b0088342751a90_tweet_date_list.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/378410ae3ae135e4f2271e4cad9190bae2d5b029c5888114a7b0088342751a90_tweet_date_list.png</image:loc>
 			<image:title><![CDATA[378410ae3ae135e4f2271e4cad9190bae2d5b029c5888114a7b0088342751a90_tweet_date_list]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/7279bc41cba54b4b5920031ecab92f4e1b806cd82980fc453d1ba97acbc036e3_tweet_date_list.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/7279bc41cba54b4b5920031ecab92f4e1b806cd82980fc453d1ba97acbc036e3_tweet_date_list.png</image:loc>
 			<image:title><![CDATA[7279bc41cba54b4b5920031ecab92f4e1b806cd82980fc453d1ba97acbc036e3_tweet_date_list]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/15db31e780e1d2df7f5d8ad7ea0d3cacfde539ef93fe71572696aabc4b19ed36_tweet_date_list.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/15db31e780e1d2df7f5d8ad7ea0d3cacfde539ef93fe71572696aabc4b19ed36_tweet_date_list.png</image:loc>
 			<image:title><![CDATA[15db31e780e1d2df7f5d8ad7ea0d3cacfde539ef93fe71572696aabc4b19ed36_tweet_date_list]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/8cf62b0d819688e71454a1997832b5e9c720bfb5a0cae070be1f2c0eb8c13792_tweet_date_list.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/8cf62b0d819688e71454a1997832b5e9c720bfb5a0cae070be1f2c0eb8c13792_tweet_date_list.png</image:loc>
 			<image:title><![CDATA[8cf62b0d819688e71454a1997832b5e9c720bfb5a0cae070be1f2c0eb8c13792_tweet_date_list]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/8b3aa79f9434a59439dbfbf33093f1c5ef41686e4f8c75b361338a8399a6d6cf_tweet_date_list.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/8b3aa79f9434a59439dbfbf33093f1c5ef41686e4f8c75b361338a8399a6d6cf_tweet_date_list.png</image:loc>
 			<image:title><![CDATA[8b3aa79f9434a59439dbfbf33093f1c5ef41686e4f8c75b361338a8399a6d6cf_tweet_date_list]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/7a746a6b77f61084a3ee732e71a3aa436e33f463825829c7286a5203ddcd6e4f_tweet_date_list.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/7a746a6b77f61084a3ee732e71a3aa436e33f463825829c7286a5203ddcd6e4f_tweet_date_list.png</image:loc>
 			<image:title><![CDATA[7a746a6b77f61084a3ee732e71a3aa436e33f463825829c7286a5203ddcd6e4f_tweet_date_list]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/2f929662caeaa8ac1405b9eecabcae76698e805b757bec9cf0358f52f962373b_tweet_date_list.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/2f929662caeaa8ac1405b9eecabcae76698e805b757bec9cf0358f52f962373b_tweet_date_list.png</image:loc>
 			<image:title><![CDATA[2f929662caeaa8ac1405b9eecabcae76698e805b757bec9cf0358f52f962373b_tweet_date_list]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/8cf62b0d819688e71454a1997832b5e9c720bfb5a0cae070be1f2c0eb8c13792_density.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/8cf62b0d819688e71454a1997832b5e9c720bfb5a0cae070be1f2c0eb8c13792_density.png</image:loc>
 			<image:title><![CDATA[8cf62b0d819688e71454a1997832b5e9c720bfb5a0cae070be1f2c0eb8c13792_density]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/2f929662caeaa8ac1405b9eecabcae76698e805b757bec9cf0358f52f962373b_density.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/2f929662caeaa8ac1405b9eecabcae76698e805b757bec9cf0358f52f962373b_density.png</image:loc>
 			<image:title><![CDATA[2f929662caeaa8ac1405b9eecabcae76698e805b757bec9cf0358f52f962373b_density]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/f82084575688f694cdf1328a7a28bc453f3b9d0c52029ac28d55ab535b1ebb5f_density.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/f82084575688f694cdf1328a7a28bc453f3b9d0c52029ac28d55ab535b1ebb5f_density.png</image:loc>
 			<image:title><![CDATA[f82084575688f694cdf1328a7a28bc453f3b9d0c52029ac28d55ab535b1ebb5f_density]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/7279bc41cba54b4b5920031ecab92f4e1b806cd82980fc453d1ba97acbc036e3_density.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/7279bc41cba54b4b5920031ecab92f4e1b806cd82980fc453d1ba97acbc036e3_density.png</image:loc>
 			<image:title><![CDATA[7279bc41cba54b4b5920031ecab92f4e1b806cd82980fc453d1ba97acbc036e3_density]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/15db31e780e1d2df7f5d8ad7ea0d3cacfde539ef93fe71572696aabc4b19ed36_density.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/15db31e780e1d2df7f5d8ad7ea0d3cacfde539ef93fe71572696aabc4b19ed36_density.png</image:loc>
 			<image:title><![CDATA[15db31e780e1d2df7f5d8ad7ea0d3cacfde539ef93fe71572696aabc4b19ed36_density]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/378410ae3ae135e4f2271e4cad9190bae2d5b029c5888114a7b0088342751a90_density.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/378410ae3ae135e4f2271e4cad9190bae2d5b029c5888114a7b0088342751a90_density.png</image:loc>
 			<image:title><![CDATA[378410ae3ae135e4f2271e4cad9190bae2d5b029c5888114a7b0088342751a90_density]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/8b3aa79f9434a59439dbfbf33093f1c5ef41686e4f8c75b361338a8399a6d6cf_density.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/8b3aa79f9434a59439dbfbf33093f1c5ef41686e4f8c75b361338a8399a6d6cf_density.png</image:loc>
 			<image:title><![CDATA[8b3aa79f9434a59439dbfbf33093f1c5ef41686e4f8c75b361338a8399a6d6cf_density]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/7a746a6b77f61084a3ee732e71a3aa436e33f463825829c7286a5203ddcd6e4f_density.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/09/7a746a6b77f61084a3ee732e71a3aa436e33f463825829c7286a5203ddcd6e4f_density.png</image:loc>
 			<image:title><![CDATA[7a746a6b77f61084a3ee732e71a3aa436e33f463825829c7286a5203ddcd6e4f_density]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/about-chinese-propaganda-on-twitter-drawing-data/</loc>
+		<loc>https://www.gubello.me/blog/about-chinese-propaganda-on-twitter-drawing-data/</loc>
 		<lastmod>2019-12-03T00:42:28+00:00</lastmod>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_volume_tweet.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/12/all_volume_tweet.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_hashtag.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/12/all_hashtag.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_retweeted_user.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/12/all_retweeted_user.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_user_agent.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/12/all_user_agent.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_tweets_language.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/12/all_tweets_language.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_volume_interactions.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/12/all_volume_interactions.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/zh_volume_tweet.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/12/zh_volume_tweet.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/zh_volume_interactions.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/12/zh_volume_interactions.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/zh_user_agent.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/12/zh_user_agent.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/zh_density.png</image:loc>
+			<image:loc>https://www.gubello.me/blog/wp-content/uploads/2019/12/zh_density.png</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/javascript-injection-in-six-android-mail-clients/</loc>
+		<loc>https://www.gubello.me/blog/javascript-injection-in-six-android-mail-clients/</loc>
 		<lastmod>2020-02-15T10:30:43+00:00</lastmod>
 	</url>
 </urlset>
