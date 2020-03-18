@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://luigigubello.github.io/blog/</loc>
-		<lastmod>2020-02-15T10:30:43+00:00</lastmod>
+		<lastmod>2020-03-18T22:34:58+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://luigigubello.github.io/blog/xsssonar/</loc>
@@ -99,8 +99,24 @@
 		<lastmod>2018-12-16T23:30:10+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://luigigubello.github.io/blog/hack5stelle/</loc>
+		<lastmod>2019-08-15T15:12:50+00:00</lastmod>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/04/superchicche.jpg</image:loc>
+			<image:caption><![CDATA[Zucchero, cannella ed ogni cosa bella! Questi sono gli ingredienti per creare le ragazzine perfette. Ma il professor Utonium aggiunse per sbaglio un'ulteriore ingrediente alla mistura: il chemical X.]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/04/anatra_gif.gif</image:loc>
+			<image:caption><![CDATA[La GIF usata nel &lt;a href="https://twitter.com/evaristegal0is/status/960793718684086272"&gt;"famoso" tweet del 6 febbraio 2018&lt;/a&gt;]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://luigigubello.github.io/blog/javascript-injection-in-six-android-mail-clients/</loc>
+		<lastmod>2020-03-17T23:39:06+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://luigigubello.github.io/blog/about-iran-and-ira-twitter-datasets-for-fun-part-one/</loc>
-		<lastmod>2018-12-30T23:11:32+00:00</lastmod>
+		<lastmod>2020-03-17T23:40:17+00:00</lastmod>
 		<image:image>
 			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2018/12/users_iran.png</image:loc>
 			<image:caption><![CDATA[Plots about Iranian users CSV]]></image:caption>
@@ -119,108 +135,42 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/about-iran-and-ira-twitter-datasets-for-fun-part-two/</loc>
-		<lastmod>2019-05-20T00:32:37+00:00</lastmod>
+		<loc>https://luigigubello.github.io/blog/about-chinese-propaganda-on-twitter-drawing-data/</loc>
+		<lastmod>2020-03-17T23:40:48+00:00</lastmod>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/Iran_descriptions.png</image:loc>
-			<image:caption><![CDATA[Iran descriptions]]></image:caption>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_volume_tweet.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/Iran_description_wordcloud.png</image:loc>
-			<image:caption><![CDATA[Iran description wordcloud]]></image:caption>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_hashtag.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/IRA_descriptions.png</image:loc>
-			<image:caption><![CDATA[IRA descriptions]]></image:caption>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_retweeted_user.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/IRA_description_wordcloud.png</image:loc>
-			<image:caption><![CDATA[IRA description wordcloud]]></image:caption>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_user_agent.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/Europe_comparison.png</image:loc>
-			<image:caption><![CDATA[Europe comparison]]></image:caption>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_tweets_language.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/German_pie.png</image:loc>
-			<image:caption><![CDATA[German pie]]></image:caption>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_volume_interactions.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/German_donut.png</image:loc>
-			<image:caption><![CDATA[German_donut]]></image:caption>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/zh_volume_tweet.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/German_user_wordcloud.png</image:loc>
-			<image:caption><![CDATA[German user wordcloud]]></image:caption>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/zh_volume_interactions.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/German_hashtag_wordcloud.png</image:loc>
-			<image:caption><![CDATA[German hashtag wordcloud]]></image:caption>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/zh_user_agent.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Italian_pie.png</image:loc>
-			<image:caption><![CDATA[Italian Pie]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Italian_donut.png</image:loc>
-			<image:caption><![CDATA[Italian_donut]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Italian_user_wordcloud.png</image:loc>
-			<image:caption><![CDATA[Italian user wordcloud]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Italian_hashtag_wordcloud.png</image:loc>
-			<image:caption><![CDATA[Italian hashtag wordcloud]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Spanish_pie.png</image:loc>
-			<image:caption><![CDATA[Spanish pie]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Spanish_donut.png</image:loc>
-			<image:caption><![CDATA[Spanish_donut]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/Spanish_user_wordcloud.png</image:loc>
-			<image:caption><![CDATA[Spanish user wordcloud]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/Spanish_hashtag_wordcloud.png</image:loc>
-			<image:caption><![CDATA[Spanish hashtag wordcloud]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/French_pie.png</image:loc>
-			<image:caption><![CDATA[French pie]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/French_donut.png</image:loc>
-			<image:caption><![CDATA[French_donut]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/French_user_wordcloud.png</image:loc>
-			<image:caption><![CDATA[French user wordcloud]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/French_hashtag_wordcloud.png</image:loc>
-			<image:caption><![CDATA[French hashtag wordcloud]]></image:caption>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://luigigubello.github.io/blog/hack5stelle/</loc>
-		<lastmod>2019-08-15T15:12:50+00:00</lastmod>
-		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/04/superchicche.jpg</image:loc>
-			<image:caption><![CDATA[Zucchero, cannella ed ogni cosa bella! Questi sono gli ingredienti per creare le ragazzine perfette. Ma il professor Utonium aggiunse per sbaglio un'ulteriore ingrediente alla mistura: il chemical X.]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/04/anatra_gif.gif</image:loc>
-			<image:caption><![CDATA[La GIF usata nel &lt;a href="https://twitter.com/evaristegal0is/status/960793718684086272"&gt;"famoso" tweet del 6 febbraio 2018&lt;/a&gt;]]></image:caption>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/zh_density.png</image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc>https://luigigubello.github.io/blog/about-iran-and-ira-twitter-datasets-for-fun-part-iii/</loc>
-		<lastmod>2019-09-15T13:40:29+00:00</lastmod>
+		<lastmod>2020-03-17T23:43:01+00:00</lastmod>
 		<image:image>
 			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/09/tweet_date_list_en.png</image:loc>
 			<image:caption><![CDATA[English tweets and retweets trend]]></image:caption>
@@ -318,42 +268,120 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/about-chinese-propaganda-on-twitter-drawing-data/</loc>
-		<lastmod>2019-12-03T00:42:28+00:00</lastmod>
+		<loc>https://luigigubello.github.io/blog/about-iran-and-ira-twitter-datasets-for-fun-part-two/</loc>
+		<lastmod>2020-03-17T23:43:30+00:00</lastmod>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_volume_tweet.png</image:loc>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/Iran_descriptions.png</image:loc>
+			<image:caption><![CDATA[Iran descriptions]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_hashtag.png</image:loc>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/Iran_description_wordcloud.png</image:loc>
+			<image:caption><![CDATA[Iran description wordcloud]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_retweeted_user.png</image:loc>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/IRA_descriptions.png</image:loc>
+			<image:caption><![CDATA[IRA descriptions]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_user_agent.png</image:loc>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/IRA_description_wordcloud.png</image:loc>
+			<image:caption><![CDATA[IRA description wordcloud]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_tweets_language.png</image:loc>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/Europe_comparison.png</image:loc>
+			<image:caption><![CDATA[Europe comparison]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/all_volume_interactions.png</image:loc>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/German_pie.png</image:loc>
+			<image:caption><![CDATA[German pie]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/zh_volume_tweet.png</image:loc>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/German_donut.png</image:loc>
+			<image:caption><![CDATA[German_donut]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/zh_volume_interactions.png</image:loc>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/German_user_wordcloud.png</image:loc>
+			<image:caption><![CDATA[German user wordcloud]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/zh_user_agent.png</image:loc>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/01/German_hashtag_wordcloud.png</image:loc>
+			<image:caption><![CDATA[German hashtag wordcloud]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/12/zh_density.png</image:loc>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Italian_pie.png</image:loc>
+			<image:caption><![CDATA[Italian Pie]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Italian_donut.png</image:loc>
+			<image:caption><![CDATA[Italian_donut]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Italian_user_wordcloud.png</image:loc>
+			<image:caption><![CDATA[Italian user wordcloud]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Italian_hashtag_wordcloud.png</image:loc>
+			<image:caption><![CDATA[Italian hashtag wordcloud]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Spanish_pie.png</image:loc>
+			<image:caption><![CDATA[Spanish pie]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/02/Spanish_donut.png</image:loc>
+			<image:caption><![CDATA[Spanish_donut]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/Spanish_user_wordcloud.png</image:loc>
+			<image:caption><![CDATA[Spanish user wordcloud]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/Spanish_hashtag_wordcloud.png</image:loc>
+			<image:caption><![CDATA[Spanish hashtag wordcloud]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/French_pie.png</image:loc>
+			<image:caption><![CDATA[French pie]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/French_donut.png</image:loc>
+			<image:caption><![CDATA[French_donut]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/French_user_wordcloud.png</image:loc>
+			<image:caption><![CDATA[French user wordcloud]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2019/03/French_hashtag_wordcloud.png</image:loc>
+			<image:caption><![CDATA[French hashtag wordcloud]]></image:caption>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://luigigubello.github.io/blog/javascript-injection-in-six-android-mail-clients/</loc>
-		<lastmod>2020-02-15T10:30:43+00:00</lastmod>
+		<loc>https://luigigubello.github.io/blog/is-china-spreading-propaganda-in-italy/</loc>
+		<lastmod>2020-03-18T22:34:58+00:00</lastmod>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2020/03/Schermata-del-2020-03-16-01-43-30.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2020/03/primo_account.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2020/03/Schermata-del-2020-03-15-17-06-52.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2020/03/251.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2020/03/like.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2020/03/tweetantitrump.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2020/03/allaccounts.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://luigigubello.github.io/blog/wp-content/uploads/2020/03/suspend.png</image:loc>
+		</image:image>
 	</url>
 </urlset>
 <!-- XML Sitemap generated by Yoast SEO -->

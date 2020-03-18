@@ -9,11 +9,13 @@
             "name": "Blog un po' nerd",
             "inLanguage": "en-US",
             "description": "Nerd is the new Hipster",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://luigigubello.github.io/blog/?s={search_term_string}",
-                "query-input": "required name=search_term_string"
-            }
+            "potentialAction": [
+                {
+                    "@type": "SearchAction",
+                    "target": "https://luigigubello.github.io/blog/?s={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            ]
         },
         {
             "@type": "ImageObject",
@@ -40,7 +42,15 @@
             "dateModified": "2018-01-20T17:18:39+00:00",
             "author": {
                 "@id": "https://luigigubello.github.io/blog/#/schema/person/3e0819226c43d8f09f15276ee0bf80b3"
-            }
+            },
+            "potentialAction": [
+                {
+                    "@type": "ReadAction",
+                    "target": [
+                        "https://luigigubello.github.io/blog/stored-xss-via-cloud-attachment/"
+                    ]
+                }
+            ]
         },
         {
             "@type": [

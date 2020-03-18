@@ -9,11 +9,13 @@
             "name": "Blog un po' nerd",
             "inLanguage": "en-US",
             "description": "Nerd is the new Hipster",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://luigigubello.github.io/blog/?s={search_term_string}",
-                "query-input": "required name=search_term_string"
-            }
+            "potentialAction": [
+                {
+                    "@type": "SearchAction",
+                    "target": "https://luigigubello.github.io/blog/?s={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            ]
         },
         {
             "@type": "CollectionPage",
@@ -78,7 +80,19 @@
 	</nav><div id="content" class="site-content">
 		
 			<div id="primary" class="content-area">
-				<main id="main" class="site-main" role="main"><article id="post-413" class="post-413 post type-post status-publish format-standard category-github category-italian category-other entry" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost"><div class="entry-inner">
+				<main id="main" class="site-main" role="main"><article id="post-438" class="post-438 post type-post status-publish format-standard category-bug-bounty category-english category-xss entry" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost"><div class="entry-inner">
+		
+			<header class="entry-header"><h2 class="entry-title" itemprop="headline"><a href="https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/" rel="bookmark">From XSS to RCE in Simplenote 1.1.3</a></h2>				
+	<div class="entry-meta">
+		<span class="entry-date"><span class="screen-reader-text">Posted on </span><a href="https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/" rel="bookmark"><time class="entry-date" datetime="2018-07-29T18:20:59+02:00" itemprop="datePublished">29 July 2018</time></a></span><span class="byline"><span class="entry-author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="screen-reader-text">Author </span><a class="entry-author-link" href="https://luigigubello.github.io/blog/author/luigi/" rel="author" itemprop="url"><span itemprop="name">luigi</span></a></span></span>			</div>
+			</header><div class="entry-summary" itemprop="description">
+				<p>SUMMARY In Simplenote 1.1.3 – Desktop app there is a stored XSS vulnerability that can be used to execute arbitrary code. If there is malicious code in the note and the user tries to print it (for example to save it as a PDF), the malicious code runs. #358049 – RCE via Print function [Simplenote 1.1.3 – Desktop <a href="https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/" class="more-link">… <span class="screen-reader-text">Continue reading From XSS to RCE in Simplenote 1.1.3</span></a></p>
+			</div>
+			
+		</div>
+
+		
+</article><article id="post-413" class="post-413 post type-post status-publish format-standard category-github category-italian category-other entry" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost"><div class="entry-inner">
 		
 			<header class="entry-header"><h2 class="entry-title" itemprop="headline"><a href="https://luigigubello.github.io/blog/quali-utenti-usano-bandiera-ita-nel-nickname-di-twitter/" rel="bookmark">Quali utenti usano 🇮🇹 nel nickname di Twitter?</a></h2>				
 	<div class="entry-meta">
@@ -121,18 +135,6 @@
 		<span class="entry-date"><span class="screen-reader-text">Posted on </span><a href="https://luigigubello.github.io/blog/stored-xss-in-microsoft-bing/" rel="bookmark"><time class="entry-date" datetime="2018-04-21T12:30:51+02:00" itemprop="datePublished">21 April 2018</time></a></span><span class="byline"><span class="entry-author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="screen-reader-text">Author </span><a class="entry-author-link" href="https://luigigubello.github.io/blog/author/luigi/" rel="author" itemprop="url"><span itemprop="name">luigi</span></a></span></span>			</div>
 			</header><div class="entry-summary" itemprop="description">
 				<p>After many unsuccessful attempts to find an XSS in Yahoo’s domains, I decided to move my attention to Microsoft Bing. If you have a Microsoft account, Bing allows you to save online content (images, videos and places) on the page “My saves”, and allows to create collections to better manage your own content. The titles <a href="https://luigigubello.github.io/blog/stored-xss-in-microsoft-bing/" class="more-link">… <span class="screen-reader-text">Continue reading Stored XSS in Microsoft Bing</span></a></p>
-			</div>
-			
-		</div>
-
-		
-</article><article id="post-324" class="post-324 post type-post status-publish format-standard category-english category-wordpress category-xss entry" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost"><div class="entry-inner">
-		
-			<header class="entry-header"><h2 class="entry-title" itemprop="headline"><a href="https://luigigubello.github.io/blog/my-calendar-2-5-16-authenticated-stored-xss/" rel="bookmark">My Calendar 2.5.16 – Authenticated stored XSS</a></h2>				
-	<div class="entry-meta">
-		<span class="entry-date"><span class="screen-reader-text">Posted on </span><a href="https://luigigubello.github.io/blog/my-calendar-2-5-16-authenticated-stored-xss/" rel="bookmark"><time class="entry-date" datetime="2018-04-18T10:13:39+02:00" itemprop="datePublished">18 April 2018</time></a></span><span class="byline"><span class="entry-author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="screen-reader-text">Author </span><a class="entry-author-link" href="https://luigigubello.github.io/blog/author/luigi/" rel="author" itemprop="url"><span itemprop="name">luigi</span></a></span></span>			</div>
-			</header><div class="entry-summary" itemprop="description">
-				<p>INFO Product: My Calendar Version: 2.5.16 Active installations: 30,000+ Product page: https://it.wordpress.org/plugins/my-calendar/ DESCRIPTION An authenticated user, who can add new events,  can inject arbitrary javascript code via event_time_label input. The arbitrary code runs both on the event page and in the admin panel. In my-calendar-event-manager.php, line 1873, the variable $eventTime is not sanitized. PROOF OF CONCEPT My Calendar 2.5.16 is <a href="https://luigigubello.github.io/blog/my-calendar-2-5-16-authenticated-stored-xss/" class="more-link">… <span class="screen-reader-text">Continue reading My Calendar 2.5.16 – Authenticated stored XSS</span></a></p>
 			</div>
 			
 		</div>
