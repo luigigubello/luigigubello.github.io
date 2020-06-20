@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Bug Bounty &#8211; Blog un po&#039; nerd</title>
-	<atom:link href="https://luigigubello.github.io/blog/category/bug-bounty/feed/" rel="self" type="application/rss+xml" />
-	<link>http://luigigubello.github.io/blog/</link>
+	<atom:link href="https://www.gubello.me/blog/category/bug-bounty/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.gubello.me/blog/</link>
 	<description>Nerd is the new Hipster</description>
 	<lastBuildDate>Tue, 17 Mar 2020 23:39:06 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,27 +21,28 @@
 	
 
 <image>
-	<url>https://luigigubello.github.io/blog/wp-content/uploads/2017/12/cropped-favicon-1-32x32.jpg</url>
+	<url>https://www.gubello.me/blog/wp-content/uploads/2017/12/cropped-favicon-1-32x32.jpg</url>
 	<title>Bug Bounty &#8211; Blog un po&#039; nerd</title>
-	<link>http://luigigubello.github.io/blog/</link>
+	<link>http://www.gubello.me/blog/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Javascript Injection in six Android mail clients</title>
-		<link>https://luigigubello.github.io/blog/javascript-injection-in-six-android-mail-clients/</link>
-				<pubDate>Sat, 15 Feb 2020 10:26:54 +0000</pubDate>
+		<link>https://www.gubello.me/blog/javascript-injection-in-six-android-mail-clients/</link>
+		
 		<dc:creator><![CDATA[luigi]]></dc:creator>
+		<pubDate>Sat, 15 Feb 2020 10:26:54 +0000</pubDate>
 				<category><![CDATA[Bug Bounty]]></category>
 		<category><![CDATA[English]]></category>
 		<category><![CDATA[IT Security]]></category>
 		<category><![CDATA[XSS]]></category>
-
 		<guid isPermaLink="false">https://www.gubello.me/blog/?p=1001</guid>
-				<description><![CDATA[<p>During last spring (2019) I started to &#8220;open and read&#8221; the Android applications before installing them. Reversing an APK file can be interesting to understand how an app works, how it manages the permissions and my data, if there are vulnerabilities. I was looking for a different Android mail client, so I started to reverse <a href="https://luigigubello.github.io/blog/javascript-injection-in-six-android-mail-clients/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Javascript Injection in six Android mail clients</span></a></p>
-<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/javascript-injection-in-six-android-mail-clients/">Javascript Injection in six Android mail clients</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+
+					<description><![CDATA[<p>During last spring (2019) I started to &#8220;open and read&#8221; the Android applications before installing them. Reversing an APK file can be interesting to understand how an app works, how it manages the permissions and my data, if there are vulnerabilities. I was looking for a different Android mail client, so I started to reverse <a href="https://www.gubello.me/blog/javascript-injection-in-six-android-mail-clients/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Javascript Injection in six Android mail clients</span></a></p>
+<p>The post <a rel="nofollow" href="https://www.gubello.me/blog/javascript-injection-in-six-android-mail-clients/">Javascript Injection in six Android mail clients</a> appeared first on <a rel="nofollow" href="http://www.gubello.me/blog/">Blog un po&#039; nerd</a>.</p>
 ]]></description>
-								<content:encoded><![CDATA[<p>During last spring (2019) I started to &#8220;open and read&#8221; the Android applications before installing them. Reversing an APK file can be interesting to understand how an app works, how it manages the permissions and my data, if there are vulnerabilities. I was looking for a different Android mail client, so I started to reverse them and I found many mail clients on Play Store were &#8211; maybe are &#8211; vulnerable to Javascript injection. I found eight important apps vulnerable to cross-site scripting:<strong> Newton Mail</strong> 10.0.23, <strong>Nine Email</strong> 4.5.3a, <strong>Blue Mail</strong> 1.9.5.36, <strong>Edison Email</strong> 1.7.1, <strong>Email TypeApp</strong> 1.9.5.35 and <strong>Spark</strong> 2.0.2 + <strong>two</strong> apps I can&#8217;t disclose now. In April and May 2019 I wrote to vendors of these apps, but only someone replied to me.</p>
+										<content:encoded><![CDATA[<p>During last spring (2019) I started to &#8220;open and read&#8221; the Android applications before installing them. Reversing an APK file can be interesting to understand how an app works, how it manages the permissions and my data, if there are vulnerabilities. I was looking for a different Android mail client, so I started to reverse them and I found many mail clients on Play Store were &#8211; maybe are &#8211; vulnerable to Javascript injection. I found eight important apps vulnerable to cross-site scripting:<strong> Newton Mail</strong> 10.0.23, <strong>Nine Email</strong> 4.5.3a, <strong>Blue Mail</strong> 1.9.5.36, <strong>Edison Email</strong> 1.7.1, <strong>Email TypeApp</strong> 1.9.5.35 and <strong>Spark</strong> 2.0.2 + <strong>two</strong> apps I can&#8217;t disclose now. In April and May 2019 I wrote to vendors of these apps, but only someone replied to me.</p>
 <h3 style="text-align: center;">JAVASCRIPT INJECTION IN ANDROID WEBVIEW</h3>
 <p>Javascript injection in Android WebView is a serious vulnerability because in some scenario it was possible to execute code remotely by injecting a malicious Javascript code in the WebView (<strong>CVE-2012-6636</strong>, <strong>CVE-2013-4710</strong>). These vulnerabilities were fixed by Google, but Javascript injection in the WebView is yet a common bug, also for this reason Google have created <a href="https://support.google.com/faqs/answer/9095419?hl=en-GB">a support page</a> to explain how to use Javascript interfaces in the WebView. Although Javascript injection usually doesn&#8217;t lead to code execution, it is still a serious vulnerability <a href="https://labs.integrity.pt/articles/review-android-webviews-fileaccess-attack-vectors/index.html">because can be used to steal data</a> (similar to CVE-2019-11730 PoC) if <code dir="ltr" translate="no">setAllowUniversalAccessFromFileURLs</code> is set <code>True</code>.</p>
 <h5 style="text-align: center;">Newton Mail</h5>
@@ -88,23 +89,27 @@ In Edison Mail 1.7.1 <code dir="ltr" translate="no">setAllowUniversalAccessFromF
 <strong>Has vendor replied? <span style="color: #ff0000;">No</span></strong><br />
 <strong>CVE: </strong>2019-12369</p>
 <p><center><iframe src="https://www.youtube-nocookie.com/embed/_tI_Yw04Xcs" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>&nbsp;</p>
-<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/javascript-injection-in-six-android-mail-clients/">Javascript Injection in six Android mail clients</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+<p>The post <a rel="nofollow" href="https://www.gubello.me/blog/javascript-injection-in-six-android-mail-clients/">Javascript Injection in six Android mail clients</a> appeared first on <a rel="nofollow" href="http://www.gubello.me/blog/">Blog un po&#039; nerd</a>.</p>
 ]]></content:encoded>
-										</item>
+					
+		
+		
+			</item>
 		<item>
 		<title>From XSS to RCE in Simplenote 1.1.3</title>
-		<link>https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/</link>
-				<pubDate>Sun, 29 Jul 2018 16:20:59 +0000</pubDate>
+		<link>https://www.gubello.me/blog/from-xss-to-rce-in-simplenote/</link>
+		
 		<dc:creator><![CDATA[luigi]]></dc:creator>
+		<pubDate>Sun, 29 Jul 2018 16:20:59 +0000</pubDate>
 				<category><![CDATA[Bug Bounty]]></category>
 		<category><![CDATA[English]]></category>
 		<category><![CDATA[XSS]]></category>
-
 		<guid isPermaLink="false">https://www.gubello.me/blog/?p=438</guid>
-				<description><![CDATA[<p>SUMMARY In Simplenote 1.1.3 &#8211; Desktop app there is a stored XSS vulnerability that can be used to execute arbitrary code. If there is malicious code in the note and the user tries to print it (for example to save it as a PDF), the malicious code runs. #358049 &#8211; RCE via Print function [Simplenote 1.1.3 &#8211; Desktop <a href="https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading From XSS to RCE in Simplenote 1.1.3</span></a></p>
-<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/">From XSS to RCE in Simplenote 1.1.3</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+
+					<description><![CDATA[<p>SUMMARY In Simplenote 1.1.3 &#8211; Desktop app there is a stored XSS vulnerability that can be used to execute arbitrary code. If there is malicious code in the note and the user tries to print it (for example to save it as a PDF), the malicious code runs. #358049 &#8211; RCE via Print function [Simplenote 1.1.3 &#8211; Desktop <a href="https://www.gubello.me/blog/from-xss-to-rce-in-simplenote/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading From XSS to RCE in Simplenote 1.1.3</span></a></p>
+<p>The post <a rel="nofollow" href="https://www.gubello.me/blog/from-xss-to-rce-in-simplenote/">From XSS to RCE in Simplenote 1.1.3</a> appeared first on <a rel="nofollow" href="http://www.gubello.me/blog/">Blog un po&#039; nerd</a>.</p>
 ]]></description>
-								<content:encoded><![CDATA[<h4 style="text-align: center;">SUMMARY</h4>
+										<content:encoded><![CDATA[<h4 style="text-align: center;">SUMMARY</h4>
 <p>In <strong>Simplenote 1.1.3 &#8211; Desktop app</strong> there is a stored XSS vulnerability that can be used to execute arbitrary code. If there is malicious code in the note and the user tries to print it (for example to save it as a PDF), the malicious code runs.</p>
 <p><center><iframe src="https://www.youtube-nocookie.com/embed/YzEzLsSAO3s?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center><br />
 <a href="https://hackerone.com/reports/358049"><strong>#358049 &#8211; <span style="font-size: 1rem;">RCE via Print function [Simplenote 1.1.3 &#8211; Desktop app]</span></strong></a></p>
@@ -120,28 +125,32 @@ In Edison Mail 1.7.1 <code dir="ltr" translate="no">setAllowUniversalAccessFromF
 </li>
 </ul>
 <div class="report-heading__social-share spec-social-share"></div>
-<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/">From XSS to RCE in Simplenote 1.1.3</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+<p>The post <a rel="nofollow" href="https://www.gubello.me/blog/from-xss-to-rce-in-simplenote/">From XSS to RCE in Simplenote 1.1.3</a> appeared first on <a rel="nofollow" href="http://www.gubello.me/blog/">Blog un po&#039; nerd</a>.</p>
 ]]></content:encoded>
-										</item>
+					
+		
+		
+			</item>
 		<item>
 		<title>Stored XSS in Microsoft Bing</title>
-		<link>https://luigigubello.github.io/blog/stored-xss-in-microsoft-bing/</link>
-				<pubDate>Sat, 21 Apr 2018 10:30:51 +0000</pubDate>
+		<link>https://www.gubello.me/blog/stored-xss-in-microsoft-bing/</link>
+		
 		<dc:creator><![CDATA[luigi]]></dc:creator>
+		<pubDate>Sat, 21 Apr 2018 10:30:51 +0000</pubDate>
 				<category><![CDATA[Bug Bounty]]></category>
 		<category><![CDATA[English]]></category>
 		<category><![CDATA[XSS]]></category>
-
 		<guid isPermaLink="false">https://www.gubello.me/blog/?p=365</guid>
-				<description><![CDATA[<p>After many unsuccessful attempts to find an XSS in Yahoo&#8217;s domains, I decided to move my attention to Microsoft Bing. If you have a Microsoft account, Bing allows you to save online content (images, videos and places) on the page &#8220;My saves&#8221;, and allows to create collections to better manage your own content. The titles <a href="https://luigigubello.github.io/blog/stored-xss-in-microsoft-bing/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Stored XSS in Microsoft Bing</span></a></p>
-<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/stored-xss-in-microsoft-bing/">Stored XSS in Microsoft Bing</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+
+					<description><![CDATA[<p>After many unsuccessful attempts to find an XSS in Yahoo&#8217;s domains, I decided to move my attention to Microsoft Bing. If you have a Microsoft account, Bing allows you to save online content (images, videos and places) on the page &#8220;My saves&#8221;, and allows to create collections to better manage your own content. The titles <a href="https://www.gubello.me/blog/stored-xss-in-microsoft-bing/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Stored XSS in Microsoft Bing</span></a></p>
+<p>The post <a rel="nofollow" href="https://www.gubello.me/blog/stored-xss-in-microsoft-bing/">Stored XSS in Microsoft Bing</a> appeared first on <a rel="nofollow" href="http://www.gubello.me/blog/">Blog un po&#039; nerd</a>.</p>
 ]]></description>
-								<content:encoded><![CDATA[<p>After many unsuccessful attempts to find an XSS in Yahoo&#8217;s domains, I decided to move my attention to Microsoft Bing.<br />
+										<content:encoded><![CDATA[<p>After many unsuccessful attempts to find an XSS in Yahoo&#8217;s domains, I decided to move my attention to Microsoft Bing.<br />
 If you have a Microsoft account, Bing allows you to save online content (images, videos and places) on the page <em>&#8220;My saves&#8221;</em>, and allows to create collections to better manage your own content.<br />
 The titles of these collections were not properly filtered, so it was possible to break the code and inject persistent arbitrary code.<br />
 The code could be injected easily, all it took was the wrong image added to <em>&#8220;My saves&#8221;</em>.<br />
 I was lucky with Bing, now I can go back to fail with Yahoo <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
-<figure id="attachment_367" aria-describedby="caption-attachment-367" style="width: 600px" class="wp-caption aligncenter"><a href="https://luigigubello.github.io/blog/wp-content/uploads/2018/04/stored_xss_bing.png"><img class="wp-image-367" src="https://luigigubello.github.io/blog/wp-content/uploads/2018/04/stored_xss_bing.png" alt="" width="600" height="326" srcset="https://luigigubello.github.io/blog/wp-content/uploads/2018/04/stored_xss_bing.png 1364w, https://luigigubello.github.io/blog/wp-content/uploads/2018/04/stored_xss_bing-300x163.png 300w, https://luigigubello.github.io/blog/wp-content/uploads/2018/04/stored_xss_bing-768x417.png 768w, https://luigigubello.github.io/blog/wp-content/uploads/2018/04/stored_xss_bing-1024x556.png 1024w, https://luigigubello.github.io/blog/wp-content/uploads/2018/04/stored_xss_bing-920x499.png 920w" sizes="(max-width: 600px) 100vw, 600px" /></a><figcaption id="caption-attachment-367" class="wp-caption-text">Stored XSS in Microsoft Bing</figcaption></figure>
+<figure id="attachment_367" aria-describedby="caption-attachment-367" style="width: 600px" class="wp-caption aligncenter"><a href="https://www.gubello.me/blog/wp-content/uploads/2018/04/stored_xss_bing.png"><img class="wp-image-367" src="https://www.gubello.me/blog/wp-content/uploads/2018/04/stored_xss_bing.png" alt="" width="600" height="326" srcset="https://www.gubello.me/blog/wp-content/uploads/2018/04/stored_xss_bing.png 1364w, https://www.gubello.me/blog/wp-content/uploads/2018/04/stored_xss_bing-300x163.png 300w, https://www.gubello.me/blog/wp-content/uploads/2018/04/stored_xss_bing-768x417.png 768w, https://www.gubello.me/blog/wp-content/uploads/2018/04/stored_xss_bing-1024x556.png 1024w, https://www.gubello.me/blog/wp-content/uploads/2018/04/stored_xss_bing-920x499.png 920w" sizes="(max-width: 600px) 100vw, 600px" /></a><figcaption id="caption-attachment-367" class="wp-caption-text">Stored XSS in Microsoft Bing</figcaption></figure>
 <h4 style="text-align: center;"><strong>ATTACK SCENARIO</strong></h4>
 <p>An attacker pastes on a site (for example a popular blog) the link of an image found on Bing. The GET parameter <strong>q</strong> has a malicious javascript code. Example:</p>
 <p><code>www.bing.com/images/search?view=detailV2&amp;ccid=ugtTKk%2bf&amp;id=77C601FDB8F3CAC089D09B4F80E5984B3D66972F&amp;thid=OIP.ugtTKk-ffUvl93ztAPX8mAHaD8&amp;<strong style="color: red;">q=malicious_javascript</strong>&amp;simid=608017275115016031&amp;selectedIndex=0&amp;ajaxhist=0</code></p>
@@ -152,23 +161,27 @@ I was lucky with Bing, now I can go back to fail with Yahoo <img src="https://s.
 <p><strong>16/04/2018</strong> – I send the report<br />
 <strong>19/04/2018</strong> – The vulnerability is fixed and I’m rewarded by having my name written in the Hall of Fame<br />
 <strong>21/04/2018</strong> – Public disclosure</p>
-<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/stored-xss-in-microsoft-bing/">Stored XSS in Microsoft Bing</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+<p>The post <a rel="nofollow" href="https://www.gubello.me/blog/stored-xss-in-microsoft-bing/">Stored XSS in Microsoft Bing</a> appeared first on <a rel="nofollow" href="http://www.gubello.me/blog/">Blog un po&#039; nerd</a>.</p>
 ]]></content:encoded>
-										</item>
+					
+		
+		
+			</item>
 		<item>
 		<title>Multiple stored XSS in AOL Mail</title>
-		<link>https://luigigubello.github.io/blog/multiple-stored-xss-in-aol-mail/</link>
-				<pubDate>Fri, 23 Mar 2018 18:05:32 +0000</pubDate>
+		<link>https://www.gubello.me/blog/multiple-stored-xss-in-aol-mail/</link>
+		
 		<dc:creator><![CDATA[luigi]]></dc:creator>
+		<pubDate>Fri, 23 Mar 2018 18:05:32 +0000</pubDate>
 				<category><![CDATA[Bug Bounty]]></category>
 		<category><![CDATA[English]]></category>
 		<category><![CDATA[XSS]]></category>
-
 		<guid isPermaLink="false">https://www.gubello.me/blog/?p=204</guid>
-				<description><![CDATA[<p>In November, I reported various persistent XSS vulnerabilities in AOL Mail to the AOL Security Team. They replied quickly and fixed the vulnerabilities in less than 90 days. 1. Using an unclosed tag, it was possible to inject arbitrary javascript code. The payload ran as soon as the victim opened the site mail.aol.com because the code <a href="https://luigigubello.github.io/blog/multiple-stored-xss-in-aol-mail/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Multiple stored XSS in AOL Mail</span></a></p>
-<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/multiple-stored-xss-in-aol-mail/">Multiple stored XSS in AOL Mail</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+
+					<description><![CDATA[<p>In November, I reported various persistent XSS vulnerabilities in AOL Mail to the AOL Security Team. They replied quickly and fixed the vulnerabilities in less than 90 days. 1. Using an unclosed tag, it was possible to inject arbitrary javascript code. The payload ran as soon as the victim opened the site mail.aol.com because the code <a href="https://www.gubello.me/blog/multiple-stored-xss-in-aol-mail/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Multiple stored XSS in AOL Mail</span></a></p>
+<p>The post <a rel="nofollow" href="https://www.gubello.me/blog/multiple-stored-xss-in-aol-mail/">Multiple stored XSS in AOL Mail</a> appeared first on <a rel="nofollow" href="http://www.gubello.me/blog/">Blog un po&#039; nerd</a>.</p>
 ]]></description>
-								<content:encoded><![CDATA[<p>In November, I reported various persistent XSS vulnerabilities in <strong>AOL Mail</strong> to the AOL Security Team. They replied quickly and fixed the vulnerabilities in less than 90 days.</p>
+										<content:encoded><![CDATA[<p>In November, I reported various persistent XSS vulnerabilities in <strong>AOL Mail</strong> to the AOL Security Team. They replied quickly and fixed the vulnerabilities in less than 90 days.</p>
 <h4 style="text-align: center;"><strong>1.</strong></h4>
 <p>Using an unclosed tag, it was possible to inject arbitrary javascript code. The payload ran as soon as the victim opened the site <strong>mail.aol.com</strong> because the code was in the e-mail preview.</p>
 <p><center><iframe src="https://www.youtube-nocookie.com/embed/o2_6lSht9L4?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center><br />
@@ -185,39 +198,46 @@ I was lucky with Bing, now I can go back to fail with Yahoo <img src="https://s.
 <strong>23/03/2018</strong> &#8211; Public disclosure</p>
 <h4 style="text-align: center;"><strong>3.</strong></h4>
 <p>In the mail contacts it was no longer possible to inject any code, but if a text field of the vCard contained javascript code and the victim clicked on the Printer icon then the payload still ran. This vulnerability was less severe than the first, but I reported it to the security team anyway.</p>
-<figure id="attachment_289" aria-describedby="caption-attachment-289" style="width: 600px" class="wp-caption aligncenter"><a href="https://luigigubello.github.io/blog/wp-content/uploads/2018/03/aol_stored_xss_print.png"><img class="wp-image-289" src="https://luigigubello.github.io/blog/wp-content/uploads/2018/03/aol_stored_xss_print.png" alt="Blind stored XSS in AOL Mail via vCard import" width="600" height="325" srcset="https://luigigubello.github.io/blog/wp-content/uploads/2018/03/aol_stored_xss_print.png 1366w, https://luigigubello.github.io/blog/wp-content/uploads/2018/03/aol_stored_xss_print-300x163.png 300w, https://luigigubello.github.io/blog/wp-content/uploads/2018/03/aol_stored_xss_print-768x416.png 768w, https://luigigubello.github.io/blog/wp-content/uploads/2018/03/aol_stored_xss_print-1024x555.png 1024w, https://luigigubello.github.io/blog/wp-content/uploads/2018/03/aol_stored_xss_print-920x498.png 920w" sizes="(max-width: 600px) 100vw, 600px" /></a><figcaption id="caption-attachment-289" class="wp-caption-text">Blind stored XSS in AOL Mail via vCard import</figcaption></figure>
+<figure id="attachment_289" aria-describedby="caption-attachment-289" style="width: 600px" class="wp-caption aligncenter"><a href="https://www.gubello.me/blog/wp-content/uploads/2018/03/aol_stored_xss_print.png"><img class="wp-image-289" src="https://www.gubello.me/blog/wp-content/uploads/2018/03/aol_stored_xss_print.png" alt="Blind stored XSS in AOL Mail via vCard import" width="600" height="325" srcset="https://www.gubello.me/blog/wp-content/uploads/2018/03/aol_stored_xss_print.png 1366w, https://www.gubello.me/blog/wp-content/uploads/2018/03/aol_stored_xss_print-300x163.png 300w, https://www.gubello.me/blog/wp-content/uploads/2018/03/aol_stored_xss_print-768x416.png 768w, https://www.gubello.me/blog/wp-content/uploads/2018/03/aol_stored_xss_print-1024x555.png 1024w, https://www.gubello.me/blog/wp-content/uploads/2018/03/aol_stored_xss_print-920x498.png 920w" sizes="(max-width: 600px) 100vw, 600px" /></a><figcaption id="caption-attachment-289" class="wp-caption-text">Blind stored XSS in AOL Mail via vCard import</figcaption></figure>
 <p><strong>18/12/2017</strong> &#8211; I send the report<br />
 <strong>21/02/2018</strong> &#8211; The vulnerability is fixed<br />
 <strong>23/03/2018</strong> &#8211; Public disclosure</p>
 <p><em>That&#8217;s all folks!</em></p>
-<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/multiple-stored-xss-in-aol-mail/">Multiple stored XSS in AOL Mail</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+<p>The post <a rel="nofollow" href="https://www.gubello.me/blog/multiple-stored-xss-in-aol-mail/">Multiple stored XSS in AOL Mail</a> appeared first on <a rel="nofollow" href="http://www.gubello.me/blog/">Blog un po&#039; nerd</a>.</p>
 ]]></content:encoded>
-										</item>
+					
+		
+		
+			</item>
 		<item>
 		<title>Stored XSS via cloud attachment</title>
-		<link>https://luigigubello.github.io/blog/stored-xss-via-cloud-attachment/</link>
-				<pubDate>Sat, 20 Jan 2018 17:16:52 +0000</pubDate>
+		<link>https://www.gubello.me/blog/stored-xss-via-cloud-attachment/</link>
+		
 		<dc:creator><![CDATA[luigi]]></dc:creator>
+		<pubDate>Sat, 20 Jan 2018 17:16:52 +0000</pubDate>
 				<category><![CDATA[Bug Bounty]]></category>
 		<category><![CDATA[English]]></category>
 		<category><![CDATA[XSS]]></category>
-
 		<guid isPermaLink="false">https://www.gubello.me/blog/?p=144</guid>
-				<description><![CDATA[<p>ZOHO Mail is a business mail that includes integrated calendar, contacts, notes, and tasks apps. Initially I was looking for a stored XSS in the webmail, but I did not find it so I started checking the other services. I wondered if it was possible to inject malicious code via attachments in ZOHO Notes. By <a href="https://luigigubello.github.io/blog/stored-xss-via-cloud-attachment/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Stored XSS via cloud attachment</span></a></p>
-<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/stored-xss-via-cloud-attachment/">Stored XSS via cloud attachment</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+
+					<description><![CDATA[<p>ZOHO Mail is a business mail that includes integrated calendar, contacts, notes, and tasks apps. Initially I was looking for a stored XSS in the webmail, but I did not find it so I started checking the other services. I wondered if it was possible to inject malicious code via attachments in ZOHO Notes. By <a href="https://www.gubello.me/blog/stored-xss-via-cloud-attachment/" class="more-link">&#8230; <span class="screen-reader-text">Continue reading Stored XSS via cloud attachment</span></a></p>
+<p>The post <a rel="nofollow" href="https://www.gubello.me/blog/stored-xss-via-cloud-attachment/">Stored XSS via cloud attachment</a> appeared first on <a rel="nofollow" href="http://www.gubello.me/blog/">Blog un po&#039; nerd</a>.</p>
 ]]></description>
-								<content:encoded><![CDATA[<p><strong>ZOHO Mail</strong> is a business mail that includes integrated calendar, contacts, notes, and tasks apps. Initially I was looking for a stored XSS in the webmail, but I did not find it so I started checking the other services. I wondered if it was possible to inject malicious code via attachments in ZOHO Notes. By attaching a local file it wasn&#8217;t, but in ZOHO Notes you can attach files from some cloud services: <strong>Google Drive</strong>, <strong>Dropbox</strong>, <strong>Box</strong> and <strong>Evernote</strong>. The XSS filters and protections worked well for the first three services, but not for Evernote. To my surprise it was possible to run javascript code in <strong>gadgets.zoho.eu</strong> via Evernote attachments.</p>
-<figure id="attachment_151" aria-describedby="caption-attachment-151" style="width: 600px" class="wp-caption aligncenter"><a href="https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_notebook.png"><img class="wp-image-151" src="https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_notebook.png" alt="Stored XSS in gadgets.zoho.eu popup box" width="600" height="325" srcset="https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_notebook.png 1366w, https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_notebook-300x163.png 300w, https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_notebook-768x416.png 768w, https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_notebook-1024x555.png 1024w, https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_notebook-920x498.png 920w" sizes="(max-width: 600px) 100vw, 600px" /></a><figcaption id="caption-attachment-151" class="wp-caption-text">Stored XSS in gadgets.zoho.eu</figcaption></figure>
+										<content:encoded><![CDATA[<p><strong>ZOHO Mail</strong> is a business mail that includes integrated calendar, contacts, notes, and tasks apps. Initially I was looking for a stored XSS in the webmail, but I did not find it so I started checking the other services. I wondered if it was possible to inject malicious code via attachments in ZOHO Notes. By attaching a local file it wasn&#8217;t, but in ZOHO Notes you can attach files from some cloud services: <strong>Google Drive</strong>, <strong>Dropbox</strong>, <strong>Box</strong> and <strong>Evernote</strong>. The XSS filters and protections worked well for the first three services, but not for Evernote. To my surprise it was possible to run javascript code in <strong>gadgets.zoho.eu</strong> via Evernote attachments.</p>
+<figure id="attachment_151" aria-describedby="caption-attachment-151" style="width: 600px" class="wp-caption aligncenter"><a href="https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_notebook.png"><img class="wp-image-151" src="https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_notebook.png" alt="Stored XSS in gadgets.zoho.eu popup box" width="600" height="325" srcset="https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_notebook.png 1366w, https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_notebook-300x163.png 300w, https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_notebook-768x416.png 768w, https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_notebook-1024x555.png 1024w, https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_notebook-920x498.png 920w" sizes="(max-width: 600px) 100vw, 600px" /></a><figcaption id="caption-attachment-151" class="wp-caption-text">Stored XSS in gadgets.zoho.eu</figcaption></figure>
 <p>There were two problems: the notebook title and the note title. By injecting the code in notebook title or note title, it ran into gadgets.zoho.eu. The first problem was quite serious, because the code ran as soon as the user opened Evernote via ZOHO and the payload was not visible. The second problem was similar, but the code ran when the victim clicked on the note-payload, and the payload was clear in the note title.</p>
-<figure style="width: 600px" class="wp-caption aligncenter"><a href="https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_note.png"><img class="wp-image-156" src="https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_note.png" alt="XSS ZOHO popup box" width="600" height="325" srcset="https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_note.png 1366w, https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_note-300x163.png 300w, https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_note-768x416.png 768w, https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_note-1024x555.png 1024w, https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_alert_note-920x498.png 920w" sizes="(max-width: 600px) 100vw, 600px" /></a><figcaption class="wp-caption-text">Stored XSS in gadgets.zoho.eu via note title</figcaption></figure>
-<figure id="attachment_155" aria-describedby="caption-attachment-155" style="width: 600px" class="wp-caption aligncenter"><a href="https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_source_note.png"><img class="wp-image-155" src="https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_source_note.png" alt="XSS ZOHO source code" width="600" height="325" srcset="https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_source_note.png 1366w, https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_source_note-300x163.png 300w, https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_source_note-768x416.png 768w, https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_source_note-1024x555.png 1024w, https://luigigubello.github.io/blog/wp-content/uploads/2018/01/zoho_source_note-920x498.png 920w" sizes="(max-width: 600px) 100vw, 600px" /></a><figcaption id="caption-attachment-155" class="wp-caption-text">XSS payload in the source code of *.zoho.eu</figcaption></figure>
+<figure style="width: 600px" class="wp-caption aligncenter"><a href="https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_note.png"><img class="wp-image-156" src="https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_note.png" alt="XSS ZOHO popup box" width="600" height="325" srcset="https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_note.png 1366w, https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_note-300x163.png 300w, https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_note-768x416.png 768w, https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_note-1024x555.png 1024w, https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_alert_note-920x498.png 920w" sizes="(max-width: 600px) 100vw, 600px" /></a><figcaption class="wp-caption-text">Stored XSS in gadgets.zoho.eu via note title</figcaption></figure>
+<figure id="attachment_155" aria-describedby="caption-attachment-155" style="width: 600px" class="wp-caption aligncenter"><a href="https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_source_note.png"><img class="wp-image-155" src="https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_source_note.png" alt="XSS ZOHO source code" width="600" height="325" srcset="https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_source_note.png 1366w, https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_source_note-300x163.png 300w, https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_source_note-768x416.png 768w, https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_source_note-1024x555.png 1024w, https://www.gubello.me/blog/wp-content/uploads/2018/01/zoho_source_note-920x498.png 920w" sizes="(max-width: 600px) 100vw, 600px" /></a><figcaption id="caption-attachment-155" class="wp-caption-text">XSS payload in the source code of *.zoho.eu</figcaption></figure>
 <p>I reported the bug via <strong>ZOHO Bug Bounty</strong>. The support was quick to answer me and fix the vulnerability, they asked me a question: <strong>is it a self XSS?</strong></p>
 <p><strong>No</strong>. It may look like a self XSS because the victim logs into their own Evernote account, therefore it may seem that only they can type some code into their own Evernote account. Evernote was born to share easy notes and collaborate with other users, so in a shared job another user with sufficient privileges can change the title of a notebook or the title of a note and inject malicious code. If the payload was in the notebook title, it was not visible and the code ran as soon as Evernote was opened via ZOHO Notes.</p>
 <p><strong>18/12/2017</strong> &#8211; I send the report<br />
 <strong>27/12/2017</strong> &#8211; The vulnerability is fixed and the bug bounty rewards are 100$ and my name in the <a href="https://bugbounty.zoho.com/bb/info#hof">Hall of Fame</a><br />
 <strong>20/01/2018</strong> &#8211; Public disclosure</p>
-<p>The post <a rel="nofollow" href="https://luigigubello.github.io/blog/stored-xss-via-cloud-attachment/">Stored XSS via cloud attachment</a> appeared first on <a rel="nofollow" href="http://luigigubello.github.io/blog/">Blog un po&#039; nerd</a>.</p>
+<p>The post <a rel="nofollow" href="https://www.gubello.me/blog/stored-xss-via-cloud-attachment/">Stored XSS via cloud attachment</a> appeared first on <a rel="nofollow" href="http://www.gubello.me/blog/">Blog un po&#039; nerd</a>.</p>
 ]]></content:encoded>
-										</item>
+					
+		
+		
+			</item>
 	</channel>
 </rss>

@@ -1,62 +1,61 @@
 <!DOCTYPE html>
-<html lang="en-US" class="no-js"><head itemscope="itemscope" itemtype="http://schema.org/WebSite"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script><title>From XSS to RCE in Simplenote 1.1.3 - Blog un po' nerd</title><meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="From XSS to RCE in Simplenote 1.1.3 - Blog un po' nerd"><meta property="og:description" content="SUMMARY In Simplenote 1.1.3 – Desktop app there is a stored XSS vulnerability that can be used to execute arbitrary code. If there is malicious code in the note and the user tries to print it (for example to save it as a PDF), the malicious code runs. #358049 – RCE via Print function [Simplenote 1.1.3 – Desktop … Continue reading From XSS to RCE in Simplenote 1.1.3"><meta property="og:url" content="https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/"><meta property="og:site_name" content="Blog un po' nerd"><meta property="article:section" content="XSS"><meta property="article:published_time" content="2018-07-29T16:20:59+00:00"><meta property="article:modified_time" content="2018-08-24T15:09:46+00:00"><meta property="og:updated_time" content="2018-08-24T15:09:46+00:00"><meta property="og:image" content="https://luigigubello.github.io/blog/wp-content/uploads/2017/12/banner_social.png"><meta property="og:image:width" content="700"><meta property="og:image:height" content="235"><meta name="twitter:card" content="summary"><meta name="twitter:description" content="SUMMARY In Simplenote 1.1.3 – Desktop app there is a stored XSS vulnerability that can be used to execute arbitrary code. If there is malicious code in the note and the user tries to print it (for example to save it as a PDF), the malicious code runs. #358049 – RCE via Print function [Simplenote 1.1.3 – Desktop … Continue reading From XSS to RCE in Simplenote 1.1.3"><meta name="twitter:title" content="From XSS to RCE in Simplenote 1.1.3 - Blog un po' nerd"><meta name="twitter:image" content="https://www.gubello.me/blog/wp-content/uploads/2017/12/banner_social.png"><script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "WebSite",
-            "@id": "https://luigigubello.github.io/blog/#website",
-            "url": "https://luigigubello.github.io/blog/",
-            "name": "Blog un po' nerd",
-            "inLanguage": "en-US",
-            "description": "Nerd is the new Hipster",
-            "potentialAction": [
-                {
-                    "@type": "SearchAction",
-                    "target": "https://luigigubello.github.io/blog/?s={search_term_string}",
-                    "query-input": "required name=search_term_string"
-                }
-            ]
-        },
-        {
-            "@type": "WebPage",
-            "@id": "https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/#webpage",
-            "url": "https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/",
-            "name": "From XSS to RCE in Simplenote 1.1.3 - Blog un po' nerd",
-            "isPartOf": {
-                "@id": "https://luigigubello.github.io/blog/#website"
-            },
-            "inLanguage": "en-US",
-            "datePublished": "2018-07-29T16:20:59+00:00",
-            "dateModified": "2018-08-24T15:09:46+00:00",
-            "author": {
-                "@id": "https://luigigubello.github.io/blog/#/schema/person/3e0819226c43d8f09f15276ee0bf80b3"
-            },
-            "potentialAction": [
-                {
-                    "@type": "ReadAction",
-                    "target": [
-                        "https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/"
-                    ]
-                }
-            ]
-        },
-        {
-            "@type": [
-                "Person"
-            ],
-            "@id": "https://luigigubello.github.io/blog/#/schema/person/3e0819226c43d8f09f15276ee0bf80b3",
-            "name": "luigi",
-            "image": {
-                "@type": "ImageObject",
-                "@id": "https://luigigubello.github.io/blog/#authorlogo",
-                "inLanguage": "en-US",
-                "url": "http://0.gravatar.com/avatar/3cd96ff9c34c26a52f9873f52c72b268?s=96&d=mm&r=g",
-                "caption": "luigi"
-            },
-            "sameAs": []
-        }
-    ]
-}</script><link rel="dns-prefetch" href="//localhost"><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="wp-block-library-css" href="https://luigigubello.github.io/blog/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="munsa-lite-fonts-css" href="https://fonts.googleapis.com/css?family=Merriweather%3A300%2C400%2C700%2C900%2C300italic%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700&subset=latin%2Clatin-ext" type="text/css" media="all"><link rel="stylesheet" id="genericons-css" href="https://luigigubello.github.io/blog/wp-content/themes/munsa-lite/fonts/genericons/genericons.css" type="text/css" media="all"><link rel="stylesheet" id="munsa-lite-style-css" href="https://luigigubello.github.io/blog/wp-content/themes/munsa-lite/style.css" type="text/css" media="all"><link rel="stylesheet" id="wp-social-sharing-css" href="https://luigigubello.github.io/blog/wp-content/plugins/wp-social-sharing/static/socialshare.css" type="text/css" media="all"><script type="text/javascript" src="https://luigigubello.github.io/blog/wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="https://luigigubello.github.io/blog/wp-includes/js/jquery/jquery-migrate.min.js"></script><style type="text/css" id="custom-header-css">.site-title, .site-title a, .site-description, .site-description a { color: #000000 }</style><link rel="icon" href="https://luigigubello.github.io/blog/wp-content/uploads/2017/12/cropped-favicon-1-32x32.jpg" sizes="32x32"><link rel="icon" href="https://luigigubello.github.io/blog/wp-content/uploads/2017/12/cropped-favicon-1-192x192.jpg" sizes="192x192"><link rel="apple-touch-icon-precomposed" href="https://luigigubello.github.io/blog/wp-content/uploads/2017/12/cropped-favicon-1-180x180.jpg"><meta name="msapplication-TileImage" content="https://luigigubello.github.io/blog/wp-content/uploads/2017/12/cropped-favicon-1-270x270.jpg"><style type="text/css" id="wp-custom-css">
+<html lang="en-US" class="no-js"><head itemscope="itemscope" itemtype="http://schema.org/WebSite"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script><title>From XSS to RCE in Simplenote 1.1.3 - Blog un po' nerd</title><meta name="robots" content="index, follow"><meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="From XSS to RCE in Simplenote 1.1.3 - Blog un po' nerd"><meta property="og:description" content="SUMMARY In Simplenote 1.1.3 – Desktop app there is a stored XSS vulnerability that can be used to execute arbitrary code. If there is malicious code in the note and the user tries to print it (for example to save it as a PDF), the malicious code runs. #358049 – RCE via Print function [Simplenote 1.1.3 – Desktop … Continue reading From XSS to RCE in Simplenote 1.1.3"><meta property="og:url" content="https://www.gubello.me/blog/from-xss-to-rce-in-simplenote/"><meta property="og:site_name" content="Blog un po' nerd"><meta property="article:published_time" content="2018-07-29T16:20:59+00:00"><meta property="article:modified_time" content="2018-08-24T15:09:46+00:00"><meta property="og:image" content="https://www.gubello.me/blog/wp-content/uploads/2017/12/banner_social.png"><meta property="og:image:width" content="700"><meta property="og:image:height" content="235"><meta name="twitter:card" content="summary"><script type="application/ld+json" class="yoast-schema-graph">{
+	    "@context": "https://schema.org",
+	    "@graph": [
+	        {
+	            "@type": "WebSite",
+	            "@id": "https://www.gubello.me/blog/#website",
+	            "url": "https://www.gubello.me/blog/",
+	            "name": "Blog un po' nerd",
+	            "description": "Nerd is the new Hipster",
+	            "potentialAction": [
+	                {
+	                    "@type": "SearchAction",
+	                    "target": "https://www.gubello.me/blog/?s={search_term_string}",
+	                    "query-input": "required name=search_term_string"
+	                }
+	            ],
+	            "inLanguage": "en-US"
+	        },
+	        {
+	            "@type": "WebPage",
+	            "@id": "https://www.gubello.me/blog/from-xss-to-rce-in-simplenote/#webpage",
+	            "url": "https://www.gubello.me/blog/from-xss-to-rce-in-simplenote/",
+	            "name": "From XSS to RCE in Simplenote 1.1.3 - Blog un po' nerd",
+	            "isPartOf": {
+	                "@id": "https://www.gubello.me/blog/#website"
+	            },
+	            "datePublished": "2018-07-29T16:20:59+00:00",
+	            "dateModified": "2018-08-24T15:09:46+00:00",
+	            "author": {
+	                "@id": "https://www.gubello.me/blog/#/schema/person/3e0819226c43d8f09f15276ee0bf80b3"
+	            },
+	            "inLanguage": "en-US",
+	            "potentialAction": [
+	                {
+	                    "@type": "ReadAction",
+	                    "target": [
+	                        "https://www.gubello.me/blog/from-xss-to-rce-in-simplenote/"
+	                    ]
+	                }
+	            ]
+	        },
+	        {
+	            "@type": [
+	                "Person"
+	            ],
+	            "@id": "https://www.gubello.me/blog/#/schema/person/3e0819226c43d8f09f15276ee0bf80b3",
+	            "name": "luigi",
+	            "image": {
+	                "@type": "ImageObject",
+	                "@id": "https://www.gubello.me/blog/#personlogo",
+	                "inLanguage": "en-US",
+	                "url": "http://0.gravatar.com/avatar/3cd96ff9c34c26a52f9873f52c72b268?s=96&d=mm&r=g",
+	                "caption": "luigi"
+	            }
+	        }
+	    ]
+	}</script><link rel="dns-prefetch" href="//localhost"><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="wp-block-library-css" href="https://www.gubello.me/blog/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="munsa-lite-fonts-css" href="https://fonts.googleapis.com/css?family=Merriweather%3A300%2C400%2C700%2C900%2C300italic%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700&subset=latin%2Clatin-ext" type="text/css" media="all"><link rel="stylesheet" id="genericons-css" href="https://www.gubello.me/blog/wp-content/themes/munsa-lite/fonts/genericons/genericons.css" type="text/css" media="all"><link rel="stylesheet" id="munsa-lite-style-css" href="https://www.gubello.me/blog/wp-content/themes/munsa-lite/style.css" type="text/css" media="all"><script type="text/javascript" src="https://www.gubello.me/blog/wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="https://www.gubello.me/blog/wp-includes/js/jquery/jquery-migrate.min.js"></script><style type="text/css" id="custom-header-css">.site-title, .site-title a, .site-description, .site-description a { color: #000000 }</style><link rel="icon" href="https://www.gubello.me/blog/wp-content/uploads/2017/12/cropped-favicon-1-32x32.jpg" sizes="32x32"><link rel="icon" href="https://www.gubello.me/blog/wp-content/uploads/2017/12/cropped-favicon-1-192x192.jpg" sizes="192x192"><link rel="apple-touch-icon" href="https://www.gubello.me/blog/wp-content/uploads/2017/12/cropped-favicon-1-180x180.jpg"><meta name="msapplication-TileImage" content="https://www.gubello.me/blog/wp-content/uploads/2017/12/cropped-favicon-1-270x270.jpg"><style type="text/css" id="wp-custom-css">
 			/* Remove post summary from home page */
 
 .home .entry-summary { display: none; }
@@ -85,8 +84,8 @@
 		<header id="masthead" class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader"><div class="site-branding">
 			
 							
-				<a href="https://luigigubello.github.io/blog/" class="custom-logo-link" rel="home"><img width="192" height="192" src="https://luigigubello.github.io/blog/wp-content/uploads/2017/12/cropped-favicon-2.jpg" class="custom-logo" alt="Blog un po' nerd" srcset="https://luigigubello.github.io/blog/wp-content/uploads/2017/12/cropped-favicon-2.jpg 192w,https://luigigubello.github.io/blog/wp-content/uploads/2017/12/cropped-favicon-2-150x150.jpg 150w,https://luigigubello.github.io/blog/wp-content/uploads/2017/12/cropped-favicon-2-125x125.jpg 125w" sizes="(max-width: 192px) 100vw, 192px"></a>			
-									<p class="site-title" itemprop="headline"><a href="https://luigigubello.github.io/blog/" rel="home">Blog un po' nerd</a></p>
+				<a href="https://www.gubello.me/blog/" class="custom-logo-link" rel="home"><img width="192" height="192" src="https://www.gubello.me/blog/wp-content/uploads/2017/12/cropped-favicon-2.jpg" class="custom-logo" alt="Blog un po' nerd" srcset="https://www.gubello.me/blog/wp-content/uploads/2017/12/cropped-favicon-2.jpg 192w,https://www.gubello.me/blog/wp-content/uploads/2017/12/cropped-favicon-2-150x150.jpg 150w,https://www.gubello.me/blog/wp-content/uploads/2017/12/cropped-favicon-2-125x125.jpg 125w" sizes="(max-width: 192px) 100vw, 192px"></a>			
+									<p class="site-title" itemprop="headline"><a href="https://www.gubello.me/blog/" rel="home">Blog un po' nerd</a></p>
 								
 				<p class="site-description" itemprop="description">Nerd is the new Hipster</p>
 			
@@ -99,8 +98,8 @@
 
 			<div class="wrap animated">
 			
-				<div class="primary-menu-container"><ul id="primary-menu" class="menu"><li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-24"><a href="https://luigigubello.github.io/blog">Blog</a></li>
-<li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="https://luigigubello.github.io/blog/about/">About</a></li>
+				<div class="primary-menu-container"><ul id="primary-menu" class="menu"><li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-24"><a href="https://www.gubello.me/blog">Blog</a></li>
+<li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="https://www.gubello.me/blog/about/">About</a></li>
 </ul></div>		
 			</div>
 
@@ -109,7 +108,7 @@
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main" role="main"><article id="post-438" class="post-438 post type-post status-publish format-standard category-bug-bounty category-english category-xss entry" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost"><header class="entry-header"><h1 class="entry-title" itemprop="headline">From XSS to RCE in Simplenote 1.1.3</h1>			
 	<div class="entry-meta">
-		<span class="entry-date"><span class="screen-reader-text">Posted on </span><a href="https://luigigubello.github.io/blog/from-xss-to-rce-in-simplenote/" rel="bookmark"><time class="entry-date" datetime="2018-07-29T18:20:59+02:00" itemprop="datePublished">29 July 2018</time></a></span><span class="byline"><span class="entry-author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="screen-reader-text">Author </span><a class="entry-author-link" href="https://luigigubello.github.io/blog/author/luigi/" rel="author" itemprop="url"><span itemprop="name">luigi</span></a></span></span>			</div>
+		<span class="entry-date"><span class="screen-reader-text">Posted on </span><a href="https://www.gubello.me/blog/from-xss-to-rce-in-simplenote/" rel="bookmark"><time class="entry-date" datetime="2018-07-29T18:20:59+02:00" itemprop="datePublished">29 July 2018</time></a></span><span class="byline"><span class="entry-author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="screen-reader-text">Author </span><a class="entry-author-link" href="https://www.gubello.me/blog/author/luigi/" rel="author" itemprop="url"><span itemprop="name">luigi</span></a></span></span>			</div>
 		</header><div class="entry-content" itemprop="articleBody">
 			
 			<h4 style="text-align: center;">SUMMARY</h4>
@@ -122,16 +121,14 @@
 <p id="only-an-electron-away-from-code-execution"><a href="https://silviavali.github.io/Electron/only_an_electron_away_from_code_execution">Only an Electron Away from Code Execution</a></p>
 </li>
 </ul><div class="report-heading__social-share spec-social-share"></div>
-		<div class="social-sharing ss-social-sharing">
-				        <a onclick="return ss_plugin_loadpopup_js(this);" rel="external nofollow" class="ss-button-facebook" href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%2Fblog%2Ffrom-xss-to-rce-in-simplenote%2F" target="_blank">Share on Facebook</a><a onclick="return ss_plugin_loadpopup_js(this);" rel="external nofollow" class="ss-button-twitter" href="http://twitter.com/intent/tweet/?text=From+XSS+to+RCE+in+Simplenote+1.1.3&url=http%3A%2F%2Flocalhost%2Fblog%2Ffrom-xss-to-rce-in-simplenote%2F" target="_blank">Share on Twitter</a><a onclick="return ss_plugin_loadpopup_js(this);" rel="external nofollow" class="ss-button-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%2Fblog%2Ffrom-xss-to-rce-in-simplenote%2F&title=From+XSS+to+RCE+in+Simplenote+1.1.3" target="_blank">Share on Linkedin</a>	        	    </div>
-	    
+
 						
 		</div>
 		
 		<footer class="entry-footer"><div class="footer-wrap">
-								<div class="entry-categories"><span class="terms-title categories-title">Categories</span><span class="entry-terms category" itemprop="articleSection">#<a href="https://luigigubello.github.io/blog/category/bug-bounty/" rel="tag">Bug Bounty</a> #<a href="https://luigigubello.github.io/blog/category/english/" rel="tag">English</a> #<a href="https://luigigubello.github.io/blog/category/xss/" rel="tag">XSS</a></span></div>							</div>
+								<div class="entry-categories"><span class="terms-title categories-title">Categories</span><span class="entry-terms category" itemprop="articleSection">#<a href="https://www.gubello.me/blog/category/bug-bounty/" rel="tag">Bug Bounty</a> #<a href="https://www.gubello.me/blog/category/english/" rel="tag">English</a> #<a href="https://www.gubello.me/blog/category/xss/" rel="tag">XSS</a></span></div>							</div>
 		</footer></article><nav class="navigation post-navigation" role="navigation" aria-label="Posts"><h2 class="screen-reader-text">Post navigation</h2>
-		<div class="nav-links"><div class="nav-previous"><a href="https://luigigubello.github.io/blog/quali-utenti-usano-bandiera-ita-nel-nickname-di-twitter/" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">Quali utenti usano 🇮🇹 nel nickname di Twitter?</span></a></div><div class="nav-next"><a href="https://luigigubello.github.io/blog/italian-hacker-camp-2018/" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">Italian Hacker Camp 2018</span></a></div></div>
+		<div class="nav-links"><div class="nav-previous"><a href="https://www.gubello.me/blog/quali-utenti-usano-bandiera-ita-nel-nickname-di-twitter/" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">Quali utenti usano 🇮🇹 nel nickname di Twitter?</span></a></div><div class="nav-next"><a href="https://www.gubello.me/blog/italian-hacker-camp-2018/" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">Italian Hacker Camp 2018</span></a></div></div>
 	</nav></main></div>
 		
 		</div>
@@ -152,8 +149,8 @@
 	
 </div>
 
-<script type="text/javascript" src="https://luigigubello.github.io/blog/wp-content/themes/munsa-lite/js/smooth-scroll.min.js"></script><script type="text/javascript">
+<script type="text/javascript" src="https://www.gubello.me/blog/wp-content/themes/munsa-lite/js/smooth-scroll.min.js"></script><script type="text/javascript">
 /* <![CDATA[ */
 var MunsaLiteScreenReaderText = {"expandMenu":"Menu","collapseMenu":"Close","expandSidebar":"Info","collapseSidebar":"Close"};
 /* ]]> */
-</script><script type="text/javascript" src="https://luigigubello.github.io/blog/wp-content/themes/munsa-lite/js/settings.min.js"></script><script type="text/javascript" src="https://luigigubello.github.io/blog/wp-content/themes/munsa-lite/js/skip-link-focus-fix.min.js"></script><script type="text/javascript" src="https://luigigubello.github.io/blog/wp-content/plugins/wp-social-sharing/static/socialshare.js"></script></body></html>
+</script><script type="text/javascript" src="https://www.gubello.me/blog/wp-content/themes/munsa-lite/js/settings.min.js"></script><script type="text/javascript" src="https://www.gubello.me/blog/wp-content/themes/munsa-lite/js/skip-link-focus-fix.min.js"></script></body></html>
