@@ -1,4 +1,5 @@
 baseURL = 'http://gubello.me/'
+title = "Blog un po' nerd"
 paginate = 5
 theme = "PaperMod"
 enableRobotsTXT = true
@@ -18,7 +19,7 @@ description = "Nerd is the new Hipster"
 keywords = [ "Blog" ]
 author = "Luigi Gubello"
 DateFormat = "January 2, 2006"
-defaultTheme = "dark"
+defaultTheme = "auto"
 disableThemeToggle = false
 ShowReadingTime = true
 ShowShareButtons = true
