@@ -1,0 +1,124 @@
+baseURL = 'http://gubello.me/'
+paginate = 5
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+pygmentsUseClasses = true
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "Blog un po' nerd"
+description = "Nerd is the new Hipster"
+keywords = [ "Blog" ]
+author = "Luigi Gubello"
+DateFormat = "January 2, 2006"
+defaultTheme = "dark"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+
+  [params.assets]
+  favicon = "/images/2023/08/favicon.png"
+  favicon16x16 = "/images/2023/08/favicon.png"
+  favicon32x32 = "/images/2023/08/favicon.png"
+  apple_touch_icon = "/images/2023/08/favicon.png"
+  safari_pinned_tab = "/images/2023/08/favicon.png"
+
+  [params.label]
+  text = "Home"
+  icon = "/apple-touch-icon.png"
+  iconHeight = 35
+
+  [params.profileMode]
+  enabled = true
+  title = "Blog un po' nerd"
+  imageUrl = "/images/2023/08/favicon.png"
+  imageWidth = 120
+  imageHeight = 120
+  imageTitle = "Milhouse"
+
+    [[params.profileMode.buttons]]
+    name = "Blog"
+    url = "/blog/"
+
+  [params.homeInfoParams]
+  Title = "Hi there 👋"
+  Content = "Welcome to my blog"
+
+  [[params.socialIcons]]
+  name = "mastodon"
+  url = "https://mastodon.social/@evaristegal0is"
+
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/evaristegal0is"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/luigigubello"
+
+  [[params.socialIcons]]
+  name = "hackerone"
+  url = "https://hackerone.com/luigigubello"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/luigigubello"
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:luigi.gubello@protonmail.com"
+
+  [params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = [ "title", "permalink", "summary", "content" ]
+
+[[menu.main]]
+identifier = "privacy-policy"
+name = "Privacy"
+url = "/privacy-policy/"
+weight = 5
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/blog/"
+weight = 10
+
+[[menu.main]]
+identifier = "Gubello.me"
+name = "Home"
+url = "https://gubello.me/"
+weight = 30
+
+[markup.highlight]
+noClasses = false
