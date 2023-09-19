@@ -8,7 +8,7 @@ categories:
   - GitHub
   - Italian
   - Other
-draft: true
+
 ---
 Qualche giorno fa il giornalista de Il Post Emanuele Menietti ha tweetato questo:
 

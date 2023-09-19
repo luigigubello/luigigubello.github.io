@@ -7,7 +7,7 @@ url: /blog/html-injection-in-signal-desktop/
 categories:
   - English
   - IT Security
-draft: true
+
 ---
 A few days ago some researchers discovered an HTML Injection vulnerability in Signal Desktop and they wrote a [public disclosure][1]. The Signal team quickly released an update on May 11th, the problem was in the file **/js/views/message_view.js**.
 

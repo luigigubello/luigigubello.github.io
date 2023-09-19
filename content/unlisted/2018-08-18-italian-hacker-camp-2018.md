@@ -7,7 +7,7 @@ url: /blog/italian-hacker-camp-2018/
 categories:
   - Italian
   - Other
-draft: true
+
 ---
 Circa due settimane fa, a Padova, si è tenuto l'evento **[Italian Hacker Camp 2018][1]**, un vero e proprio campeggio per appassionati del mondo dell'informatica (ma non solo). L'evento si è svolto dal 2 al 5 agosto e offriva alle persone, come si può intuire dal nome, la possibilità di fermarsi lì con la propria tenda e il proprio sacco a pelo per tutta la durata dell'evento. Non ho avuto modo di parteciparci in maniera così "selvaggia", ma sono riuscito a passarci in giornata, trovando un ambiente inclusivo, che non ha deluso le  mie aspettative. Cerco di semplificare la mia esperienza con due elenchi puntati, uno con gli aspetti personalmente positivi dell'evento e l'altro con qualche spunto per migliorare le edizioni future, nella speranza che ce ne siano.
 
