@@ -8,7 +8,7 @@ categories:
   - English
   - WordPress
   - XSS
-draft: false
+draft: true
 ---
 ### Info
 
