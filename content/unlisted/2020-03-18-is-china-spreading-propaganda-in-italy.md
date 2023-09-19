@@ -7,7 +7,7 @@ url: /blog/is-china-spreading-propaganda-in-italy/
 categories:
   - English
   - Twitter
-draft: true
+
 ---
 Italy is facing dark days because of coronavirus and there is a lot of disinformation about this topic, especially on messaging apps and social networks (the journalist Jane Lytvynenko is [collecting and debunking][1] a large number of fake news about COVID-19). Last week (**03/12**) China sent a team of doctors and equipment for Italian hospitals, a part of which Italy will pay for. The Chinese Embassy in Italy reported the news on Twitter and – during these particular days – their Twitter account is particular active. Their tweets have generated many retweets, likes and positive replies – many thanks from Italian people – because coronavirus is a world issue and people are scared. This is the bright side of it, but there is another side: many tweets and reactions seem to have been created by bots or suspicious accounts, usually with few tweets, no profile pic, absolutely pro Chinese government and anti USA. If you try to reply in a negative way to the Chinese Embassy in Italy ([@AmbCina][2]), you will probably receive this message from some users: **nmsl**, Chinese slang that stands for “_Your mom is dead_”.
 
