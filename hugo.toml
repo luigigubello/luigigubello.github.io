@@ -59,14 +59,6 @@ tocopen = false
   imageHeight = 120
   imageTitle = "Milhouse"
 
-    [[params.profileMode.buttons]]
-    name = "Blog"
-    url = "/blog/"
-
-  [params.homeInfoParams]
-  Title = "Hi there 👋"
-  Content = "Welcome to my blog"
-
   [[params.socialIcons]]
   name = "mastodon"
   url = "https://mastodon.social/@evaristegal0is"
