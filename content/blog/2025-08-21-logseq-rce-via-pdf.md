@@ -77,7 +77,7 @@ logseq.sdk.git.exec_command(['calc']);
 
 ### Proof-of-Concept
 
-1. Download [PoC-logseq-CVE-2024-4367.pdf](static/docs/2025/08/PoC-logseq-CVE-2024-4367.pdf) and upload it as asset (or host it on a web server and link it in a Logseq page).
+1. Download [PoC-logseq-CVE-2024-4367.pdf](../../static/docs/2025/08/PoC-logseq-CVE-2024-4367.pdf) and upload it as asset (or host it on a web server and link it in a Logseq page).
 2. Open the file using Logseq Desktop on macOS.
 3. When the PDF is rendered, the embedded JavaScript is executed, launching the Calculator app in macOS.
 
