@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	{{ partial "header.html" . }}
+	<body>
+		<div class="content">
+			{{ partial "head.html" . }}
+
+			<main class="list">
+				<div class="site-description" style="flex-direction: column; text-align: center; justify-content: center;">
+					<img src="{{ .Site.Params.favicon | absURL }}" alt="Milhouse" width="120" height="120" style="border-radius: 50%;">
+				</div>
+				{{ .Content }}
+			</main>
+			{{ partial "footer.html" . }}
+		</div>
+	</body>
+</html>

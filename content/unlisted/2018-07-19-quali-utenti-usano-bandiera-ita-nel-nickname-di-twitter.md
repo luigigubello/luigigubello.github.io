@@ -12,7 +12,7 @@ categories:
 ---
 Qualche giorno fa il giornalista de Il Post Emanuele Menietti ha tweetato questo:
 
-{{< tweet user="emenietti" id="1015510268393254912" >}}
+{{< x user="emenietti" id="1015510268393254912" >}}
 
 Mi sono quindi domandato se c'è un modo veloce per filtrare gli utenti di Twitter in base alla presenza, o meno, di una determinata emoji nel loro nickname. La risposta è **Sì**, bastano qualche riga di Python e l'utilizzo delle API di Twitter. A questo punto ho deciso di giocare un po' di più con Python e le API di Twitter, provando a vedere se era possibile rispondere a qualche domanda, utilizzando i dati ottenibili tramite le API. Le domande che mi sono posto sono principalmente due:
 

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Bug Bounty on Just Milhouse</title>
+		<link>http://localhost:1313/categories/bug-bounty/</link>
+		<description>Recent content in Bug Bounty on Just Milhouse</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+			<copyright>© Luigi Gubello</copyright>
+		
+		
+			<lastBuildDate>Tue, 27 Aug 2024 00:35:53 +0200</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/categories/bug-bounty/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>JavaScript-based PDF Viewers, Cross Site Scripting, and PDF files</title>
+				<link>http://localhost:1313/blog/pdf-viewers-xss-and-pdf-files/</link>
+				<pubDate>Tue, 27 Aug 2024 00:35:53 +0200</pubDate>
+				<guid>http://localhost:1313/blog/pdf-viewers-xss-and-pdf-files/</guid>
+				<description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;❗️Disclosure:&lt;/strong&gt; I worked at Smallpdf from January to November 2021. In that period, Smallpdf used PDFTron WebViewer SDK (now Apryse PDF WebViewer) to render PDF files in the browser. This information was &lt;a href=&#34;https://web.archive.org/web/20240816134346/https://smallpdf.com/library-detail&#34;&gt;public&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;interview-and-first-xss-in-pdftron-webviewer&#34;&gt;Interview and first XSS in PDFTron WebViewer&lt;/h2&gt;&#xA;&lt;p&gt;In October 2020, I started my job interview with Smallpdf for a Cloud Security Engineer position. During the interview process, I began to use Smallpdf as a service to &amp;ldquo;play&amp;rdquo; with it, and being a web application that renders PDF files, I tried to exploit PDF files to inject arbitrary Javascript code.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Javascript Injection in six Android mail clients</title>
+				<link>http://localhost:1313/blog/javascript-injection-in-six-android-mail-clients/</link>
+				<pubDate>Sat, 15 Feb 2020 10:26:54 +0000</pubDate>
+				<guid>http://localhost:1313/blog/javascript-injection-in-six-android-mail-clients/</guid>
+				<description>&lt;p&gt;During last spring (2019) I started to &amp;ldquo;open and read&amp;rdquo; the Android applications before installing them. Reversing an APK file can be interesting to understand how an app works, how it manages the permissions and my data, if there are vulnerabilities. I was looking for a different Android mail client, so I started to reverse them and I found many mail clients on Play Store were - maybe are - vulnerable to Javascript injection. I found eight important apps vulnerable to cross-site scripting: &lt;strong&gt;Newton Mail&lt;/strong&gt; 10.0.23, &lt;strong&gt;Nine Email&lt;/strong&gt; 4.5.3a, &lt;strong&gt;Blue Mail&lt;/strong&gt; 1.9.5.36, &lt;strong&gt;Edison Email&lt;/strong&gt; 1.7.1, &lt;strong&gt;Email TypeApp&lt;/strong&gt; 1.9.5.35 and &lt;strong&gt;Spark&lt;/strong&gt; 2.0.2 + &lt;strong&gt;two&lt;/strong&gt; apps I can&amp;rsquo;t disclose now. In April and May 2019 I wrote to vendors of these apps, but only someone replied to me.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>From XSS to RCE in Simplenote 1.1.3</title>
+				<link>http://localhost:1313/blog/from-xss-to-rce-in-simplenote/</link>
+				<pubDate>Sun, 29 Jul 2018 16:20:59 +0000</pubDate>
+				<guid>http://localhost:1313/blog/from-xss-to-rce-in-simplenote/</guid>
+				<description>&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;&#xA;&lt;p&gt;In &lt;strong&gt;Simplenote 1.1.3 - Desktop app&lt;/strong&gt; there is a stored XSS vulnerability that can be used to execute arbitrary code. If there is malicious code in the note and the user tries to print it (for example to save it as a PDF), the malicious code runs.&lt;/p&gt;&#xA;&lt;p&gt;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;&#x9;&#x9;&#x9;&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/YzEzLsSAO3s?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;&#x9;&#x9;&lt;/div&gt;&#xA;&#xA; &lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Stored XSS in Microsoft Bing</title>
+				<link>http://localhost:1313/blog/stored-xss-in-microsoft-bing/</link>
+				<pubDate>Sat, 21 Apr 2018 10:30:51 +0000</pubDate>
+				<guid>http://localhost:1313/blog/stored-xss-in-microsoft-bing/</guid>
+				<description>&lt;p&gt;After many unsuccessful attempts to find an XSS in Yahoo&amp;rsquo;s domains, I decided to move my attention to Microsoft Bing.&lt;br&gt;&#xA;If you have a Microsoft account, Bing allows you to save online content (images, videos and places) on the page &lt;em&gt;My saves&lt;/em&gt;, and allows to create collections to better manage your own content.&lt;br&gt;&#xA;The titles of these collections were not properly filtered, so it was possible to break the code and inject persistent arbitrary code.&lt;br&gt;&#xA;The code could be injected easily, all it took was the wrong image added to &lt;em&gt;My saves&lt;/em&gt;.&lt;br&gt;&#xA;I was lucky with Bing, now I can go back to fail with Yahoo 🙂&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Multiple stored XSS in AOL Mail</title>
+				<link>http://localhost:1313/blog/multiple-stored-xss-in-aol-mail/</link>
+				<pubDate>Fri, 23 Mar 2018 18:05:32 +0000</pubDate>
+				<guid>http://localhost:1313/blog/multiple-stored-xss-in-aol-mail/</guid>
+				<description>&lt;p&gt;In November, I reported various persistent XSS vulnerabilities in &lt;strong&gt;AOL Mail&lt;/strong&gt; to the AOL Security Team. They replied quickly and fixed the vulnerabilities in less than 90 days.&lt;/p&gt;&#xA;&lt;h3 id=&#34;1&#34;&gt;1.&lt;/h3&gt;&#xA;&lt;p&gt;Using an unclosed tag, it was possible to inject arbitrary javascript code. The payload ran as soon as the victim opened the site &lt;strong&gt;mail.aol.com&lt;/strong&gt; because the code was in the e-mail preview.&lt;/p&gt;&#xA;&lt;p&gt;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;&#x9;&#x9;&#x9;&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/o2_6lSht9L4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;&#x9;&#x9;&lt;/div&gt;&#xA;&#xA; &lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Stored XSS via cloud attachment</title>
+				<link>http://localhost:1313/blog/stored-xss-via-cloud-attachment/</link>
+				<pubDate>Sat, 20 Jan 2018 17:16:52 +0000</pubDate>
+				<guid>http://localhost:1313/blog/stored-xss-via-cloud-attachment/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;ZOHO Mail&lt;/strong&gt; is a business mail that includes integrated calendar, contacts, notes, and tasks apps. Initially I was looking for a stored XSS in the webmail, but I did not find it so I started checking the other services. I wondered if it was possible to inject malicious code via attachments in ZOHO Notes. By attaching a local file it wasn&amp;rsquo;t, but in ZOHO Notes you can attach files from some cloud services: &lt;strong&gt;Google Drive&lt;/strong&gt;, &lt;strong&gt;Dropbox&lt;/strong&gt;, &lt;strong&gt;Box&lt;/strong&gt; and &lt;strong&gt;Evernote&lt;/strong&gt;. The XSS filters and protections worked well for the first three services, but not for Evernote. To my surprise it was possible to run javascript code in &lt;strong&gt;gadgets.zoho.eu&lt;/strong&gt; via Evernote attachments.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Stored XSS in touch.mail.ru</title>
+				<link>http://localhost:1313/blog/stored-xss-in-touch-mail-ru/</link>
+				<pubDate>Wed, 27 Dec 2017 17:55:41 +0000</pubDate>
+				<guid>http://localhost:1313/blog/stored-xss-in-touch-mail-ru/</guid>
+				<description>&lt;p&gt;This is my first public disclosure on HackerOne. It is a partial disclosure, but the summary is clear: there was a stored XSS in the image preview feature via crafted attachment filename.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://hackerone.com/reports/275274&#34;&gt;&lt;strong&gt;#275274 - touch.mail.ru/messages - Stored XSS&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;07/10/2017&lt;/strong&gt; - I send the report&lt;br&gt;&#xA;&lt;strong&gt;11/10/2017&lt;/strong&gt; - The vulnerability is fixed and the bug bounty reward is 750$&lt;br&gt;&#xA;&lt;strong&gt;27/12/2017&lt;/strong&gt; - Public disclosure&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

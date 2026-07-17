@@ -60,6 +60,6 @@ I hope to have time to write the **part II**: I would like to analyze the freque
 
 hese days in France there have been many manifestations of people in the yellow vest. Of course on Twitter it was born a hashtag to talk about this: [# GiletsJaunes](https://twitter.com/hashtag/GiletsJaunes?src=hash). To better understand how propaganda can affect Twitter I suggest three tweets:
 
-{{< tweet user="fs0c131y" id="1070978229224267776" >}}
+{{< x user="fs0c131y" id="1070978229224267776" >}}
 
-{{< tweet user="x0rz" id="1070716650322829312" >}}
+{{< x user="x0rz" id="1070716650322829312" >}}

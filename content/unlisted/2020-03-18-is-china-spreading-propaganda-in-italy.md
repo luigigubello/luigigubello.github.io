@@ -17,7 +17,7 @@ _"nmsl" replies under Chinese Embassy's tweets_
 
 I monitored the retweets of this Chinese Embassy's tweet:
 
-{{< tweet user="AmbCina" id="1238091838713671681" >}}
+{{< x user="AmbCina" id="1238091838713671681" >}}
 
 and I found some suspicious accounts, but at first I didn't give them importance:
 

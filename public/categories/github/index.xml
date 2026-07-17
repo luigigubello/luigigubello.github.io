@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>GitHub on Just Milhouse</title>
+		<link>http://localhost:1313/categories/github/</link>
+		<description>Recent content in GitHub on Just Milhouse</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+			<copyright>© Luigi Gubello</copyright>
+		
+		
+			<lastBuildDate>Tue, 03 Dec 2019 00:42:28 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/categories/github/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>About Chinese propaganda on Twitter: drawing data 📊</title>
+				<link>http://localhost:1313/blog/about-chinese-propaganda-on-twitter-drawing-data/</link>
+				<pubDate>Tue, 03 Dec 2019 00:42:28 +0000</pubDate>
+				<guid>http://localhost:1313/blog/about-chinese-propaganda-on-twitter-drawing-data/</guid>
+				<description>&lt;p&gt;Some days ago the journalist Charlotte Godart contacted me and asked me to explain how to use my script &lt;a href=&#34;https://github.com/luigigubello/My-Twitter-World/tree/master/tweets-analysis&#34;&gt;&lt;strong&gt;tweet_analysis.py&lt;/strong&gt;&lt;/a&gt;. Her goal was to convert Twitter datasets about Chinese propaganda into graphs, so that people can see how the Chinese government operates on Twitter to influence their opinion. While helping her I had the possibility to take a look at these datasets and they are intriguing, very different from the Internet Research Agency dataset. My &lt;em&gt;unconfirmed&lt;/em&gt; theory is that the Chinese government bought some bots and fake accounts from third-party companies. China has a strong power on national internet services such as TikTok or WeChat (e.g. filters, censorship), not so much on external services, though, for now. I think this situation will change quickly.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Quali utenti usano 🇮🇹 nel nickname di Twitter?</title>
+				<link>http://localhost:1313/blog/quali-utenti-usano-bandiera-ita-nel-nickname-di-twitter/</link>
+				<pubDate>Thu, 19 Jul 2018 10:40:28 +0000</pubDate>
+				<guid>http://localhost:1313/blog/quali-utenti-usano-bandiera-ita-nel-nickname-di-twitter/</guid>
+				<description>&lt;p&gt;Qualche giorno fa il giornalista de Il Post Emanuele Menietti ha tweetato questo:&lt;/p&gt;&#xA;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;it&#34; dir=&#34;ltr&#34;&gt;ci sarà pur un modo per filtrare tutti quelli con la bandierina dell&amp;#39;italia nel nome del profilo e con foto che non troveresti manco sulle credenze nei tinelli a predappio.&lt;/p&gt;&amp;mdash; emanuele menietti (@emenietti) &lt;a href=&#34;https://x.com/emenietti/status/1015510268393254912?ref_src=twsrc%5Etfw&#34;&gt;July 7, 2018&lt;/a&gt;&lt;/blockquote&gt;&#xA;&lt;script async src=&#34;https://platform.x.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&#xA;&#xA;&#xA;&lt;p&gt;Mi sono quindi domandato se c&amp;rsquo;è un modo veloce per filtrare gli utenti di Twitter in base alla presenza, o meno, di una determinata emoji nel loro nickname. La risposta è &lt;strong&gt;Sì&lt;/strong&gt;, bastano qualche riga di Python e l&amp;rsquo;utilizzo delle API di Twitter. A questo punto ho deciso di giocare un po&amp;rsquo; di più con Python e le API di Twitter, provando a vedere se era possibile rispondere a qualche domanda, utilizzando i dati ottenibili tramite le API. Le domande che mi sono posto sono principalmente due:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>XSSSonar: python tool to look for XSS</title>
+				<link>http://localhost:1313/blog/xsssonar/</link>
+				<pubDate>Sat, 16 Dec 2017 16:37:19 +0000</pubDate>
+				<guid>http://localhost:1313/blog/xsssonar/</guid>
+				<description>&lt;p&gt;In my own spare time I like to participate in the bug bounty programs. They are a hard challenge, but it is satisfying to find vulnerabilities in big companies. I usually look for XSS vulnerabilities, for this reason I have written a little python script to automate the search of XSS.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2017/12/xsssonar_logo.png#center&#34; alt=&#34;XSSSonar&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;XSSSonar&lt;/strong&gt; is an open source tool to look for XSS vulnerabilities on a web page, it is written in Python 2.x for now, but I hope to rewrite it in Python 3.x. You can download it from the &lt;a href=&#34;https://www.github.com/luigigubello/XSSSonar&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Other on Just Milhouse</title>
+		<link>http://localhost:1313/categories/other/</link>
+		<description>Recent content in Other on Just Milhouse</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+			<copyright>© Luigi Gubello</copyright>
+		
+		
+			<lastBuildDate>Tue, 13 Aug 2019 13:05:36 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/categories/other/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>#Hack5Stelle</title>
+				<link>http://localhost:1313/blog/hack5stelle/</link>
+				<pubDate>Tue, 13 Aug 2019 13:05:36 +0000</pubDate>
+				<guid>http://localhost:1313/blog/hack5stelle/</guid>
+				<description>&lt;p&gt;&lt;em&gt;Questo post doveva essere pubblicato verso giugno 2019, l&amp;rsquo;ho scritto in quel periodo, poi si sa, è facile procrastinare, gli imprevisti sono dietro l&amp;rsquo;angolo, le scalette personali mutano, capitano settimane impegnative, e le bozze rimangono salvate a prendere polvere. Ci tengo molto a ringraziare le persone - tante - che mi hanno fatto sentire il proprio sostegno, in vari modi, durante tutta la vicenda che mi ha coinvolto. Quindi rispolvero questa bozza, riprendo da dove avevo lasciato e la pubblico con colpevole ritardo.&lt;/em&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Italian Hacker Camp 2018</title>
+				<link>http://localhost:1313/blog/italian-hacker-camp-2018/</link>
+				<pubDate>Sat, 18 Aug 2018 08:48:50 +0000</pubDate>
+				<guid>http://localhost:1313/blog/italian-hacker-camp-2018/</guid>
+				<description>&lt;p&gt;Circa due settimane fa, a Padova, si è tenuto l&amp;rsquo;evento &lt;strong&gt;&lt;a href=&#34;https://www.ihc.camp/&#34;&gt;Italian Hacker Camp 2018&lt;/a&gt;&lt;/strong&gt;, un vero e proprio campeggio per appassionati del mondo dell&amp;rsquo;informatica (ma non solo). L&amp;rsquo;evento si è svolto dal 2 al 5 agosto e offriva alle persone, come si può intuire dal nome, la possibilità di fermarsi lì con la propria tenda e il proprio sacco a pelo per tutta la durata dell&amp;rsquo;evento. Non ho avuto modo di parteciparci in maniera così &amp;ldquo;selvaggia&amp;rdquo;, ma sono riuscito a passarci in giornata, trovando un ambiente inclusivo, che non ha deluso le  mie aspettative. Cerco di semplificare la mia esperienza con due elenchi puntati, uno con gli aspetti personalmente positivi dell&amp;rsquo;evento e l&amp;rsquo;altro con qualche spunto per migliorare le edizioni future, nella speranza che ce ne siano.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Quali utenti usano 🇮🇹 nel nickname di Twitter?</title>
+				<link>http://localhost:1313/blog/quali-utenti-usano-bandiera-ita-nel-nickname-di-twitter/</link>
+				<pubDate>Thu, 19 Jul 2018 10:40:28 +0000</pubDate>
+				<guid>http://localhost:1313/blog/quali-utenti-usano-bandiera-ita-nel-nickname-di-twitter/</guid>
+				<description>&lt;p&gt;Qualche giorno fa il giornalista de Il Post Emanuele Menietti ha tweetato questo:&lt;/p&gt;&#xA;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;it&#34; dir=&#34;ltr&#34;&gt;ci sarà pur un modo per filtrare tutti quelli con la bandierina dell&amp;#39;italia nel nome del profilo e con foto che non troveresti manco sulle credenze nei tinelli a predappio.&lt;/p&gt;&amp;mdash; emanuele menietti (@emenietti) &lt;a href=&#34;https://x.com/emenietti/status/1015510268393254912?ref_src=twsrc%5Etfw&#34;&gt;July 7, 2018&lt;/a&gt;&lt;/blockquote&gt;&#xA;&lt;script async src=&#34;https://platform.x.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&#xA;&#xA;&#xA;&lt;p&gt;Mi sono quindi domandato se c&amp;rsquo;è un modo veloce per filtrare gli utenti di Twitter in base alla presenza, o meno, di una determinata emoji nel loro nickname. La risposta è &lt;strong&gt;Sì&lt;/strong&gt;, bastano qualche riga di Python e l&amp;rsquo;utilizzo delle API di Twitter. A questo punto ho deciso di giocare un po&amp;rsquo; di più con Python e le API di Twitter, provando a vedere se era possibile rispondere a qualche domanda, utilizzando i dati ottenibili tramite le API. Le domande che mi sono posto sono principalmente due:&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
