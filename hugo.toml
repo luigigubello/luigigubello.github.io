@@ -26,6 +26,7 @@ subtitle = "Just Milhouse"
 description = "Just Milhouse"
 favicon = "/images/2023/08/favicon.png"
 og_image = "/images/2023/08/favicon.png"
+customCSS = ["css/custom.css"]
 
 [[params.social]]
 name = "Mastodon"
